@@ -1,0 +1,25 @@
+/* ------------------- Style Resets ------------------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ------------------- Variables -------------------*/
+
+:root {
+    /*colours*/
+    --clr-F:#FFFFFF;
+    --clr-0:#000000;
+}
