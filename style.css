@@ -51,26 +51,46 @@ body {
     display: grid;
 }
 
+
+/*Skewed white panels for titles etc*/
+
 .skewedpanel {
     margin: 3em;
     background: transparent;
     z-index: 3;
 }
-
+/*apply padding to the internel element within the panel
+this is to make the padding also apply to the pseudoelements*/
 .skewedpanel * {
 padding: 1em;
+z-index: 3;
 }
 
-
-.skewedpanel::after {
+/*clone the shape of the panel, skew it and place it behind the content*/
+.skewedpanel::before {
     content: "";
     display: grid;
     position: relative;
     z-index: -1;
-    top: -100%;
+    top: 100%;
     min-height: 100%;
     width: 100%;
     background-image: var(--clr-gradient-box);
     transform: var(--transform-skew);
-    box-shadow: 10px 10px var(--clr-primary);
+}
+
+/*clone the shape of the panel, skew it, and place it behind both the content and the ::before element
+offset it to creat shadow effect
+All this BS is because box-shadow doesn't work on SVG shapes :D*/
+.skewedpanel::after {
+    content: "";
+    display: grid;
+    position: relative;
+    z-index: -2;
+    top: calc(-1 * (100% - 10px));
+    left: 10px;
+    min-height: 100%;
+    width: 100%;
+    background: var(--clr-primary);
+    transform: var(--transform-skew)
 }
