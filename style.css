@@ -50,31 +50,40 @@ html {
 body {
     background-color: var(--clr-bg-dark);
     display: grid;
+    grid-template-columns: 1fr 1200px 1fr;
 }
 
+.maincontent {
+    height: 100vh;
+    width: 1200px;
+}
 
 /*Skewed white panels for titles etc*/
 
 .skewedpanel {
+    position: relative;
+    height: 4em;
+    width: 20%;
     margin: 3em;
     background: transparent;
-    transform: translateY(-100%);
     z-index: 3;
 }
+
 /*apply padding to the internel element within the panel
 this is to make the padding also apply to the pseudoelements*/
-.skewedpanel * {
-padding: 1em;
-z-index: 3;
+.skewedpanel .panelinternals {
+    height: 100%;
+    padding: 1em;
+    z-index: 3;
 }
 
 /*clone the shape of the panel, skew it and place it behind the content*/
 .skewedpanel::before {
     content: "";
     display: grid;
-    position: relative;
+    position: absolute;
     z-index: -1;
-    top: 100%;
+    top: 0%;
     min-height: 100%;
     width: 100%;
     background-image: var(--clr-gradient-box);
@@ -87,85 +96,68 @@ All this BS is because box-shadow doesn't work on SVG shapes :D*/
 .skewedpanel::after {
     content: "";
     display: grid;
-    position: relative;
+    position: absolute;
     z-index: -2;
-    top: calc(-1 * (100% - 10px));
+    top: 10px;
     left: 10px;
-    min-height: 100%;
+    height: 100%;
     width: 100%;
     background: var(--clr-primary);
     transform: var(--transform-skew)
 }
 
+/*Button style - always add the div with .buttonstyle inside, and a p wrapper for text within that*/
 button {
-    max-width: 40em;
+    min-width: 30em;
+    max-width: 50em;
+    height: 4em;
     background: transparent;
     border: none;
     cursor: pointer;
 }
 
-button p {
-    position: relative;
-    padding: 1em;
-    z-index: 2;
+.buttonstyle {
+    height: 100%;
+    width: 100%;
+    background-image: var(--clr-gradient-button);
+    transform: var(--transform-skew);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.buttonstyle p {
+    transform: skewX(12.5deg);
     color: var(--clr-F);
+    padding-top: 0.5em;
     font-size: 1.5em;
     font-weight: bold;
     font-family: 'Mochiy Pop P One', sans-serif;
     text-transform: uppercase;
+    height: 100%;
 }
 
 button:hover {
     transform: translate(-5px, -5px);
+    transition: 150ms;
+}
+
+button:hover p{
+    color: var(--clr-highlight);
 }
 
 button:active {
-    transform: translate(0px, 0px);
+    transform: translate(-0px, -0px);
+    transition: 10ms;
 }
 
-button:hover p {
-    color: var(--clr-0);
-}
-
-button::before {
-    content: "";
-    display: grid;
-    position: relative;
-    z-index: 1;
-    top: 100%;
-    min-height: 100%;
-    width: 100%;
-    background-image: var(--clr-gradient-button);
-    transform: var(--transform-skew);
-}
-
-button:hover::before {
+button:hover .buttonstyle {
     background-image: var(--clr-gradient-button-hover);
+    box-shadow: 10px 10px 0px var(--clr-highlight);
+    transition: 150ms;
+
 }
 
-button:active::before {
+button:active .buttonstyle {
     background-image: var(--clr-gradient-button-click);
-    box-shadow: 0px 0px 0.5em var(--clr-button-tint-1);
-}
-
-button::after {
-    display: none;
-    background: transparent;
-}
-
-button:hover::after {
-    content: "";
-    display: grid;
-    position: relative;
-    z-index: 0;
-    top: calc(-1 * (100% - 10px));
-    left: 10px;
-    min-height: 100%;
-    width: 100%;
-    background-image: var(--clr-gradient-button);
-    transform: var(--transform-skew);
-}
-
-button:active::after {
-    display: none;
+    box-shadow: 0px 0px 5px var(--clr-highlight);
+    transition: 10ms;
 }
