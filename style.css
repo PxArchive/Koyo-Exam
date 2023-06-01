@@ -36,13 +36,14 @@ html {
     --clr-shadow: #202d33;
 
     /*gradients*/
-    --clr-gradient-box:linear-gradient(to right, var(--clr-F), var(--clr-primary-tint));
+    --clr-gradient-box:linear-gradient(90deg, var(--clr-F) 0%, var(--clr-F) 10%, var(--clr-primary-tint) 100%);
     --clr-gradient-button:linear-gradient(to right, var(--clr-button-tint-2), var(--clr-button-tint-1));
     --clr-gradient-button-hover:linear-gradient(to right, var(--clr-F), var(--clr-button-tint-3));
     --clr-gradient-button-click:linear-gradient(to left, var(--clr-F), var(--clr-button-tint-3));
 
-    /*skew transformation amount*/
+    /*transforms*/
     --transform-skew:skewX(-12.5deg);
+    --transform-unskew:skewX(12.5deg);
 }
 
 /* ------------------- Global Styles -------------------*/
@@ -58,8 +59,11 @@ body {
     width: 1200px;
 }
 
-/*Skewed white panels for titles etc*/
+nav ul {
+    list-style: none; /*gets rid of the annoying bullet points in the nav menu*/
+}
 
+/*Skewed white panels for titles etc*/
 .skewedpanel {
     position: relative;
     height: 4em;
@@ -116,6 +120,8 @@ button {
     cursor: pointer;
 }
 
+/*functions as the background of the button.
+Necessary to split the skew transform and the translate transform*/
 .buttonstyle {
     height: 100%;
     width: 100%;
@@ -125,7 +131,7 @@ button {
 }
 
 .buttonstyle p {
-    transform: skewX(12.5deg);
+    transform: var(--transform-unskew);
     color: var(--clr-F);
     padding-top: 0.5em;
     font-size: 1.5em;
@@ -153,7 +159,6 @@ button:hover .buttonstyle {
     background-image: var(--clr-gradient-button-hover);
     box-shadow: 10px 10px 0px var(--clr-highlight);
     transition: 150ms;
-
 }
 
 button:active .buttonstyle {
@@ -161,3 +166,7 @@ button:active .buttonstyle {
     box-shadow: 0px 0px 5px var(--clr-highlight);
     transition: 10ms;
 }
+
+/* ------------------- Media Queries -------------------*/
+
+/* ------------------- Title Pending -------------------*/
