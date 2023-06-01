@@ -39,6 +39,7 @@ html {
     --clr-gradient-box:linear-gradient(to right, var(--clr-F), var(--clr-primary-tint));
     --clr-gradient-button:linear-gradient(to right, var(--clr-button-tint-2), var(--clr-button-tint-1));
     --clr-gradient-button-hover:linear-gradient(to right, var(--clr-F), var(--clr-button-tint-3));
+    --clr-gradient-button-click:linear-gradient(to left, var(--clr-F), var(--clr-button-tint-3));
 
     /*skew transformation amount*/
     --transform-skew:skewX(-12.5deg);
@@ -57,6 +58,7 @@ body {
 .skewedpanel {
     margin: 3em;
     background: transparent;
+    transform: translateY(-100%);
     z-index: 3;
 }
 /*apply padding to the internel element within the panel
@@ -93,4 +95,77 @@ All this BS is because box-shadow doesn't work on SVG shapes :D*/
     width: 100%;
     background: var(--clr-primary);
     transform: var(--transform-skew)
+}
+
+button {
+    max-width: 40em;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+button p {
+    position: relative;
+    padding: 1em;
+    z-index: 2;
+    color: var(--clr-F);
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-transform: uppercase;
+}
+
+button:hover {
+    transform: translate(-5px, -5px);
+}
+
+button:active {
+    transform: translate(0px, 0px);
+}
+
+button:hover p {
+    color: var(--clr-0);
+}
+
+button::before {
+    content: "";
+    display: grid;
+    position: relative;
+    z-index: 1;
+    top: 100%;
+    min-height: 100%;
+    width: 100%;
+    background-image: var(--clr-gradient-button);
+    transform: var(--transform-skew);
+}
+
+button:hover::before {
+    background-image: var(--clr-gradient-button-hover);
+}
+
+button:active::before {
+    background-image: var(--clr-gradient-button-click);
+    box-shadow: 0px 0px 0.5em var(--clr-button-tint-1);
+}
+
+button::after {
+    display: none;
+    background: transparent;
+}
+
+button:hover::after {
+    content: "";
+    display: grid;
+    position: relative;
+    z-index: 0;
+    top: calc(-1 * (100% - 10px));
+    left: 10px;
+    min-height: 100%;
+    width: 100%;
+    background-image: var(--clr-gradient-button);
+    transform: var(--transform-skew);
+}
+
+button:active::after {
+    display: none;
 }
