@@ -24,6 +24,7 @@ html {
     --clr-0:#000000; /*black*/
 
     --clr-primary: #ee7425; /*orange primary*/
+    --clr-primary-alt: #e05800; /*orange primary - darkened version for contrast*/
     --clr-highlight: #25a8e0; /*light blue primary*/
 
     --clr-primary-tint: #fff3eb; /*very light orange for tinting boxes*/
@@ -51,16 +52,23 @@ html {
 body {
     background-color: var(--clr-bg-dark);
     display: grid;
-    grid-template-columns: 1fr 1200px 1fr;
+    grid-template-columns: 1fr clamp(800px, 80%, 1400px) 1fr;
 }
 
 .maincontent {
-    height: 100vh;
-    width: 1200px;
+    width: 100%;
+    display: grid;
 }
 
 nav ul {
     list-style: none; /*gets rid of the annoying bullet points in the nav menu*/
+}
+
+h1, h2 {
+    font-size: 1.5em;
+    color: var(--clr-primary);
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-transform: uppercase;
 }
 
 p a {
@@ -68,15 +76,27 @@ p a {
     font-weight: bold;
 }
 
+p {
+    font-size: 1.125em;
+    color: var(--clr-F);
+    font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
+}
+
 /*Skewed white panels for titles etc*/
 .skewedpanel {
     display: grid;
     position: relative;
     height: 4em;
-    width: 20%;
-    margin: 3em;
+    width: 100%;
     background: transparent;
     z-index: 3;
+}
+
+.skewedpanel h2 {
+    font-size: 1.5em;
+    color: var(--clr-primary);
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-transform: uppercase;
 }
 
 /*apply padding to the internel element within the panel
@@ -118,12 +138,14 @@ All this BS is because box-shadow doesn't work on SVG shapes :D*/
 
 /*Button style - always add the div with .buttonstyle inside, and a p wrapper for text within that*/
 button {
-    min-width: 30em;
-    max-width: 50em;
+    width: 30em;
+    justify-self: center;
     height: 4em;
     background: transparent;
     border: none;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /*functions as the background of the button.
@@ -175,7 +197,9 @@ button:active .buttonstyle {
 
 /*dropdown menu*/
 .dropdown {
-
+    margin-bottom: 3em;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .dropdown-title {
@@ -193,25 +217,79 @@ button:active .buttonstyle {
 }
 
 .dropdown-checkbox {
-/*     display: none; */
+    display: none;
 }
 
 .dropdown-arrow {
     margin-top: 0.5em;
-    height: 60%;
+    justify-self: right;
+    height: 1.4em;
     transform: scaleY(-1);
     transition: 100ms;
 }
 
-.dropdown-checkbox:checked  ~ * * .dropdown-arrow {
+.dropdown .dropdown-checkbox:checked  ~ * * .dropdown-arrow {
     transform: scaleY(1);
     transition: 100ms;
 }
 
-.dropdown-checkbox:checked ~ .dropdown-contents {
-    transform: scaleY(1)
+.dropdown-contents {
+    transform: scaleY(0);
+    position: absolute;
+    transform-origin: top;
+    transition: 200ms;
+    margin-top: 3em;
+
+}
+
+.dropdown-contents p {
+    padding-left: 1em;
+}
+
+.dropdown .dropdown-checkbox:checked ~ .dropdown-contents {
+    transform: scaleY(1);
+    position: relative;
+    transform-origin: top;
+    transition: 200ms;
+}
+
+/* ------------------- Navigation -------------------*/
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 1em;
+}
+
+nav ul li {
+    transform: var(--transform-skew);
+    background-image: var(--clr-gradient-box);
+    box-shadow: 10px 10px 0px var(--clr-primary);
+
+}
+
+nav ul li a{
+    color: var(--clr-primary);
+}
+
+nav ul li a h1{
+    padding: 0.5em;
+    transform: var(--transform-unskew);
+    font-size: 1em;
+    color: var(--clr-primary);
+}
+
+nav ul li:hover {
+    background: var(--clr-primary);
+    transition: 200ms;
+}
+
+nav ul li:hover a h1{
+    transition: 200ms;
+    color: var(--clr-F);
 }
 
 /* ------------------- Media Queries -------------------*/
+
+
 
 /* ------------------- Title Pending -------------------*/
