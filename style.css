@@ -20,20 +20,20 @@ html {
 
 :root {
     /*colours*/
-    --clr-F:#FFFFFF;
-    --clr-0:#000000;
+    --clr-F:#FFFFFF; /*white*/
+    --clr-0:#000000; /*black*/
 
-    --clr-primary: #ee7425;
-    --clr-highlight: #25a8e0;
+    --clr-primary: #ee7425; /*orange primary*/
+    --clr-highlight: #25a8e0; /*light blue primary*/
 
-    --clr-primary-tint: #fff3eb;
-    --clr-button-tint-1: #0096d7;
-    --clr-button-tint-2: #65d1ff;
-    --clr-button-tint-3: #c5edff;
+    --clr-primary-tint: #fff3eb; /*very light orange for tinting boxes*/
+    --clr-button-tint-1: #0096d7; /*light blue - darkened slightly for gradient*/
+    --clr-button-tint-2: #65d1ff; /*light blue - lightened for gradient*/
+    --clr-button-tint-3: #c5edff; /*light blue - sublte almost white*/
 
-    --clr-bg-light: #ededed;
-    --clr-bg-dark: #404040;
-    --clr-shadow: #202d33;
+    --clr-bg-light: #ededed; /*light grey*/
+    --clr-bg-dark: #404040; /*medium grey*/
+    --clr-shadow: #202d33; /*dark tinted borders, near black*/
 
     /*gradients*/
     --clr-gradient-box:linear-gradient(90deg, var(--clr-F) 0%, var(--clr-F) 10%, var(--clr-primary-tint) 100%);
@@ -63,8 +63,14 @@ nav ul {
     list-style: none; /*gets rid of the annoying bullet points in the nav menu*/
 }
 
+p a {
+    color: var(--clr-primary);
+    font-weight: bold;
+}
+
 /*Skewed white panels for titles etc*/
 .skewedpanel {
+    display: grid;
     position: relative;
     height: 4em;
     width: 20%;
@@ -165,6 +171,45 @@ button:active .buttonstyle {
     background-image: var(--clr-gradient-button-click);
     box-shadow: 0px 0px 5px var(--clr-highlight);
     transition: 10ms;
+}
+
+/*dropdown menu*/
+.dropdown {
+
+}
+
+.dropdown-title {
+    display: grid;
+    grid-template-columns: 80% 20%;
+    padding: 1em;
+}
+
+.speechtriangle {
+    position: absolute;
+    height: 149%;
+    left: -10px;
+    z-index: -1;
+    transform: var(--transform-skew);
+}
+
+.dropdown-checkbox {
+/*     display: none; */
+}
+
+.dropdown-arrow {
+    margin-top: 0.5em;
+    height: 60%;
+    transform: scaleY(-1);
+    transition: 100ms;
+}
+
+.dropdown-checkbox:checked  ~ * * .dropdown-arrow {
+    transform: scaleY(1);
+    transition: 100ms;
+}
+
+.dropdown-checkbox:checked ~ .dropdown-contents {
+    transform: scaleY(1)
 }
 
 /* ------------------- Media Queries -------------------*/
