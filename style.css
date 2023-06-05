@@ -82,6 +82,14 @@ p {
     font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
 }
 
+.center {
+    display: flex;
+    justify-self: center;
+    margin-right: auto;
+    margin-left: auto;
+    align-self: center;
+}
+
 /*Skewed white panels for titles etc*/
 .skewedpanel {
     display: grid;

@@ -6,7 +6,8 @@
         <link rel="stylesheet" href="style.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One" rel="stylesheet">
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -29,9 +30,6 @@
         <!-- main content section -->
         <div></div>
         <div class="maincontent">
-
-            <br>
-            <button><div class="buttonstyle"><p>HJÆLP MIG</p></div></button>
 
             <section class="dropdown">
                 <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox1">
@@ -66,14 +64,19 @@
                     <p>Article Text</p>
                 </div>
 
+                
+            <br>
+            <button class="center"><div class="buttonstyle"><p>HJÆLP MIG</p></div></button>
+
             </section>
-            <div class="skewedpanel">
+<!--             <div class="skewedpanel">
                 <div class="panelinternals">
                     <h2>Dette er en test</h2>
                 </div>
-            </div>
+            </div> -->
         </div>
         <div></div>
+        
 
         <!-- Slideshow container -->
         <!-- goes brrrrr-->
@@ -117,62 +120,6 @@
             <span class="dot" onclick="currentSlide(1)"></span>
             <span class="dot" onclick="currentSlide(2)"></span>
         </div>
-
-        <script>
-            let slideIndex = 0;
-            let countdownTimer = 10000; // Change image every 10 seconds
-            playSlides();
-
-            function playSlides() {
-                plusSlides();
-                setTimeout(playSlides, countdownTimer); 
-            }
-
-            // Next controls
-            function plusSlides() {
-                slideIndex++;
-                showSlides(slideIndex);
-            }
-
-            // Previous controls
-            function minusSlides() {
-                slideIndex--;
-                showSlides(slideIndex);
-            }
-
-            // Thumbnail image controls
-            function currentSlide(n) {
-                showSlides(slideIndex = n);
-            }
-
-            function showSlides() {
-                let i;
-                let slides = document.getElementsByClassName("mySlides");
-                let dots = document.getElementsByClassName("dot");
-                
-                if (slideIndex >= slides.length) {
-                    slideIndex = 0;
-                }
-
-                if (slideIndex < 0) {
-                    slideIndex = slides.length - 1;
-                }
-
-                for (i = 0; i < slides.length; i++) {
-                    slides[i].style.display = "none";
-                }
-
-                for (i = 0; i < dots.length; i++) {
-                    dots[i].className = dots[i].className.replace(" active", "");
-                }
-
-                //console.log(slideIndex);
-
-                slides[slideIndex].style.display = "block";
-                dots[slideIndex].className += " active";
-            }
-
-        </script>
     </body>
 
     <footer>
