@@ -275,6 +275,7 @@ header {
     background-size: cover;
     background-image: url(img/Banner2.png);
     margin-bottom: -2px;
+    overflow: hidden;
 }
 
 .logo {
@@ -310,6 +311,7 @@ header {
     background-image: url(assets/halftone-shadow.svg);
     background-size: contain;
     background-repeat: repeat-x;
+    overflow-x: hidden;
     width: 100%;
     height: 6em;
     transform: translateY(-3em);
@@ -326,6 +328,7 @@ nav ul {
 nav ul li {
     transform: var(--transform-skew);
     text-align: center;
+    background: var(--clr-F);
     background-image: var(--clr-gradient-box);
     box-shadow: 10px 10px 0px var(--clr-primary);
 
