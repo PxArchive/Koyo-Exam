@@ -264,10 +264,14 @@ button:active .buttonstyle {
 
 /* ------------------- Navigation -------------------*/
 
+nav {
+    z-index: 5;
+}
+
 header {
     display: grid;
     row-gap: 1em;
-    grid-template-rows: 7em 8em auto 5em;
+    grid-template-rows: 7em 8em auto 3em;
     background-image: url(assets/placeholder-gradient.svg);
     margin-bottom: -2px;
 }
@@ -278,6 +282,7 @@ header {
     transform: var(--transform-skew);
     background-image: var(--clr-gradient-box);
     box-shadow: 10px 10px 0px var(--clr-primary);
+
 }
 
 .logo * {
@@ -305,6 +310,9 @@ header {
     background-size: contain;
     background-repeat: repeat-x;
     width: 100%;
+    height: 6em;
+    transform: translateY(-3em);
+    z-index: 1;
 }
 
 nav ul {
