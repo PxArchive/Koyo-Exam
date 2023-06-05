@@ -267,7 +267,7 @@ button:active .buttonstyle {
 header {
     display: grid;
     row-gap: 1em;
-    grid-template-rows: 3em 8em auto 5em;
+    grid-template-rows: 7em 8em auto 5em;
     background-image: url(assets/placeholder-gradient.svg);
     margin-bottom: -2px;
 }
@@ -282,7 +282,6 @@ header {
 
 .logo * {
     transform: var(--transform-unskew);
-
 }
 
 .logo-text {
@@ -295,7 +294,7 @@ header {
 .logo-owl {
     position: absolute;
     margin-bottom: -0.5px;
-    height: 12em;
+    height: 11em;
     bottom: 0;
     left: -2em;
 }
@@ -347,10 +346,14 @@ nav ul li:hover a h1{
 /* ------------------- Countdown bar -------------------*/
 
 .countdown-bar {
+    width: clamp(800px, 80%, 1400px);
+    position: fixed;
+    z-index: 10;
     background: var(--clr-shadow);
     display: grid;
-    padding: 0.5em 0 0.5em 0;
+    padding-bottom: 0.25em;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto 0.8em;
     align-items: end;
 
     text-align: center;
@@ -364,7 +367,11 @@ nav ul li:hover a h1{
 }
 
 .spacing {
-    word-spacing: 20px;
+    word-spacing: 2em;
+}
+
+.spacing-small {
+    word-spacing: 0.5em;
 }
 
 .cdtext {
