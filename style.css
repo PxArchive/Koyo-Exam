@@ -268,7 +268,8 @@ header {
     display: grid;
     row-gap: 1em;
     grid-template-rows: 3em 8em auto 5em;
-    background-image: url(assets/placeholder-gradient.svg);
+    background-size: cover;
+    background-image: url(img/Banner2.png);
     margin-bottom: -2px;
 }
 
