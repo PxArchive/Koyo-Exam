@@ -34,7 +34,7 @@ html {
 
     --clr-bg-light: #ededed; /*light grey*/
     --clr-bg-dark: #404040; /*medium grey*/
-    --clr-shadow: #202d33; /*dark tinted borders, near black*/
+    --clr-shadow: #231F20; /*dark tinted borders, near black*/
 
     /*gradients*/
     --clr-gradient-box:linear-gradient(90deg, var(--clr-F) 0%, var(--clr-F) 10%, var(--clr-primary-tint) 100%);
@@ -50,7 +50,7 @@ html {
 /* ------------------- Global Styles -------------------*/
 
 body {
-    background-color: var(--clr-bg-dark);
+    background-color: var(--clr-0);
     display: grid;
     grid-template-columns: 1fr clamp(800px, 80%, 1400px) 1fr;
 }
@@ -58,6 +58,7 @@ body {
 .maincontent {
     width: 100%;
     display: grid;
+    background: var(--clr-shadow);
 }
 
 nav ul {
@@ -262,10 +263,56 @@ button:active .buttonstyle {
 }
 
 /* ------------------- Navigation -------------------*/
+
+header {
+    display: grid;
+    gap: 2em;
+    grid-template-rows: 3em 8em 3em 5em;
+    background-image: url(assets/placeholder-gradient.svg);
+    margin-bottom: -2px;
+}
+
+.logo {
+    display: grid;
+    margin: 0 3em 0 3em;
+    transform: var(--transform-skew);
+    background-image: var(--clr-gradient-box);
+    box-shadow: 10px 10px 0px var(--clr-primary);
+}
+
+.logo * {
+    transform: var(--transform-unskew);
+
+}
+
+.logo-text {
+    position: relative;
+    align-self: center;
+    justify-self: center;
+    height: 8em;
+}
+
+.logo-owl {
+    position: absolute;
+    margin-bottom: -0.5px;
+    height: 12em;
+    bottom: 0;
+    left: -2em;
+}
+
+.nav-halftone {
+    position: relative;
+    background-image: url(assets/halftone-shadow.svg);
+    background-size: contain;
+    background-repeat: repeat-x;
+    width: 100%;
+}
+
 nav ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 1em;
+    margin: 0 3em 0 3em;
 }
 
 nav ul li {
@@ -303,13 +350,9 @@ nav ul li:hover a h1{
 
 /* ------------------- Slideshow -------------------*/
 
-* {
-    box-sizing: border-box
-}
-
 /* Slideshow container */
 .slideshow-container {
-    max-width: 1000px;
+    max-width: 100%;
     position: relative;
     margin: auto;
 }
