@@ -60,7 +60,7 @@ function showSlides() {
 /* ------------------- Countdown Code -------------------*/
 
 // Set the date we're counting down to
-var countDownDate = new Date("Nov 8, 2023 18:00:00").getTime();
+var countDownDate = new Date("Sep 8, 2023 18:00:00").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
@@ -77,9 +77,37 @@ var x = setInterval(function () {
     var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
+    var dayText = days.toString();
+    var hourText = hours.toString();
+    var minText = minutes.toString();
+    var secText = seconds.toString();
+
+    // 3 digit day counter
+    if (days < 10) {
+        dayText = "00" + dayText;
+    }
+    else if (days < 100) {
+        dayText = "0" + dayText;
+    }
+
+    // 2 digit hour counter
+    if (hours < 10) {
+        hourText = "0" + hourText;
+    }
+
+    // 2 digit min counter
+    if (minutes < 10) {
+        minText = "0" + minText;
+    }
+
+    // 2 digit sec counter
+    if (seconds < 10) {
+        secText = "0" + secText;
+    }
+
     // Output the result in an element with id="demo"
-    document.getElementById("countdown").innerHTML = days + " " + hours + " "
-        + minutes + " " + seconds + " ";
+    document.getElementById("countdown").innerHTML = dayText + " " + hourText + " "
+        + minText + " " + secText + " ";
 
     // If the count down is over, write some text 
     if (distance < 0) {
