@@ -266,8 +266,8 @@ button:active .buttonstyle {
 
 header {
     display: grid;
-    gap: 2em;
-    grid-template-rows: 3em 8em 3em 5em;
+    row-gap: 1em;
+    grid-template-rows: 3em 8em auto 5em;
     background-image: url(assets/placeholder-gradient.svg);
     margin-bottom: -2px;
 }
@@ -317,6 +317,7 @@ nav ul {
 
 nav ul li {
     transform: var(--transform-skew);
+    text-align: center;
     background-image: var(--clr-gradient-box);
     box-shadow: 10px 10px 0px var(--clr-primary);
 
@@ -329,7 +330,7 @@ nav ul li a{
 nav ul li a h1{
     padding: 0.5em;
     transform: var(--transform-unskew);
-    font-size: 1em;
+    font-size: 1.25em;
     color: var(--clr-primary);
 }
 
@@ -341,6 +342,38 @@ nav ul li:hover {
 nav ul li:hover a h1{
     transition: 200ms;
     color: var(--clr-F);
+}
+
+/* ------------------- Countdown bar -------------------*/
+
+.countdown-bar {
+    background: var(--clr-shadow);
+    display: grid;
+    padding: 0.5em 0 0.5em 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+
+    text-align: center;
+    font-size: 1.8em;
+
+}
+
+.countdown-bar * {
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-transform: uppercase;
+}
+
+.spacing {
+    word-spacing: 20px;
+}
+
+.cdtext {
+    font-size: 0.5em;
+    color: var(--clr-primary);
+}
+
+.countdown-bar button {
+    scale: 0.8;
 }
 
 
@@ -368,12 +401,12 @@ nav ul li:hover a h1{
     position: absolute;
     top: 50%;
     width: auto;
-    margin-top: -22px;
+    margin-top: -1.5em;
     padding: 16px;
     color: var(--clr-primary);
-    background-color: transparent;
+    background-color: var(--clr-shadow);
     font-weight: bold;
-    font-size: 1.5em;
+    font-size: 3em;
     font-family: 'Mochiy Pop P One', sans-serif;
     transition: 0.6s ease;
     border-radius: 0 3px 3px 0;
