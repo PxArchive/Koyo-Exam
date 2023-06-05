@@ -61,6 +61,12 @@ body {
     background: var(--clr-shadow);
 }
 
+
+.spacer {
+    height: 6em;
+    background: var(--clr-shadow);
+}
+
 nav ul {
     list-style: none; /*gets rid of the annoying bullet points in the nav menu*/
 }
@@ -353,6 +359,95 @@ nav ul li:hover {
 nav ul li:hover a h1{
     transition: 200ms;
     color: var(--clr-F);
+}
+
+/* ------------------- Footer -------------------*/
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr clamp(800px, 80%, 1400px) 1fr;
+    position: fixed;
+    width: 100%;
+    height: 12em;
+    bottom: 0;
+}
+
+.footer-halftone {
+    position: relative;
+    background-image: url(assets/halftone-medgreyt.svg);
+    filter: brightness(0);
+    background-size: contain;
+    background-repeat: repeat-x;
+    overflow-x: hidden;
+    margin-bottom: -1px;
+    width: 100%;
+    height: 6em;
+}
+
+.footer-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 100%;
+    background: var(--clr-0);
+    font-size: 1em;
+    justify-items: center;
+    text-align: center;
+}
+
+.footer-main * {
+    color: grey;
+    font-weight: normal;
+}
+
+footer a:hover {
+    color: var(--clr-F);
+    opacity: 100% !important;
+}
+
+.footer-title {
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.icon-container {
+    margin-top: 1em;
+    gap: 1em;
+    display: flex;
+}
+
+footer img {
+    height: 3em;
+    opacity: 50%;
+}
+
+footer a:hover img{
+    opacity: 100%;
+}
+
+footer a:hover *{
+    opacity: 100%;
+}
+
+.footer-icon-adjust {
+    height: 2.5em;
+}
+
+.hoverdisplay {
+    display: none;
+    position: absolute;
+    background: var(--clr-bg-dark);
+    color: var(--clr-F);
+    padding: 0.5em;
+    border-radius: 0.5em;
+    font-size: 1em;
+    transform: translateY(-2.2em);
+    font-size: 1.125em;
+    color: var(--clr-F);
+    font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
+}
+
+footer a:hover .hoverdisplay {
+    display: inline;
 }
 
 /* ------------------- Countdown bar -------------------*/
