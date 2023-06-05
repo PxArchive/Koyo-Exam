@@ -433,21 +433,23 @@ footer a:hover *{
 }
 
 .hoverdisplay {
-    display: none;
     position: absolute;
     background: var(--clr-bg-dark);
     color: var(--clr-F);
     padding: 0.5em;
     border-radius: 0.5em;
     font-size: 1em;
-    transform: translateY(-2.2em);
+    transform: translateY(-1.5em);
     font-size: 1.125em;
     color: var(--clr-F);
     font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
+    opacity: 0%;
 }
 
 footer a:hover .hoverdisplay {
-    display: inline;
+    transform: translateY(-2.2em);
+    opacity: 100%;
+    transition: 200ms;
 }
 
 /* ------------------- Countdown bar -------------------*/
@@ -462,7 +464,6 @@ footer a:hover .hoverdisplay {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: auto 0.8em;
     align-items: end;
-
     text-align: center;
     font-size: 1.8em;
 
