@@ -142,6 +142,7 @@ p {
 .listbox ul li::before {
     content: url(assets/star.svg);
     height: 1em;
+    scale: 2;
 }
 
 /*Skewed white panels for titles etc*/
