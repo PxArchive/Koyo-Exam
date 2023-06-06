@@ -309,6 +309,21 @@ button:active .buttonstyle {
     transition: 200ms;
 }
 
+.yt-embed {
+    height: 50em;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.yt-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
 /* ------------------- Navigation -------------------*/
 
 nav {
@@ -707,6 +722,10 @@ footer a:hover .hoverdisplay {
         grid-template-columns: 1fr ;
     }
 
+    .yt-embed {
+        height: 40em;
+    }
+
 }
 
 @media (max-width: 50em) {
@@ -760,6 +779,10 @@ footer a:hover .hoverdisplay {
 
     .spons-list a img {
         height: 10em ;
+    }
+
+    .yt-embed {
+        height: 30em;
     }
     
 
