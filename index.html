@@ -1,44 +1,46 @@
 <!doctype html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Koyocon - home</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One" rel="stylesheet">
-    <script src="script.js" defer></script>
-</head>
+    <head>
+        <meta charset="utf-8">
+        <title>Koyocon - home</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One" rel="stylesheet">
+        <script src="countdownScript.js" defer></script>
+        <script src="slideshowScript.js" defer></script>
+    </head>
 
     <body>
         <!-- Heading and top bar section -->
         <span class="grid-aligner"></span>
         <header>
-         <!-- Countdown Timer -->
-         <div class="countdown-bar">
-            <p>Koyocon</p>
-            <p id="countdown" class="spacing-small"></p>
-            <button><div class="buttonstyle"><p>køb billetter</p></div></button>
-            <p style="font-size: 0.75em;" class="spacing-small">Sommer 2023</p>
-            <p id="cdtext" class="spacing cdtext">  dage timer min sek</p>
-            <a href="#" class="cdtext">Læs mere >></a>
-         </div>
-         <span></span>
-            <div class="logo">
-                <img src="assets/cherubic_sky_2_cropped.png" class="logo-owl" alt="">
-                <img src="assets/Logo.svg" alt="" class="logo-text">
+            <!-- Countdown Timer -->
+            <div class="countdown-bar">
+                <p>Koyocon</p>
+                <p id="countdown" class="spacing-small"></p>
+                <a href="https://conbillet.dk/events/" target=”_blank”>
+                    <button><div class="buttonstyle"><p>køb billetter</p></div></button>
+                </a>
+                <p style="font-size: 0.75em;" class="spacing-small">Sommer 2023</p>
+                <p id="cdtext" class="spacing cdtext">  dage timer min sek</p>
+                <a href="billetter.html" class="cdtext">Læs mere >></a>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#"><h1>Event Info</h1></a></li>
-                    <li><a href="#"><h1>Om Koyo</h1></a></li>
-                    <li><a href="#"><h1>Join Teamet</h1></a></li>
-                    <li><a href="#"><h1>Billetter</h1></a></li>
-                    <li><a href="#"><h1>Kontakt</h1></a></li>
-                </ul>
-            </nav>
-            <div class="nav-halftone"></div>
-            
+         <span></span>
+            <a class="logo" href="index.html">
+                <img src="assets/cherubic_sky_2_cropped.png" class="logo-owl" alt="" href="index.html">
+                <img src="assets/Logo.svg" alt="" class="logo-text">
+            </a>
+             <nav>
+                 <ul>
+                     <li><a href="event-info.html"><h1>Event Info</h1></a></li>
+                     <li><a href="om-koyo.html"><h1>Om Koyo</h1></a></li>
+                     <li><a href="join-teamet.html"><h1>Join Teamet</h1></a></li>
+                     <li><a href="billetter.html"><h1>Billetter</h1></a></li>
+                     <li><a href="kontakt.html"><h1>Kontakt</h1></a></li>
+                 </ul>
+             </nav>
+             <div class="nav-halftone"></div>
         </header>
         <span></span>
 
@@ -84,13 +86,7 @@
 
                 <br>
                 <button class="center"><div class="buttonstyle"><p>HJÆLP MIG</p></div></button>
-
             </section>
-            <!--             <div class="skewedpanel">
-        <div class="panelinternals">
-            <h2>Dette er en test</h2>
-        </div>
-    </div> -->
 
             <!-- YouTube Embed -->
             <iframe width="960" height="640" src="https://www.youtube-nocookie.com/embed/5PhVUPImx1s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="center"></iframe>
@@ -172,13 +168,15 @@
                 <p><span class="footer-title">Kontakt os</span><br><br>
                     <a href="mailto:kontakt@koyocon.dk"><span class="hoverdisplay">kontakt@koyocon.dk</span><img src="assets/Group 31.svg" alt="" class="footer-icon-adjust"></a></p>
                 <p>Ophavsret © Koyo 2023<br><br>CVR-nr. 37 77 30 85</p>
-                <div> <p><span class="footer-title">Følg os på sociale medier</span>
+                <div>
+                    <p><span class="footer-title">Følg os på sociale medier</span>
                     <div class="icon-container">
-                        <a href=""><span class="hoverdisplay">Facebook</span><img src="assets/Group 32.svg" alt=""></a>
-                        <a href=""><span class="hoverdisplay">Instagram</span><img src="assets/Group 33.svg" alt=""></a>
-                        <a href=""><span class="hoverdisplay">YouTube</span><img src="assets/Group 34.svg" alt=""></a>
+                        <a href="https://www.facebook.com/KoyoConDK/"><span class="hoverdisplay">Facebook</span><img src="assets/Group 32.svg" alt=""></a>
+                        <a href="https://www.instagram.com/koyocon/"><span class="hoverdisplay">Instagram</span><img src="assets/Group 33.svg" alt=""></a>
+                        <a href="https://www.youtube.com/@KoyoCon"><span class="hoverdisplay">YouTube</span><img src="assets/Group 34.svg" alt=""></a>
                     </div>
-                </p></div>
+                    </p>
+                </div>
                
             </div>
         </div>
