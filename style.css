@@ -52,7 +52,7 @@ html {
 body {
     background-color: var(--clr-0);
     display: grid;
-    grid-template-columns: 1fr clamp(800px, 80%, 1400px) 1fr;
+    grid-template-columns: 1fr clamp(1280px, 80%, 1600px) 1fr;
 }
 
 .maincontent {
@@ -364,11 +364,11 @@ nav ul li {
 
 }
 
-nav ul li a{
+nav ul li a {
     color: var(--clr-primary);
 }
 
-nav ul li a h1{
+nav ul li a h1 {
     padding: 0.5em;
     transform: var(--transform-unskew);
     font-size: 1.25em;
@@ -380,7 +380,7 @@ nav ul li:hover {
     transition: 200ms;
 }
 
-nav ul li:hover a h1{
+nav ul li:hover a h1 {
     transition: 200ms;
     color: var(--clr-F);
 }
@@ -389,7 +389,7 @@ nav ul li:hover a h1{
 
 footer {
     display: grid;
-    grid-template-columns: 1fr clamp(800px, 80%, 1400px) 1fr;
+    grid-template-columns: 1fr clamp(1280px, 80%, 1600px) 1fr;
     position: fixed;
     width: 100%;
     height: 9em;
@@ -446,11 +446,11 @@ footer img {
     opacity: 50%;
 }
 
-footer a:hover img{
+footer a:hover img {
     opacity: 100%;
 }
 
-footer a:hover *{
+footer a:hover * {
     opacity: 100%;
 }
 
@@ -481,7 +481,7 @@ footer a:hover .hoverdisplay {
 /* ------------------- Countdown bar -------------------*/
 
 .countdown-bar {
-    width: clamp(800px, 80%, 1400px);
+    width: clamp(1280px, 80%, 1600px);
     position: fixed;
     z-index: 10;
     background: var(--clr-shadow);
@@ -520,6 +520,45 @@ footer a:hover .hoverdisplay {
 
 /* ------------------- Media Queries -------------------*/
 
+
+
+@media (max-width: 80em) {
+
+    body {
+        grid-template-columns: 100vw;
+    }
+
+    nav {
+        font-size: 0.75em;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .countdown-bar {
+        font-size: 1.25em;
+        margin-top: -0.75em;
+        width: 100%;
+    }
+
+    .countdown-bar button {
+        position: relative;
+        width: 100%;
+        scale: 0.7;
+        bottom: -0.5em;
+    }
+
+    .countdown-bar p {
+        padding-top: -0.5em;
+    }
+
+    .dropdown {
+        max-width: calc(100vw - 20vw);
+    }
+
+}
+
 @media (max-width: 50em) {
 
     body {
@@ -557,29 +596,23 @@ footer a:hover .hoverdisplay {
     .footer-halftone, .footer-main{
         transform: translateY(-4.4em);
     }
+
+    .dropdown {
+        margin-left: 2em;
+        margin-right: 2em;
+        width: calc(100vw - 4em);
+        max-width: calc(100vw - 4em);
+    }
+
+
+    /*mobile navigation*/
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
     
-}
-
-@media (max-width: 80em) {
-    nav {
-        font-size: 0.75em;
-    }
-
-    .countdown-bar {
-        font-size: 1.25em;
-        margin-top: -0.75em;
-    }
-
-    .countdown-bar button {
-        position: relative;
-        width: 100%;
-        scale: 0.7;
-        bottom: -0.5em;
-    }
-
-    .countdown-bar p {
-        padding-top: -0.5em;
-    }
 }
 
 /* ------------------- Slideshow -------------------*/
