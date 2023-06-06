@@ -61,9 +61,18 @@ body {
     background: var(--clr-shadow);
 }
 
+.column {
+    display: grid;
+    grid-template-columns: 10% 40% 40% 10%;
+}
 
 .spacer {
     height: 6em;
+    background: var(--clr-shadow);
+}
+
+.spacer-small {
+    height: 3em;
     background: var(--clr-shadow);
 }
 
@@ -74,6 +83,13 @@ nav ul {
 h1, h2 {
     font-size: 1.5em;
     color: var(--clr-primary);
+    font-family: 'Mochiy Pop P One', sans-serif;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 3.5em;
+    color: var(--clr-F);
     font-family: 'Mochiy Pop P One', sans-serif;
     text-transform: uppercase;
 }
