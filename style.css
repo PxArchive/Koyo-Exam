@@ -102,6 +102,7 @@ p {
 .listbox {
     background-image: var(--clr-gradient-box);
     box-shadow: 10px 10px 0px var(--clr-primary);
+    color: var(--clr-shadow);
 }
 
 .listbox h1, .listbox h2 {
@@ -529,115 +530,7 @@ footer a:hover .hoverdisplay {
 }
 
 
-/* ------------------- Media Queries -------------------*/
 
-
-
-@media (max-width: 80em) {
-
-    body {
-        grid-template-columns: 100vw;
-    }
-
-    nav {
-        font-size: 0.75em;
-    }
-
-    header {
-        width: 100%;
-    }
-
-    .countdown-bar {
-        font-size: 1.25em;
-        margin-top: -0.75em;
-        width: 100%;
-    }
-
-    .countdown-bar button {
-        position: relative;
-        width: 100%;
-        scale: 0.7;
-        bottom: -0.5em;
-    }
-
-    .countdown-bar p {
-        padding-top: -0.5em;
-    }
-
-    .dropdown {
-        max-width: calc(100vw - 20vw);
-    }
-
-    footer {
-        grid-template-columns: 1fr ;
-    }
-
-}
-
-@media (max-width: 50em) {
-    header {
-        width: 100%;
-    }
-
-    body {
-        grid-template-columns: 100vw;
-    }
-
-    .mobile-hidden {
-        display: none;
-    }
-
-    .mobile-visible {
-        display: inline;
-    }
-
-    .maincontent {
-        width: 100vw;
-    }
-
-    .spacer {
-        width: 100vw;
-    }
-
-    .grid-aligner {
-        display: none;
-    }
-
-    footer {
-        position: relative;
-        bottom: 0px;
-    }
-
-    .footer-main {
-        grid-template-columns: 100vw;
-    }
-
-    .footer-halftone, .footer-main{
-        transform: translateY(-4.4em);
-    }
-
-    .dropdown {
-        margin-left: 2em;
-        margin-right: 2em;
-        width: calc(100vw - 4em);
-        max-width: calc(100vw - 4em);
-    }
-
-
-    /*mobile navigation*/
-
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
-    }
-
-    nav {
-        font-size: 1em;
-        transform: scaleY(0);
-    }
-
-}
 
 /* ------------------- Slideshow -------------------*/
 
@@ -739,3 +632,133 @@ footer a:hover .hoverdisplay {
 }
 
 /* ------------------- Title Pending -------------------*/
+
+/*sponsor block*/
+
+.spons-list {
+    max-width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.spons-list a img {
+    height: 15em ;
+}
+
+
+/* ------------------- Media Queries -------------------*/
+
+
+
+@media (max-width: 80em) {
+
+    body {
+        grid-template-columns: 100vw;
+    }
+
+    nav {
+        font-size: 0.75em;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    .countdown-bar {
+        font-size: 1.25em;
+        margin-top: -0.75em;
+        width: 100%;
+    }
+
+    .countdown-bar button {
+        position: relative;
+        width: 100%;
+        scale: 0.7;
+        bottom: -0.5em;
+    }
+
+    .countdown-bar p {
+        padding-top: -0.5em;
+    }
+
+    .dropdown {
+        max-width: calc(100vw - 20vw);
+    }
+
+    footer {
+        grid-template-columns: 1fr ;
+    }
+
+}
+
+@media (max-width: 50em) {
+    header {
+        width: 100%;
+    }
+
+    body {
+        grid-template-columns: 100vw;
+    }
+
+    .mobile-hidden {
+        display: none;
+    }
+
+    .mobile-visible {
+        display: inline;
+    }
+
+    .maincontent {
+        width: 100vw;
+    }
+
+    .spacer {
+        width: 100vw;
+    }
+
+    .grid-aligner {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .footer-main {
+        grid-template-columns: 100vw;
+    }
+
+    .footer-halftone, .footer-main{
+        transform: translateY(-4.4em);
+    }
+
+    .dropdown {
+        margin-left: 2em;
+        margin-right: 2em;
+        width: calc(100vw - 4em);
+        max-width: calc(100vw - 4em);
+    }
+
+    .spons-list a img {
+        height: 10em ;
+    }
+    
+
+
+    /*mobile navigation*/
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    nav {
+        font-size: 1em;
+        transform: scaleY(0);
+    }
+
+}
