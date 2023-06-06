@@ -121,6 +121,10 @@ p {
     color: var(--clr-shadow);
 }
 
+.listbox p {
+    color: var(--clr-shadow);
+}
+
 .listbox h1, .listbox h2 {
     display: grid;
     background: var(--clr-primary);
