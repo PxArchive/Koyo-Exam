@@ -63,7 +63,7 @@ body {
 
 .column {
     display: grid;
-    grid-template-columns: 10% 40% 40% 10%;
+    grid-template-columns: 10% 35% 45% 10%;
 }
 
 .spacer {
