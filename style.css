@@ -122,10 +122,12 @@ p {
 }
 
 .listbox p {
+    padding: 1em;
     color: var(--clr-shadow);
 }
 
 .listbox h1, .listbox h2 {
+    padding: 1em;
     display: grid;
     background: var(--clr-primary);
     color: var(--clr-F);
