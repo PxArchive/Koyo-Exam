@@ -97,6 +97,30 @@ p {
     align-self: center;
 }
 
+/*list box for highlighted ul-li elements*/
+
+.listbox {
+    background-image: var(--clr-gradient-box);
+    box-shadow: 10px 10px 0px var(--clr-primary);
+}
+
+.listbox h1, .listbox h2 {
+    display: grid;
+    background: var(--clr-primary);
+    color: var(--clr-F);
+    width: 100%;
+}
+
+.listbox ul{
+    list-style: none;
+    color: var(--clr-shadow);
+}
+
+.listbox ul li::before {
+    content: url(assets/star.svg);
+    height: 1em;
+}
+
 /*Skewed white panels for titles etc*/
 .skewedpanel {
     display: grid;
@@ -368,8 +392,9 @@ footer {
     grid-template-columns: 1fr clamp(800px, 80%, 1400px) 1fr;
     position: fixed;
     width: 100%;
-    height: 12em;
+    height: 9em;
     bottom: 0;
+    z-index: 100;
 }
 
 .footer-halftone {
@@ -381,15 +406,16 @@ footer {
     overflow-x: hidden;
     margin-bottom: -1px;
     width: 100%;
-    height: 6em;
+    height: 4.5em;
 }
 
 .footer-main {
+    line-height: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     height: 100%;
     background: var(--clr-0);
-    font-size: 1em;
+    font-size: 0.8em;
     justify-items: center;
     text-align: center;
 }
@@ -494,7 +520,67 @@ footer a:hover .hoverdisplay {
 
 /* ------------------- Media Queries -------------------*/
 
+@media (max-width: 50em) {
 
+    body {
+        grid-template-columns: 100vw;
+    }
+    .mobile-hidden {
+        display: none;
+    }
+
+    .mobile-visible {
+        display: inline;
+    }
+
+    .maincontent {
+        width: 100vw;
+    }
+
+    .spacer {
+        width: 100vw;
+    }
+
+    .grid-aligner {
+        display: none;
+    }
+
+    footer {
+        position: relative;
+        bottom: 0px;
+    }
+
+    .footer-main {
+        grid-template-columns: 100vw;
+    }
+
+    .footer-halftone, .footer-main{
+        transform: translateY(-4.4em);
+    }
+    
+}
+
+@media (max-width: 80em) {
+    nav {
+        font-size: 0.75em;
+    }
+
+    .countdown-bar {
+        font-size: 1.25em;
+        margin-top: -0.75em;
+    }
+
+    .countdown-bar button {
+        position: relative;
+        width: 100%;
+        scale: 0.7;
+        bottom: -0.5em;
+    }
+
+    .countdown-bar p {
+        padding-top: -0.5em;
+    }
+}
 
 /* ------------------- Slideshow -------------------*/
 
