@@ -97,6 +97,30 @@ p {
     align-self: center;
 }
 
+/*list box for highlighted ul-li elements*/
+
+.listbox {
+    background-image: var(--clr-gradient-box);
+    box-shadow: 10px 10px 0px var(--clr-primary);
+}
+
+.listbox h1, .listbox h2 {
+    display: grid;
+    background: var(--clr-primary);
+    color: var(--clr-F);
+    width: 100%;
+}
+
+.listbox ul{
+    list-style: none;
+    color: var(--clr-shadow);
+}
+
+.listbox ul li::before {
+    content: url(assets/star.svg);
+    height: 1em;
+}
+
 /*Skewed white panels for titles etc*/
 .skewedpanel {
     display: grid;
