@@ -113,6 +113,11 @@ p {
     align-self: center;
 }
 
+.text-margin {
+    margin-right: 10%;
+    margin-left: 10%;
+}
+
 /*list box for highlighted ul-li elements*/
 
 .listbox {
@@ -790,6 +795,11 @@ footer a:hover .hoverdisplay {
 
     .yt-embed {
         height: 30em;
+    }
+
+    .text-margin {
+        margin-right: 1em;
+        margin-left: 1em;
     }
     
 
