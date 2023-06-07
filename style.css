@@ -67,6 +67,12 @@ body {
     gap: 1em;
 }
 
+.column-half {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1em;
+}
+
 .spacer {
     height: 6em;
     background: var(--clr-shadow);
@@ -126,6 +132,7 @@ p {
     background-image: var(--clr-gradient-box);
     box-shadow: 10px 10px 0px var(--clr-primary);
     color: var(--clr-shadow);
+    width: fit-content;
 }
 
 .listbox p {
@@ -447,6 +454,46 @@ nav ul li:hover a h1 {
     color: var(--clr-F);
 }
 
+.top-container {
+    z-index: 99;
+    width: 100%;
+    position: fixed;
+    bottom: 0em;
+    justify-items: end;
+    display: grid;
+    grid-template-columns: 1fr clamp(1280px, 80%, 1600px) 1fr;
+}
+
+.to-top {
+    box-shadow: 2px 2px 5px var(--clr-shadow);
+    margin-right: 2em;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border-radius: 100%;
+    width: 5em;
+    height: 5em;
+    transform: translateY(-144px);
+    background: var(--clr-primary);
+}
+
+.to-top:hover {
+    transform: translate(-2px, -146px);
+    box-shadow: 5px 5px 0px var(--clr-primary);
+    background: var(--clr-F);
+}
+
+.to-top:hover img {
+    filter: brightness(100%) ;
+}
+
+.to-top img {
+    padding-bottom: 0.25em;
+    filter: brightness(900%) grayscale(1);
+    height: 3em;
+    width: 3em;
+}
+
 /* ------------------- Footer -------------------*/
 
 footer {
@@ -750,6 +797,13 @@ footer a:hover .hoverdisplay {
         height: 40em;
     }
 
+    .top-container {
+        width: 100%;
+        position: fixed;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
 }
 
 @media (max-width: 50em) {
@@ -813,8 +867,10 @@ footer a:hover .hoverdisplay {
         margin-right: 1em;
         margin-left: 1em;
     }
-    
 
+    .top-container {
+        bottom: 1em;
+    }
 
     /*mobile navigation*/
 
@@ -827,6 +883,16 @@ footer a:hover .hoverdisplay {
     nav {
         font-size: 1em;
         transform: scaleY(0);
+    }
+
+    .top-container {
+        bottom: -8em;
+        right: 3em;
+        width: 3em;
+        z-index: 200;
+    }
+
+    .to-top {
     }
 
 }
