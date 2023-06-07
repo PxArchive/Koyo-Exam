@@ -693,6 +693,9 @@ footer a:hover .hoverdisplay {
     height: 15em ;
 }
 
+.eventTimeline img {
+    width: 100%;
+}
 
 /* ------------------- Media Queries -------------------*/
 
