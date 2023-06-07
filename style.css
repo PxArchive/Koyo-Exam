@@ -64,6 +64,7 @@ body {
 .column {
     display: grid;
     grid-template-columns: 10% 35% 45% 10%;
+    gap: 1em;
 }
 
 .spacer {
@@ -88,6 +89,7 @@ h1, h2 {
 }
 
 h3 {
+    /*TODO: Media query for h3*/
     font-size: 3.5em;
     color: var(--clr-F);
     font-family: 'Mochiy Pop P One', sans-serif;
