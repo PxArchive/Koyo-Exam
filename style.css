@@ -812,10 +812,21 @@ footer a:hover .hoverdisplay {
 }
 
 @media (max-width: 50em) {
+
     header {
         width: 100%;
+        grid-template-rows: 7em 6em 20em 3em;
     }
 
+    .logo-owl {
+        height: 8em;
+    }
+
+    .logo-text {
+        margin-left: 0;
+        height: 6em;
+    }
+    
     body {
         grid-template-columns: 100vw;
     }
@@ -887,7 +898,7 @@ footer a:hover .hoverdisplay {
 
     nav {
         font-size: 1em;
-        transform: scaleY(0);
+        transform: scaleY(1);
     }
 
     .top-container {
