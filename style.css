@@ -140,6 +140,7 @@ p {
 }
 
 .listbox ul{
+    font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
     list-style: none;
     color: var(--clr-shadow);
 }
