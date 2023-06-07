@@ -130,6 +130,7 @@ p {
 
 .listbox p {
     padding: 1em;
+    font-size: 1.125rem;
     color: var(--clr-shadow);
 }
 
@@ -141,10 +142,15 @@ p {
     width: 100%;
 }
 
-.listbox ul{
+.listbox ul {
     font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
+    font-size: 1.125rem;
     list-style: none;
     color: var(--clr-shadow);
+}
+
+.listbox ul li {
+    margin-left: 1em;
 }
 
 .listbox ul li::before {
