@@ -67,6 +67,12 @@ body {
     gap: 1em;
 }
 
+.column-half {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1em;
+}
+
 .spacer {
     height: 6em;
     background: var(--clr-shadow);
