@@ -449,10 +449,10 @@ nav ul li:hover a h1 {
 }
 
 .top-container {
-    z-index: 200;
+    z-index: 99;
     width: 100%;
     position: fixed;
-    bottom: 9em;
+    bottom: 0em;
     justify-items: end;
     display: grid;
     grid-template-columns: 1fr clamp(1280px, 80%, 1600px) 1fr;
@@ -467,11 +467,12 @@ nav ul li:hover a h1 {
     border-radius: 100%;
     width: 5em;
     height: 5em;
+    transform: translateY(-144px);
     background: var(--clr-primary);
 }
 
 .to-top:hover {
-    transform: translate(-2px, -2px);
+    transform: translate(-2px, -146px);
     box-shadow: 5px 5px 0px var(--clr-primary);
     background: var(--clr-F);
 }
@@ -876,6 +877,16 @@ footer a:hover .hoverdisplay {
     nav {
         font-size: 1em;
         transform: scaleY(0);
+    }
+
+    .top-container {
+        bottom: -8em;
+        right: 3em;
+        width: 3em;
+        z-index: 200;
+    }
+
+    .to-top {
     }
 
 }
