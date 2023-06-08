@@ -73,6 +73,12 @@ body {
     gap: 1em;
 }
 
+.column-thirds {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1em;
+}
+
 .spacer {
     height: 6em;
     background: var(--clr-shadow);
@@ -80,7 +86,6 @@ body {
 
 .spacer-small {
     height: 3em;
-    background: var(--clr-shadow);
 }
 
 nav ul {
@@ -96,7 +101,7 @@ h1, h2 {
 
 h3 {
     /*TODO: Media query for h3*/
-    font-size: 3.5em;
+    font-size: 3em;
     color: var(--clr-F);
     font-family: 'Mochiy Pop P One', sans-serif;
     text-transform: uppercase;
