@@ -52,7 +52,7 @@ function UpdateTimer () {
         secText = "0" + secText;
     }
 
-    // Output the result in an element with id="demo"
+    // Output the result in an element with id="countdown"
     document.getElementById("countdown").innerHTML = dayText + " " + hourText + " "
         + minText + " " + secText + " ";
 
