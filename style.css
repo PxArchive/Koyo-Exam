@@ -210,8 +210,8 @@ this is to make the padding also apply to the pseudoelements*/
 }
 
 /*clone the shape of the panel, skew it, and place it behind both the content and the ::before element
-offset it to creat shadow effect
-All this BS is because box-shadow doesn't work on SVG shapes :D*/
+offsets it to create shadow effect
+All this is because box-shadow doesn't work on SVG shapes :D*/
 .skewedpanel::after {
     content: "";
     display: grid;
@@ -328,7 +328,6 @@ button:active .buttonstyle {
     transform-origin: top;
     transition: 200ms;
     margin-top: 3em;
-
 }
 
 .dropdown-contents p {
@@ -426,7 +425,6 @@ nav ul li {
     background: var(--clr-F);
     background-image: var(--clr-gradient-box);
     box-shadow: 10px 10px 0px var(--clr-primary);
-
 }
 
 nav ul li[data-active="true"] {
@@ -489,7 +487,7 @@ nav ul li:hover a h1 {
 }
 
 .to-top:hover img {
-    filter: brightness(100%) ;
+    filter: brightness(100%);
 }
 
 .to-top img {
@@ -608,7 +606,6 @@ footer a:hover .hoverdisplay {
     align-items: end;
     text-align: center;
     font-size: 1.8em;
-
 }
 
 .countdown-bar * {
@@ -632,9 +629,6 @@ footer a:hover .hoverdisplay {
 .countdown-bar button {
     scale: 0.8;
 }
-
-
-
 
 /* ------------------- Slideshow -------------------*/
 
@@ -675,10 +669,10 @@ footer a:hover .hoverdisplay {
 }
 
 /* On hover, add a black background color with a little bit see-through */
-    .prev:hover, .next:hover {
-        color: var(--clr-highlight);
-        background-color: var(--clr-F);
-    }
+.prev:hover, .next:hover {
+    color: var(--clr-highlight);
+    background-color: var(--clr-F);
+}
 
 /* Caption text */
 .text {
@@ -691,16 +685,6 @@ footer a:hover .hoverdisplay {
     bottom: 0px;
     width: 100%;
     text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-    font-size: 1.5em;
-    color: var(--clr-shadow);
-    font-family: 'Mochiy Pop P One', sans-serif;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
 }
 
 /* The dots/bullets/indicators */
@@ -727,24 +711,21 @@ footer a:hover .hoverdisplay {
 
 @keyframes fade {
     from {
-        opacity: 0.2
+        opacity: 0.2;
     }
 
     to {
-        opacity: 1
+        opacity: 1;
     }
 }
 
-/* ------------------- Title Pending -------------------*/
-
-/*sponsor block*/
+/* ------------------- Sponsor list -------------------*/
 
 .spons-list {
     max-width: 1200px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-
 }
 
 .spons-list a img {
@@ -757,8 +738,7 @@ footer a:hover .hoverdisplay {
 
 /* ------------------- Media Queries -------------------*/
 
-
-
+/* Small Web Layout */
 @media (max-width: 80em) {
 
     body {
@@ -811,6 +791,7 @@ footer a:hover .hoverdisplay {
 
 }
 
+/* Mobile Layout*/
 @media (max-width: 50em) {
 
     header {
@@ -907,5 +888,4 @@ footer a:hover .hoverdisplay {
         width: 3em;
         z-index: 200;
     }
-
 }
