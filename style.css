@@ -944,7 +944,7 @@ footer a:hover .hoverdisplay {
     }
 
     nav ul {
-        width: 100%;
+        width: calc(100% - 10rem);
         display: flex;
         flex-direction: column;
         gap: 1.5em;
