@@ -51,8 +51,13 @@ html {
 
 body {
     background-color: var(--clr-0);
+    overflow-x: hidden;
     display: grid;
     grid-template-columns: 1fr clamp(1280px, 80%, 1600px) 1fr;
+}
+
+.mobile-visible {
+    display: none;
 }
 
 .maincontent {
@@ -497,6 +502,48 @@ nav ul li:hover a h1 {
     width: 3em;
 }
 
+/*mobile*/
+
+.borgar {
+    display: none;
+    position:fixed;
+    cursor: pointer;
+    align-items: center;
+    justify-items: center;
+    transform: var(--transform-skew);
+    background-image: var(--clr-gradient-box);
+    box-shadow: 10px 10px 0px var(--clr-primary);
+    z-index: 111;
+    right: 2rem;
+    top: 4rem;
+    height: 4rem;
+    width: 4rem;
+}
+
+.borgar-line {
+    height: 0.4rem;
+    background: var(--clr-primary);
+    width: 80%;
+}
+
+#navtoggle {
+    display: none;
+}
+
+#navtoggle:checked ~ .borgar .x1 {
+    transform: rotate(45deg) translate(0.4rem, 0.35rem);
+    border-radius: 1rem;
+}
+
+#navtoggle:checked ~ .borgar .x2 {
+    display: none;
+}
+
+#navtoggle:checked ~ .borgar .x3 {
+    transform: rotate(-45deg) translate(0.4rem, -0.35rem);
+    border-radius: 1rem;
+}
+
 /* ------------------- Footer -------------------*/
 
 footer {
@@ -796,7 +843,11 @@ footer a:hover .hoverdisplay {
 
     header {
         width: 100%;
-        grid-template-rows: 7em 6em 20em 3em;
+        grid-template-rows: 5.5em 6em 0em 2em;
+    }
+
+    .logo {
+        z-index: 3;
     }
 
     .logo-owl {
@@ -871,15 +922,33 @@ footer a:hover .hoverdisplay {
 
     /*mobile navigation*/
 
-    nav ul {
-        display: flex;
-        flex-direction: column;
-        gap: 1.5em;
+    .borgar {
+        display: grid;
     }
 
     nav {
         font-size: 1em;
         transform: scaleY(1);
+        position: fixed;
+        align-items: center;
+        display: none;
+        width: 100%;
+        z-index: 110;
+        background: rgba(0, 0, 0, 0.5);
+        height: 100vh;
+        height: 100svh;
+        overflow-x: hidden;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5em;
+    }
+
+    #navtoggle:checked ~ nav {
+        display: flex;
     }
 
     .top-container {
@@ -888,4 +957,5 @@ footer a:hover .hoverdisplay {
         width: 3em;
         z-index: 200;
     }
+
 }
