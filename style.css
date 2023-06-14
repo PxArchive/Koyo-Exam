@@ -524,6 +524,7 @@ nav ul li:hover a h1 {
     height: 0.4rem;
     background: var(--clr-primary);
     width: 80%;
+    transition: 100ms;
 }
 
 #navtoggle {
@@ -533,6 +534,7 @@ nav ul li:hover a h1 {
 #navtoggle:checked ~ .borgar .x1 {
     transform: rotate(45deg) translate(0.4rem, 0.35rem);
     border-radius: 1rem;
+    transition: 100ms;
 }
 
 #navtoggle:checked ~ .borgar .x2 {
@@ -540,8 +542,9 @@ nav ul li:hover a h1 {
 }
 
 #navtoggle:checked ~ .borgar .x3 {
-    transform: rotate(-45deg) translate(0.4rem, -0.35rem);
+    transform: rotate(-45deg) translate(0.45rem, -0.35rem);
     border-radius: 1rem;
+    transition: 100ms;
 }
 
 /* ------------------- Footer -------------------*/
