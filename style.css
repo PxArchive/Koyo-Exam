@@ -515,7 +515,7 @@ nav ul li:hover a h1 {
     box-shadow: 10px 10px 0px var(--clr-primary);
     z-index: 111;
     right: 2rem;
-    top: 4rem;
+    top: 5rem;
     height: 4rem;
     width: 4rem;
 }
@@ -533,6 +533,7 @@ nav ul li:hover a h1 {
 
 #navtoggle:checked ~ .borgar .x1 {
     transform: rotate(45deg) translate(0.4rem, 0.35rem);
+    background: var(--clr-F);
     border-radius: 1rem;
     transition: 100ms;
 }
@@ -543,8 +544,14 @@ nav ul li:hover a h1 {
 
 #navtoggle:checked ~ .borgar .x3 {
     transform: rotate(-45deg) translate(0.45rem, -0.35rem);
+    background: var(--clr-F);
     border-radius: 1rem;
     transition: 100ms;
+}
+
+#navtoggle:checked ~ .borgar {
+    background-image: none;
+    background: var(--clr-primary);
 }
 
 /* ------------------- Footer -------------------*/
@@ -846,7 +853,7 @@ footer a:hover .hoverdisplay {
 
     header {
         width: 100%;
-        grid-template-rows: 5.5em 6em 0em 2em;
+        grid-template-rows: 4em 4em 0em 2em;
     }
 
     .logo {
@@ -854,12 +861,37 @@ footer a:hover .hoverdisplay {
     }
 
     .logo-owl {
-        height: 8em;
+        height: 5em;
     }
 
     .logo-text {
         margin-left: 0;
-        height: 6em;
+        height: 5em;
+    }
+
+    button {
+        width: 20em;
+        font-size: 0.8em;
+    }
+
+    h3 {
+        font-size: 2em;a
+    }
+
+    h1, h2 {
+        font-size: 1.3em;
+
+    }
+
+    .skewedpanel {
+        height: fit-content;
+    }
+
+    .dropdown-title h2 {
+        font-size: 1.3em;
+        word-wrap: break-word;
+        max-width: 70vw;
+
     }
     
     body {
@@ -954,6 +986,10 @@ footer a:hover .hoverdisplay {
         display: flex;
     }
 
+    .mobile-hidden {
+        display: none;
+    }
+
     .top-container {
         bottom: -8em;
         right: 3em;
@@ -961,4 +997,45 @@ footer a:hover .hoverdisplay {
         z-index: 200;
     }
 
+    .countdown-bar {
+        grid-template-rows: 1fr 1.5em 1em;
+        font-size: 1em;
+        margin-top: 0em;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .countdown-bar button{
+        font-size: 0.64em;
+    }
+
+    .countdown-mobile-span {
+        font-size: 1em;
+        grid-column: 1 / span 2;
+        height: 2em;
+        margin-top: 0 !important; 
+    }
+
+    .spacing-small {
+        word-spacing: 0.25em;
+    }
+
+    .spacing {
+        word-spacing: 0.65em;
+    }
+
+    .cdtext {
+        font-size: 0.65em;
+    }
+
+}
+
+@media (max-width: 25em) {
+    .logo-owl {
+        display: none;
+    }
+
+    .logo {
+        margin-left: 1em;
+        margin-right: 6em;
 }
