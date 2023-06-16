@@ -20,8 +20,8 @@ html {
 
 :root {
     /*colours*/
-    --clr-F:#FFFFFF; /*white*/
-    --clr-0:#000000; /*black*/
+    --clr-F: #FFFFFF; /*white*/
+    --clr-0: #000000; /*black*/
 
     --clr-primary: #ee7425; /*orange primary*/
     --clr-primary-alt: #e05800; /*orange primary - darkened version for contrast*/
@@ -35,16 +35,15 @@ html {
     --clr-bg-light: #ededed; /*light grey*/
     --clr-bg-dark: #404040; /*medium grey*/
     --clr-shadow: #231F20; /*dark tinted borders, near black*/
-
     /*gradients*/
-    --clr-gradient-box:linear-gradient(90deg, var(--clr-F) 0%, var(--clr-F) 10%, var(--clr-primary-tint) 100%);
-    --clr-gradient-button:linear-gradient(to right, var(--clr-button-tint-2), var(--clr-button-tint-1));
-    --clr-gradient-button-hover:linear-gradient(to right, var(--clr-F), var(--clr-button-tint-3));
-    --clr-gradient-button-click:linear-gradient(to left, var(--clr-F), var(--clr-button-tint-3));
-
+    /*--clr-gradient-box:linear-gradient(90deg, var(--clr-F) 0%, var(--clr-F) 10%, var(--clr-primary-tint) 100%);*/
+    --clr-gradient-box: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 10%, var(--clr-primary-tint) 100%);
+    --clr-gradient-button: linear-gradient(to right, var(--clr-button-tint-2), var(--clr-button-tint-1));
+    --clr-gradient-button-hover: linear-gradient(to right, var(--clr-F), var(--clr-button-tint-3));
+    --clr-gradient-button-click: linear-gradient(to left, var(--clr-F), var(--clr-button-tint-3));
     /*transforms*/
-    --transform-skew:skewX(-12.5deg);
-    --transform-unskew:skewX(12.5deg);
+    --transform-skew: skewX(-12.5deg);
+    --transform-unskew: skewX(12.5deg);
 }
 
 /* ------------------- Global Styles -------------------*/
@@ -254,7 +253,8 @@ Necessary to split the skew transform and the translate transform*/
 
 .buttonstyle p {
     transform: var(--transform-unskew);
-    color: var(--clr-F);
+    /*color: var(--clr-F);*/
+    color: #FFFFFF;
     padding-top: 0.5em;
     font-size: 1.5em;
     font-weight: bold;
@@ -875,7 +875,7 @@ footer a:hover .hoverdisplay {
     }
 
     h3 {
-        font-size: 2em;a
+        font-size: 2em;
     }
 
     h1, h2 {
