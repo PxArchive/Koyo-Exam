@@ -112,11 +112,12 @@ h1, h2 {
 }
 
 h3 {
-    /*TODO: Media query for h3*/
     font-size: 3em;
     color: var(--clr-F);
     font-family: 'Mochiy Pop P One', sans-serif;
     text-transform: uppercase;
+    word-wrap: hyphenate;
+    max-width: 100%;
 }
 
 p a {
@@ -726,6 +727,10 @@ footer a:hover .hoverdisplay {
     display: none;
 }
 
+.mySlides img {
+    aspect-ratio: 6 / 4;
+}
+
 /* Next & previous buttons */
 .prev, .next {
     cursor: pointer;
@@ -879,6 +884,14 @@ footer a:hover .hoverdisplay {
     header {
         width: 100%;
         grid-template-rows: 4em 4em 0em 2em;
+    }
+
+    .column {
+        grid-template-columns: 1fr;
+    }
+
+    .column iframe {
+        scale: 0.8;
     }
 
     .logo {
