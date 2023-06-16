@@ -1,747 +1,761 @@
 <!doctype html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Koyocon - Om Koyo</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
-        <script src="countdownScript.js" defer></script>
-        <link rel="icon" type="image/x-icon" href="favicon.png">
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Koyocon - Om Koyo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="countdownScript.js" defer></script>
+    <script src="darkToggleScript.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
 
-    <body>
-        <!-- Heading and top bar section -->
-        <span class="grid-aligner"></span>
-        <header>
-            <!-- Countdown Timer -->
-            <div class="countdown-bar">
-                <p class="mobile-visible countdown-mobile-span">Koyocon Sommer 2023</p>
-                <p class="mobile-hidden">Koyocon</p>
-                <p id="countdown" class="spacing-small"></p>
-                <a href="https://conbillet.dk/events/" target=”_blank”>
-                    <button><div class="buttonstyle"><p>køb billetter</p></div></button>
-                </a>
-                <p style="font-size: 0.75em;" class="spacing-small mobile-hidden">Sommer 2023</p>
-                <p id="cdtext" class="spacing cdtext">  dage timer min sek</p>
-                <a href="billetter.html" class="cdtext">Læs mere >></a>
-            </div>
-         <span></span>
-            <a class="logo" href="index.html">
-                <img src="assets/cherubic_sky_2_cropped.png" class="logo-owl" alt="" href="index.html">
-                <img src="assets/Logo.svg" alt="" class="logo-text">
+<body>
+    <!-- Heading and top bar section -->
+    <span class="grid-aligner"></span>
+    <header>
+        <!-- Countdown Timer -->
+        <div class="countdown-bar">
+            <p class="mobile-visible countdown-mobile-span">Koyocon Sommer 2023</p>
+            <p class="mobile-hidden">Koyocon</p>
+            <p id="countdown" class="spacing-small"></p>
+            <a href="https://conbillet.dk/events/" target=”_blank”>
+                <button><div class="buttonstyle"><p>køb billetter</p></div></button>
             </a>
-            <input type="checkbox" id="navtoggle">
-             <label for="navtoggle" class="borgar">
-                 <span></span>
-                 <div class="borgar-line x1"></div>
-                 <div class="borgar-line x2"></div>
-                 <div class="borgar-line x3"></div>
-                 <span></span>
-             </label>
-            <nav>
-                <ul>
-                    <li class="mobile-visible"><a href="index.html" ><h1>Hjem</h1></a></li>
-                    <li><a href="event-info.html"><h1>Event Info</h1></a></li>
-                    <li><a href="billetter.html"><h1>Billetter</h1></a></li>
-                    <li data-active="true"><a href="om-koyo.html"><h1>Om Koyo</h1></a></li>
-                    <li><a href="join-teamet.html"><h1>Join Teamet</h1></a></li>
-                    <li><a href="kontakt.html"><h1>Kontakt</h1></a></li>
-                </ul>
-            </nav>
-             <div class="nav-halftone"></div>
-        </header>
+            <p style="font-size: 0.75em;" class="spacing-small mobile-hidden">Sommer 2023</p>
+            <p id="cdtext" class="spacing cdtext">  dage timer min sek</p>
+            <a href="billetter.html" class="cdtext-tickets">Læs mere >></a>
+        </div>
         <span></span>
+        <a class="logo" href="index.html">
+            <img src="assets/cherubic_sky_2_cropped.png" class="logo-owl" alt="" href="index.html">
+            <img src="assets/Logo.svg" alt="" class="logo-text">
+        </a>
+        <input type="checkbox" id="navtoggle">
+        <label for="navtoggle" class="borgar">
+            <span></span>
+            <div class="borgar-line x1"></div>
+            <div class="borgar-line x2"></div>
+            <div class="borgar-line x3"></div>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li class="mobile-visible"><a href="index.html"><h1>Hjem</h1></a></li>
+                <li><a href="event-info.html"><h1>Event Info</h1></a></li>
+                <li><a href="billetter.html"><h1>Billetter</h1></a></li>
+                <li data-active="true"><a href="om-koyo.html"><h1>Om Koyo</h1></a></li>
+                <li><a href="join-teamet.html"><h1>Join Teamet</h1></a></li>
+                <li><a href="kontakt.html"><h1>Kontakt</h1></a></li>
+            </ul>
+        </nav>
+        <div class="nav-halftone"></div>
+    </header>
+    <span></span>
 
-        <!-- main content section -->
-        <span></span>
-        <div class="maincontent">
-            <div class="text-margin">
+    <!-- main content section -->
+    <span></span>
+    <div class="maincontent">
+        <div class="text-margin">
+            <br>
+            <h1>Hvad er Koyo?</h1>
+            <br>
+            <p>
+                Koyo er danmarks største forening for cosplay- og cosplay-interesserede. Foreningen afholder i løbet af året en række forskellige begivenheder, den største heraf værende KoyoCon med over 900 deltagende. Koyo og KoyoCon samler begge passionerede fans af cosplay, anime, manga, spil og lign. fra hele landet.
                 <br>
-                <h1>Hvad er Koyo?</h1>
                 <br>
+                Koyo blev stiftet i 2013 og havde i sin tid omkring 200 medlemmer. Tallet har dog været konstant stigende siden. Foreningen har hjemsted i Norddjurs kommune, hvor størstedelen af foreningens aktiviteter finder sted, dog med nogle aktiviteter spredt ud over resten af Djursland.
+                <br>
+                <br>
+                I 2019 startede Koyo et nyt initiativ kaldet Koyo Cosplay Camp, forkortet KCC. Dette er en weekend workshop, hvor Koyo’s medlemmer får mulighed for at benytte værktøj og materialer som måske ellers ikke ville være muligt at investere i for den enkelte. Derudover tilbydes der vejledning og hjælp med at fremstille medlemmernes selvvalgte cosplays. KCC blev startet op med et stort økonomisk bidrag fra DUFs Lokalforeningspulje.
+                <br>
+                <br>
+                Koyo, og derigennem Koyo’s medlemmer, er medlem af Bifrost, som er landsforeningen for kreativ udvikling af børn og unge. Gennem Bifrost har Koyo modtaget økonomisk støtte og vejledning, deltaget i kurser og fundet nye samarbejdspartnere med samme fokus på kreativ udvikling og udfoldelse.
+                <br>
+                <br>
+                Hvis du vil have mere løbende information er du både velkommen til at tjekke vores facebook side.
+            </p>
+        </div>
+        <div class="spacer-small"></div>
+
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox2">
+            <label for="dropdown-checkbox2">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Foreningsstruktur</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
+
+            <div class="dropdown-contents">
+                <h2>Generalforsamlingen</h2>
                 <p>
-                    Koyo er danmarks største forening for cosplay- og cosplay-interesserede. Foreningen afholder i løbet af året en række forskellige begivenheder, den største heraf værende KoyoCon med over 900 deltagende. Koyo og KoyoCon samler begge passionerede fans af cosplay, anime, manga, spil og lign. fra hele landet.
+                    Den øverste myndighed i enhver forening er medlemmerne. På generalforsamlingen diskuterer vi foreningens fremtid, og vælger en bestyrelse som skal arbejde på at opfylde medlemmernes ønsker.
+                </p>
+                <br>
+                <br>
+                <h2>Bestyrelsen</h2>
+                <p>
+                    Bestyrelsen varetager foreningens daglige drift og økonomi, samt vælger arrangør teamet.
+                </p>
+                <br>
+                <br>
+                <h2>Hovedarrangører</h2>
+                <p>
+                    Hovedarrangørerne agere som projektledere for en enkelt event type, herunder KoyoCon, Koyo Sommer, Koyo Cosplay Camp, Manga Camp og Koyo Chibi events.
+                </p>
+                <br>
+                <br>
+                <h2>Arrangører</h2>
+                <p>
+                    Hvert Koyo event er afholdt af et team af arrangører som arbejder tæt sammen.
                     <br>
                     <br>
-                    Koyo blev stiftet i 2013 og havde i sin tid omkring 200 medlemmer. Tallet har dog været konstant stigende siden. Foreningen har hjemsted i Norddjurs kommune, hvor størstedelen af foreningens aktiviteter finder sted, dog med nogle aktiviteter spredt ud over resten af Djursland.
-                    <br>
-                    <br>
-                    I 2019 startede Koyo et nyt initiativ kaldet Koyo Cosplay Camp, forkortet KCC. Dette er en weekend workshop, hvor Koyo’s medlemmer får mulighed for at benytte værktøj og materialer som måske ellers ikke ville være muligt at investere i for den enkelte. Derudover tilbydes der vejledning og hjælp med at fremstille medlemmernes selvvalgte cosplays. KCC blev startet op med et stort økonomisk bidrag fra DUFs Lokalforeningspulje.
-                    <br>
-                    <br>
-                    Koyo, og derigennem Koyo’s medlemmer, er medlem af Bifrost, som er landsforeningen for kreativ udvikling af børn og unge. Gennem Bifrost har Koyo modtaget økonomisk støtte og vejledning, deltaget i kurser og fundet nye samarbejdspartnere med samme fokus på kreativ udvikling og udfoldelse.
-                    <br>
-                    <br>
-                    Hvis du vil have mere løbende information er du både velkommen til at tjekke vores facebook side.
+                    Udover event specifikke arrangører er der også drift arrangører som står for f.eks. PR, Tryghed og Logistik på tværs af events.
+                </p>
+                <br>
+                <br>
+                <h2>Teams</h2>
+                <p>
+                    Nogle arrangører er ledere af teams af frivillige, såsom KoyoCons event team, gophers og grafisk team.
                 </p>
             </div>
-            <div class="spacer-small"></div>
+        </section>
 
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox2">
-                <label for="dropdown-checkbox2">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Foreningsstruktur</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox3">
+            <label for="dropdown-checkbox3">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Bestyrelsen</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
                     </div>
-                </label>
-
-                <div class="dropdown-contents">
-                    <h2>Generalforsamlingen</h2>
-                    <p>
-                        Den øverste myndighed i enhver forening er medlemmerne. På generalforsamlingen diskuterer vi foreningens fremtid, og vælger en bestyrelse som skal arbejde på at opfylde medlemmernes ønsker.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Bestyrelsen</h2>
-                    <p>
-                        Bestyrelsen varetager foreningens daglige drift og økonomi, samt vælger arrangør teamet.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Hovedarrangører</h2>
-                    <p>
-                        Hovedarrangørerne agere som projektledere for en enkelt event type, herunder KoyoCon, Koyo Sommer, Koyo Cosplay Camp, Manga Camp og Koyo Chibi events.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Arrangører</h2>
-                    <p>
-                        Hvert Koyo event er afholdt af et team af arrangører som arbejder tæt sammen.
-                        <br>
-                        <br>
-                        Udover event specifikke arrangører er der også drift arrangører som står for f.eks. PR, Tryghed og Logistik på tværs af events.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Teams</h2>
-                    <p>
-                        Nogle arrangører er ledere af teams af frivillige, såsom KoyoCons event team, gophers og grafisk team.
-                    </p>
                 </div>
-            </section>
+            </label>
 
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox3">
-                <label for="dropdown-checkbox3">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Bestyrelsen</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
-                    </div>
-                </label>
-
-                <div class="dropdown-contents">
-                    <h2>Formand</h2>
-                    <p>
-                        Victoria
-                    </p>
-                    <br>
-                    <h2>Næstformand</h2>
-                    <p>
-                        Sascha
-                    </p>
-                    <br>
-                    <h2>Kasserer</h2>
-                    <p>
-                        Marcus
-                    </p>
-                    <br>
-                    <h2>Menige</h2>
-                    <p>
-                        Asger
-                        Christine
-                        Mette
-                        Clara
-                    </p>
-                </div>
-            </section>
-
-
-            <div class="text-margin">
-                <h1>Medlemskab</h1>
-                <br>
+            <div class="dropdown-contents">
+                <h2>Formand</h2>
                 <p>
-                    Alle er velkomne i foreningen, uanset om man selv deler vores interesser eller blot ønsker at støtte op om fællesskabet.
-                    <br>
-                    <br>
-                    Det er muligt at blive medlem af foreningen Koyo på hjemmesiden conbillet.dk. Et medlemskab koster 100 kr. og gælder året ud. Medlemskab kan købes hele året og kan ikke refunderes.
+                    Victoria
                 </p>
                 <br>
-                <br>
-            </div>
-
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox1">
-                <label for="dropdown-checkbox1">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Fordele for dig</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
-                    </div>
-                </label>
-
-                <div class="dropdown-contents">
-                    <p>
-                        Et medlemskab giver adgang til alle foreningens arrangementer, herunder Koyo Sommer, Koyo Cosplay Camp og Koyo Chibi. Der kan dog forekomme ekstra udgifter, f.eks. kræver Koyo Cosplay Camp typisk en mindre entré betaling.
-                        <br>
-                        <br>
-                        Derudover giver medlemskabet adgang til køb af de billigere Koyocon medlemsbilletter. Selvom man ikke har mulighed for at deltage til foreningens mindre arrangementer, tjener medlemskabet sig ind allerede til Koyocon.
-                        <br>
-                        <br>
-                        Medlemmer får information om relevante begivenheder på mail, så de er sikre på aldrig at misse noget. Dog sender Koyo maks 4 mails om året, så man skal ikke være bange for at vi fylder indbakken helt op.
-                        <br>
-                        <br>
-                        Ønsker medlemmer selv at oprette events der støtter op om foreningens formål, såsom cosplay picnics eller specielle biografvisninger, er det muligt at søge Koyo’s initiativstøtte. Dette inkluderer promovering, penge til materialer el.lign. og lån af materialer og udstyr.
-                        <br>
-                        <br>
-                        Medlemmer har desuden mulighed for at stemme og stille op til poster i bestyrelsen ved Koyo’s Generalforsamling. På generalforsamlingen kan man derfor få stor indflydelse på foreningens udvikling det kommende år.
-                        <br>
-                        <br>
-                        Sidst men ikke mindst har foreningen en forsikring som dækker alle medlemmer under vores arrangementer. Dette dækker udgifter og erstatning hvis et medlem kommer til skade når de hjælper connen, fx i forbindelse med at sætte scenen op, får smadret sine briller, eller hvis man kommer til at gøre skade på lokationen.
-                    </p>
-                </div>
-            </section>
-
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox8">
-                <label for="dropdown-checkbox8">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Fordele for Os</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
-                    </div>
-                </label>
-
-                <div class="dropdown-contents">
-                    <p>
-                        Helt fundamentalt er en forening intet uden dets medlemmer. Det er selve grundstenen i foreningslivet.
-                        Historisk har Koyo ageret mere som en event organisation end en forening, men dette sætter en begrænsning på hvilke retninger foreningens kan udhvikle sig i fremtiden. Derfor har bestyrelserne i de senere år arbejdet særligt på at udhvikle selve medlemsskabet og gøre det attraktivt.
-                        <br>
-                        <br>
-                        Vi ønsker at give vores deltagere ejerskab over foreningen. Jo flere som føler sig involverede i foreningen, fx gennem et aktivt medlemsskab, jo bedre et indblik får bestyrelsen og arrangørgrupperne i deltagernes ønsker.
-                    </p>
-                </div>
-            </section>
-
-
-
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox4">
-                <label for="dropdown-checkbox4">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Privatlivspolitik</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
-                    </div>
-                </label>
-
-                <div class="dropdown-contents">
-                    <h2 id="privatlivspolitik">Generel privatlivspolitik</h2>
-                    <p>
-                        Koyo indsamler og videregiver ikke personoplysninger. Vi kan dog tilgå og behandle personoplysninger fra Noctem Solutions, som står for KoyoCons tilmeldingssystem.
-                        <br>
-                        <br>
-                        Koyo Behandler dine personoplysninger for at kunne sende dig relevant information på e-mail, samt for at ansøge om børneattester på frivillige. Ingen information bliver gemt andre steder end på tilmeldingssystemet servere og alle børneattester slettes øjebliklig efter godkendelse.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Brug af billeder</h2>
-                    <p>
-                        Koyo vil i løbet af KoyoCon tage billeder til brug på vores hjemmeside, sociale medier og generel markedsføring. Disse billeder bliver kun taget med godkendelse fra personerne på billedet og kan til enhver tid slettes hvis den pågældende person ønsker det, dette gælder dog ikke stemningsbilleder.
-                        <br>
-                        <br>
-                        Ønsker man et eller flere billeder slette bedes man kontakte Koyo på kontakt@koyocon.dk
-                    </p>
-                </div>
-            </section>
-
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox5">
-                <label for="dropdown-checkbox5">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Koyos Initiativstøtte</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
-                    </div>
-                </label>
-
-                <div class="dropdown-contents">
-                    <p>
-                        Ønsker som medlem af forening at oprette events der støtter op om foreningens formål, såsom cosplay picnics eller specielle biografvisninger, er det muligt at søge Koyo’s initiativstøtte. Dette inkluderer promovering, penge til materialer el.lign. og lån af materialer og udstyr.
-                        <br>
-                        <br>
-                        Som eksempel er der tidligere blevet givet penge til at materialer og præmier til aktiviteter på cosplay picnics i andre byer og kommuner.
-                        <br>
-                        <br>
-                        Udover penge til materialer råder foreningen også over en lang række udstyr som man kan låne til arrangementet. Noget udstyr, såsom symaskiner, kan kræve depositum som tilbagebetales når udstyret er returneret og tjekket. Du kan se en liste over udstyret nedenfor.
-                        <br>
-                        <br>
-                        Man kan søge op til 5000 kr i støtte. Vi prioriterer dog at hjælpe flere events, og det sædvanlige tilskudsbeløb ligger derfor omkring 1-2000 kr per et event.
-                    </p>
-                    <br>
-                    <br>
-                    <div class="listbox">
-                        <h2>Sådan søger du:</h2>
-                        <p>Skriv en e-mail til kontakt@koyocon.dk med relevant information for ens ansøgning. Dette inkluderer:</p>
-                        <p>
-                            Beskrivelse af det event der ønskes afholdt.
-                            Beskrivelse af den støtte der ønskes. Hvis der ønskes økonomisk støtte skal der inkluderes et budget for eventet.
-                            Dato og lokation for eventet.
-                            Hvis man ansøger som flere bør alle navne inkluderes i ansøgningen.
-                            Ansøgningsfrist er senest 14 dage inden eventet.
-                        </p>
-
-                    </div>
-
-                    <div class="spacer-small"></div>
-
-                    <div class="listbox">
-                        <h2>Krav</h2>
-                        <ul>
-                            <p>
-                            <li>
-                                Alle arrangører for eventet skal være medlemmer, så I er dækket af vores forsikring.
-                            </li>
-
-                            <li>
-                                Eventet skal være åbent for at andre Koyo medlemmer kan deltage. Er der begrænsede pladser kan vi hjælpe med at sætte et billetsalg op.
-                            </li>
-
-                            <li>
-                                Ved lån af materialer/udstyr skal disse leveres tilbage efter brug. Hvordan aftales nærmere ved den enkelte ansøgning.
-                            </li>
-
-                            <li>
-                                Ved økonomisk støtte skal overskydende penge returneres til Koyo.
-                            </li>
-
-                            <li>
-                                Alle events skal afrapporteres: Hvordan gik eventet? Antal deltagere? Inkluder gerne billeder/video. Ved økonomisk støtte inkluderes her også kvitteringer fra køb.
-                            </li>
-
-                            <li>
-                                Det skal fremgå tydeligt at Koyo støtter eventet (gælder dog ikke hvis man kun ønsker hjælp med promovering).
-                            </li>
-
-                            <li>
-                                Koyo har altid ret til at promovere eventet.
-                            </li>
-                            </p>
-                        </ul>
-                    </div>
-                    <br>
-                    <br>
-                    <h2>Udstyr tl udlån</h2>
-                    <p>WIP</p>
-                    <br>
-                    <br>
-
-                </div>
-            </section>
-
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox6">
-                <label for="dropdown-checkbox6">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Vedtægter</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
-                    </div>
-                </label>
-
-                <div class="dropdown-contents">
-                    <div class="listbox">
-                        <h2>1 – NAVN OG HJEMSTED</h2>
-                        <p>
-                            1.1 – Foreningens navn er Kōyō.
-                            <br>
-                            <br>
-                            1.2 – Foreningen har hjemsted i Norddjurs kommune.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="listbox">
-                        <h2>2 – FORMÅL</h2>
-                        <p>
-                            2.1 – Foreningens formål er via flere årlige arrangementer i Jylland at skabe rammer for sociale aktiviteter som samler cosplay interesserede og fremme interessen for cosplay og relaterede aktiviteter. Foreningen ønsker at medlemmerne, gennem foreningens aktiviteter, engagerer sig og forhøjer deres teoretiske og praktiske færdigheder.
-                            <br>
-                            <br>
-                            2.2 – Foreningens formål er ikke at skabe økonomisk gevinst, men foreningen ønsker at geninvestere alle indtægter i eget arbejde.
-                            <br>
-                            <br>
-                            2.3 – Foreningen er ikke partipolitisk.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="listbox">
-                        <h2>3 – MEDLEMMER</h2>
-                        <p>
-                            3.1 – Alle, der ønsker det, kan blive medlem af foreningen.
-                            <br>
-                            <br>
-                            3.2 – Alle medlemmer har stemmeret under generalforsamlingen.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="listbox">
-                        <h2>4 – KONTINGENT</h2>
-                        <p>
-                            4.1 – Kontingent og opkrævningsform fastsættes af bestyrelsen, som også sørger for registrering af medlemskredsen.
-                            <br>
-                            <br>
-                            4.2 – Kontingent opkræves kontant til én af foreningens events eller via den, af bestyrelsens valgte, online billetsystem.
-                            <br>
-                            <br>
-                            4.3 – Kontingent er gældende fra betalingsdatoen indtil d. 31. december det indeværende år.
-                            <br>
-                            <br>
-                            4.4 – Kontingent for medlemskab af foreningen tilbagebetales ikke. Bestyrelsen kan vælge at bevilge en tilbagebetaling af kontingent i særlige tilfælde.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="listbox">
-                        <h2>5 – UDMELDING OG UDELUKKELSE</h2>
-                        <p>
-                            5.1 – Et medlem kan udmelde sig fra foreningen skriftligt til bestyrelsen gennem kontakt metoderne beskrevet på foreningens hjemmeside.
-                            <br>
-                            <br>
-                            5.2 – Et medlem kan udelukkes, hvis det pågældende medlem:
-                            <br>
-                            <br>
-                            Ikke betaler et vedtaget kontingent
-                            Modarbejder foreningen
-                            <br>
-                            <br>
-                            5.3 – En person kan af bestyrelsen dømmes uønsket til foreningens arrangementer i en periode eller permanent, samt udelukkes fra foreningens lukkede grupper på sociale medier hvis de modarbejder foreningen.
-                            <br>
-                            <br>
-                            5.4 – Et medlem eller deltager som udelukkes fra foreningen og dens arrangementer jf. §5.2 og §5.3, har ret til at anke sagen til den næstkommende generalforsamling efter dommens afgivelse. Her har generalforsamlingen mulighed for at omstøde bestyrelsens beslutning om udelukkelse af vedkommende.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="listbox">
-                        <h2>6 – FORENINGENS LEDELSE</h2>
-                        <p>
-                            6.1 – Foreningens ledelse varetages af en bestyrelse, bestående af én formand, én næstformand, én kasserer, og 2-4 menige.
-                            <br>
-                            <br>
-                            6.2 – Alle bestyrelsesposter vælges på den ordinære generalforsamling, heriblandt 4 menige.
-                            <br>
-                            <br>
-                            6.3 – Såfremt bestyrelsen på noget tidspunkt har færre end 2 menige medlemmer, da indkaldes til ekstraordinær generalforsamling, hvorpå der vælges et antal menige så bestyrelsen igen består af 7 medlemmer.
-                            <br>
-                            <br>
-                            6.4 – Alle bestyrelsesmedlemmer vælges for 1 år ad gangen.
-                            <br>
-                            <br>
-                            6.5 – Bestyrelsen fastsætter selv sin forretningsorden.
-                            <br>
-                            <br>
-                            6.6 – Fratræder formanden overtager næstformanden formandens post indtil næstkommende ordinære generalforsamling.
-                            <br>
-                            <br>
-                            6.7 –  Fratræder næstformanden vælger bestyrelsen intern iblandt sig en erstatning indtil den næstkommende ordinære generalforsamling.
-                            <br>
-                            <br>
-                            6.8 – Fratræder kassereren vælger bestyrelsen internt i blandt sig en erstatning, som overtager posten indtil den næstkommende ordinære generalforsamling.
-                            <br>
-                            <br>
-                            6.9 – I tilfælde af mistillid til at et medlem af bestyrelsen kan udføre sin opgave, arbejder for foreningens bedste, eller der på anden måde udvises inkompetence, kan der afholdes et ekstraordinært bestyrelsesmøde, hvor det eneste på dagsorden er en afstemning om mistillid. For at der skal kunne udtales mistillid, skal der, uden den pågældendes stemme, være flertal i bestyrelsen.
-                            <br>
-                            <br>
-                            6.10 – Intet bestyrelsesmedlem kan forblive i sin post, efter bestyrelsen har udtalt sin mistillid til denne.
-                            <br>
-                            <br>
-                            6.11 – Afhængig af mistillidens natur, afgør den resterende bestyrelsen internt om den pågældende må deltage i det ekstraordinære bestyrelsesmøde. Pågældende har dog krav på information om at mødet afholdes.
-                            <br>
-                            <br>
-                            6.12 – Alle der er frivillig inden for Koyo, skal være medlem af koyo.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="listbox">
-                        <h2>7 – TEGNINGSREGLER OG HÆFTELSE</h2>
-                        <p>
-                            7.1 – Foreningen tegnes udadtil af formanden og kassereren.
-                            <br>
-                            <br>
-                            7.2 – Ved optagelse af lån eller køb/salg af fast ejendom kræves en enig bestyrelse.
-                            <br>
-                            <br>
-                            7.3 – Hæftelse påhviler ikke foreningens medlemmer for forpligtelser som foreningen har tegnet.
-                            <br>
-                            <br>
-                            7.4 – Overskud og inventar kan ikke tilfalde enkeltpersoner.
-                            <br>
-                            <br>
-                            7.5 – Personer, der yder hærværk imod materiale og ejendom står selv til ansvar for reparation/erstatning.
-                            <br>
-                            <br>
-                            7.6 – Foreningen hæfter kun for sine forpligtelser med den af foreningen til enhver tid tilhørende formue.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="listbox">
-                        <h2>8 – REGNSKAB</h2>
-                        <p>
-                            8.1 – Regnskabsåret slutter d. 31. december.
-                            <br>
-                            <br>
-                            8.2 – Regnskabet revideres af hele bestyrelsen.
-                            <br>
-                            <br>
-                            8.3 – Regnskabet kan fremsendes til foreningens medlemmer, hvis dette ønskes inden den ordinære generalforsamling, ved skriftlig anmodning til kasserer.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="listbox">
-                        <h2>9 – GENERALFORSAMLING</h2>
-                        <p>
-                            9.1 – Generalforsamlingen er foreningens højeste myndighed.
-                            <br>
-                            <br>
-                            9.2 – Ordinær generalforsamling afholdes hvert år i årets sidste kvartal, under hensynstagning til foreningens øvrige arrangementer.
-                            <br>
-                            <br>
-                            9.3 – Den ordinære generalforsamling indkaldes med mindst fire ugers varsel ved bekendtgørelse via foreningens aktive medieplatforme.
-                            <br>
-                            <br>
-                            9.4 – Stemmer om valg til bestyrelsesposter afgives skriftligt.
-                            <br>
-                            <br>
-                            9.5 – Man kan kun stemme ved personligt fremmøde, og kan derfor ikke afgives ved fuldmagt.
-                            <br>
-                            <br>
-                            9.6 – Hvert medlem har én stemme per afgørelse.
-                            <br>
-                            <br>
-                            a) Ved valg af menige kan hvert medlem stemme på op til det antal kandidater, tilsvarende mængden af menige der skal stemmes ind. Et medlem kan kun stemme én gang på én kandidat.
-                            <br>
-                            b) Alle menige vælges i samme valgrunde.
-                            <br>
-                            <br>
-                            9.7 – Vedrørende stemmelighed:
-                            <br>
-                            a) Ved stemmelighed mellem to eller flere kandidater til én eller flere bestyrelsesposter, udføres endnu en valgrunde, hvor kun de lige kandidater kan stemmes på.
-                            <br>
-                            b) Såfremt der fortsat er stemmelighed mellem to eller flere kandidater, afgøres valget ved lodtrækning.
-                            <br>
-                            <br>
-                            9.8 – Dagsorden på den ordinære generalforsamling skal som minimum indeholde:
-                            <br>
-                            <br>
-                            Valg af: 1 dirigent, 2 referenter og 2 stemmetællere.
-                            <br>
-                            Bestyrelsens beretning
-                            <br>
-                            Fremlægning af regnskab
-                            <br>
-                            Vedtægtsforslag
-                            <br>
-                            Øvrige forslag
-                            <br>
-                            Fastsættelse af kontingent
-                            <br>
-                            <br>
-                            Valg af bestyrelsesmedlemmer i følgende rækkefølge:
-                            <br>
-                            Formand
-                            <br>
-                            Kasserer
-                            <br>
-                            Næstformand
-                            <br>
-                            Menige
-                            <br>
-                            <br>
-                            Eventuelt
-                            <br>
-                            <br>
-                            9.9 – Til generalforsamlingen tages beslutningsreferat. Umiddelbart efter generalforsamlingens afslutning sammenlignes de to referater, sammenskrives og det endelige referat godkendes af begge referenter.
-                            <br>
-                            <br>
-                            9.10 – Forslag der ønskes behandlet på den ordinære generalforsamling, skal skriftligt være bestyrelsen i hænde senest 2 dage før generalforsamlingen.
-                            <br>
-                            <br>
-                            9.11 – Ekstraordinær generalforsamling kan til enhver tid indkaldes af bestyrelsen, og skal desuden finde sted, når mindst 20 % af foreningens medlemmer indsender skriftlig anmodning herom.
-                            <br>
-                            <br>
-                            9.12 – En ekstraordinær generalforsamling skal afholdes senest 3 uger efter begæringens modtagelse. Angående krav til indkaldelse, mødets ledelse, afstemning m.m. gælder samme bestemmelser som for den ordinære generalforsamling.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="listbox">
-                        <h2>10 – VEDTÆGTSÆNDRINGER</h2>
-                        <p>
-                            10.1 – Forslag om vedtægtsændringer kan ske på enhver generalforsamling.
-                            <br>
-                            <br>
-                            10.2 – Vedtægtsændringer kan ske, når mindst 66 % af samtlige afgivne stemmer er for forslaget.
-                        </p>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="listbox">
-                        <h2>11 – FORENINGENS OPLØSNING</h2>
-                        <p>
-                            11.1 – Foreningen kan kun opløses ved én af to måder:
-                            <br>
-                            <br>
-                            66% af alle mulige stemmer på en generalforsamling indkaldt til dette formål, stemmer for opløsningen af foreningen.
-                            <br>
-                            Det på hinanden følgende to generalforsamlinger ikke har vist sig muligt at udfylde nødvendige bestyrelsesposter.
-                            <br>
-                            <br>
-                            11.2 – Ved en generalforsamling med anledning om opløsning af foreningen, kræves der mindst 80 % af de afgivne stemmer er for opløsning.
-                            <br>
-                            <br>
-                            11.3 – Foreningens midler skal ved opløsning overdrages til foreningen Dokocon. Såfremt denne forening ikke længere er eksisterende, overdrages de til en anden forening, hvis formål ligeledes stemmer overens med Koyos formålsparagraf.
-                            <br>
-                            <br>
-                            Således vedtaget på generalforsamling den 4. december 2022.
-
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox7">
-                <label for="dropdown-checkbox7">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Samarbejdspartnere</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
-                    </div>
-                </label>
-
-                <div class="dropdown-contents">
-                    <h2>Bifrost: Landsforeningen for kreativ udvikling af børn og unge.</h2>
-                    <p>Koyo er medlem af Bifrost og er derigennem en del af et større samarbejde med foreninger i hele landet. Gennem Bifrost får Koyo støtte til initiativer, hovedsaligt i form af vejledning og kurser, men også til tider økonomisk. Koyo støtter desuden Bifrost i deres mærkesager indenfor kreativ udvikling af børn og unge.</p>
-                    <br>
-                    <br>
-                    <h2>OK</h2>
-                    <p>
-                        Koyo har en sponsoraftale ved OK, der gør at vi får støtte fra OK hver gang vores medlemmer og andre interesserede tanker benzin med deres OK app eller kort. Du kan læse mere om detaljerne af aftalen her. Hvis du er interesseret i at hjælpe til så skal du oprette eller redigere din OK profil, så den støtter ‘Foreningen Koyo’ hver gang du tanker.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>DokoCon</h2>
-                    <p>
-                        DokoCon er en cosplay convention i Randers, som havde sin første convention i 2020. Koyo har et tæt samarbejder med DokoCon ift. sparring og vidensdeling.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Ninjin</h2>
-                    <p>
-                        Ninjin er en cosplay convention i Nyborg, som havde sin første convention i 2022. Koyo har et tæt samarbejder med Ninjin ift. sparring og vidensdeling.
-                    </p>
-                    <br>
-                    <br>
-                    <p>
-                        Vil du også være en af Koyos officielle samarbejdspartnere? Så skriv en mail til os på kontakt@koyocon.dk
-                    </p>
-                </div>
-            </section>
-
-            <div class="text-margin">
-                <h2>Foreningsstøtte</h2>
-                <br>
+                <h2>Næstformand</h2>
                 <p>
-                    I Koyo arbejder vi aktivt på at blive en folkeoplysende forening, med forventning om at blive godkendt i løbet af 2022. Som folkeoplysende forening har vi mulighed for at modtage aktivitetstilskud af kommunen. Der er her tale om et beløb som kan svare til vores medlemsindtægter fra alle medlemmer under 25 år. Når vi søger aktivitetsstøtte, baseres beløbet på sidste års medlemstal, og derfor er der vigtigt for os allerede i år at øge vores medlemstal til næste års ansøgning.
+                    Sascha
                 </p>
                 <br>
-                <br>
-                <h2>Bifrost</h2>
-                <br>
+                <h2>Kasserer</h2>
                 <p>
-                    Udover at Koyo selv kan modtage kommunal tilskud, sender vi hvert år også vores medlemstal til Landsforeningen Bifrost. Bifrost får årligt tildelt et millionbeløb fra Tipsmidlerne som fastsættes efter de samlede medlemstal i lokalforeningerne. Her udgør Koyo en væsentlig andel. Pengene bruges på at drive sekretariatet som igennem årene har hjulpet Koyo med fondssøgning og kontakt med kommunen, kurser, forsikring og giver adgang til de puljer som har startet Koyo Cosplay Camp. Jo flere medlemmer vi har, jo stærkere står landsforeningen til at hjælpe os.
+                    Marcus
                 </p>
                 <br>
-                <br>
-                <h2>Fondssøgning</h2>
-                <br>
+                <h2>Menige</h2>
                 <p>
-                    Et højere antal medlemmer giver indirekte muligheden for at modtage flere fondspenge. Når fonde tildeler midler til ansøgere, lægger de som regel stor vægt på hvor mange mennesker der vil få glæde af ressourcerne. Når vi søger udstyr er det som regel med henblik på at bruge det til flere af vores arrangementer, og derfor vil der blive kigget på vores medlemstal frem for billetsalg. Derudover tildeler mange fonde ikke penge til arrangementer som laver overskud fra billetsalget. Når vi gør billetprisen lavere, og medlemsindtægter højere, kan vi derfor modtage flere penge fra fonden.
-                    <br>
-                    <br>
-                    Ved at dele billetprisen op i mindre bidder, får Koyo derfor ikke kun mange flere midler til rådighed, men det giver også deltagerne mulighed for at opdele betalingen over flere måneder.
-                    Får man ikke brugt sit medlemskab det pågældende år, enten fordi man blev forhindret eller der blev udsolgt til vores arrangementer, refunderer vi gerne medlemskabet.
-                    <br>
-                    <br>
-                    Afsluttende er det bare fedt at kunne kalde os Danmarks største cosplay forening
+                    Asger
+                    Christine
+                    Mette
+                    Clara
                 </p>
             </div>
+        </section>
 
+
+        <div class="text-margin">
+            <h1>Medlemskab</h1>
+            <br>
+            <p>
+                Alle er velkomne i foreningen, uanset om man selv deler vores interesser eller blot ønsker at støtte op om fællesskabet.
+                <br>
+                <br>
+                Det er muligt at blive medlem af foreningen Koyo på hjemmesiden conbillet.dk. Et medlemskab koster 100 kr. og gælder året ud. Medlemskab kan købes hele året og kan ikke refunderes.
+            </p>
+            <br>
+            <br>
         </div>
 
-        <!-- Footer alignment (Don't Delete!)-->
-        <span class="grid-aligner"></span>
-        <span class="grid-aligner"></span>
-        <div class="spacer"></div>
-        <span class="grid-aligner"></span>
-        <span class="grid-aligner"></span>
-        <div class="spacer"></div>
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox1">
+            <label for="dropdown-checkbox1">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Fordele for dig</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
 
-        <div class="top-container">
-            <span></span>
-            <a href="#" class="to-top">
-                <img src="assets/Arrow.svg" alt="">
-            </a>
-       </div> 
+            <div class="dropdown-contents">
+                <p>
+                    Et medlemskab giver adgang til alle foreningens arrangementer, herunder Koyo Sommer, Koyo Cosplay Camp og Koyo Chibi. Der kan dog forekomme ekstra udgifter, f.eks. kræver Koyo Cosplay Camp typisk en mindre entré betaling.
+                    <br>
+                    <br>
+                    Derudover giver medlemskabet adgang til køb af de billigere Koyocon medlemsbilletter. Selvom man ikke har mulighed for at deltage til foreningens mindre arrangementer, tjener medlemskabet sig ind allerede til Koyocon.
+                    <br>
+                    <br>
+                    Medlemmer får information om relevante begivenheder på mail, så de er sikre på aldrig at misse noget. Dog sender Koyo maks 4 mails om året, så man skal ikke være bange for at vi fylder indbakken helt op.
+                    <br>
+                    <br>
+                    Ønsker medlemmer selv at oprette events der støtter op om foreningens formål, såsom cosplay picnics eller specielle biografvisninger, er det muligt at søge Koyo’s initiativstøtte. Dette inkluderer promovering, penge til materialer el.lign. og lån af materialer og udstyr.
+                    <br>
+                    <br>
+                    Medlemmer har desuden mulighed for at stemme og stille op til poster i bestyrelsen ved Koyo’s Generalforsamling. På generalforsamlingen kan man derfor få stor indflydelse på foreningens udvikling det kommende år.
+                    <br>
+                    <br>
+                    Sidst men ikke mindst har foreningen en forsikring som dækker alle medlemmer under vores arrangementer. Dette dækker udgifter og erstatning hvis et medlem kommer til skade når de hjælper connen, fx i forbindelse med at sætte scenen op, får smadret sine briller, eller hvis man kommer til at gøre skade på lokationen.
+                </p>
+            </div>
+        </section>
 
-    </body>
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox8">
+            <label for="dropdown-checkbox8">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Fordele for Os</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
+
+            <div class="dropdown-contents">
+                <p>
+                    Helt fundamentalt er en forening intet uden dets medlemmer. Det er selve grundstenen i foreningslivet.
+                    Historisk har Koyo ageret mere som en event organisation end en forening, men dette sætter en begrænsning på hvilke retninger foreningens kan udhvikle sig i fremtiden. Derfor har bestyrelserne i de senere år arbejdet særligt på at udhvikle selve medlemsskabet og gøre det attraktivt.
+                    <br>
+                    <br>
+                    Vi ønsker at give vores deltagere ejerskab over foreningen. Jo flere som føler sig involverede i foreningen, fx gennem et aktivt medlemsskab, jo bedre et indblik får bestyrelsen og arrangørgrupperne i deltagernes ønsker.
+                </p>
+            </div>
+        </section>
 
 
-    <footer>
-        <span class="grid-aligner"></span>
-        <div>
-            <div class="footer-halftone"></div>
-            <div class="footer-main">
-                <p><span class="footer-title">Kontakt os</span><br><br>
-                <a href="mailto:kontakt@koyocon.dk"><span class="hoverdisplay">kontakt@koyocon.dk</span><img src="assets/Group 31.svg" alt="" class="footer-icon-adjust"></a></p>
-                <p>Ophavsret © Koyo 2023<br><br>CVR-nr. 37 77 30 85 | <a href="om-koyo.html#privatlivspolitik" style="text-decoration:underline">Privatlivspolitik</a></p>
-                <div>
-                    <p><span class="footer-title">Følg os på sociale medier</span>
+
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox4">
+            <label for="dropdown-checkbox4">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Privatlivspolitik</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
+
+            <div class="dropdown-contents">
+                <h2 id="privatlivspolitik">Generel privatlivspolitik</h2>
+                <p>
+                    Koyo indsamler og videregiver ikke personoplysninger. Vi kan dog tilgå og behandle personoplysninger fra Noctem Solutions, som står for KoyoCons tilmeldingssystem.
+                    <br>
+                    <br>
+                    Koyo Behandler dine personoplysninger for at kunne sende dig relevant information på e-mail, samt for at ansøge om børneattester på frivillige. Ingen information bliver gemt andre steder end på tilmeldingssystemet servere og alle børneattester slettes øjebliklig efter godkendelse.
+                </p>
+                <br>
+                <br>
+                <h2>Brug af billeder</h2>
+                <p>
+                    Koyo vil i løbet af KoyoCon tage billeder til brug på vores hjemmeside, sociale medier og generel markedsføring. Disse billeder bliver kun taget med godkendelse fra personerne på billedet og kan til enhver tid slettes hvis den pågældende person ønsker det, dette gælder dog ikke stemningsbilleder.
+                    <br>
+                    <br>
+                    Ønsker man et eller flere billeder slette bedes man kontakte Koyo på kontakt@koyocon.dk
+                </p>
+            </div>
+        </section>
+
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox5">
+            <label for="dropdown-checkbox5">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Koyos Initiativstøtte</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
+
+            <div class="dropdown-contents">
+                <p>
+                    Ønsker som medlem af forening at oprette events der støtter op om foreningens formål, såsom cosplay picnics eller specielle biografvisninger, er det muligt at søge Koyo’s initiativstøtte. Dette inkluderer promovering, penge til materialer el.lign. og lån af materialer og udstyr.
+                    <br>
+                    <br>
+                    Som eksempel er der tidligere blevet givet penge til at materialer og præmier til aktiviteter på cosplay picnics i andre byer og kommuner.
+                    <br>
+                    <br>
+                    Udover penge til materialer råder foreningen også over en lang række udstyr som man kan låne til arrangementet. Noget udstyr, såsom symaskiner, kan kræve depositum som tilbagebetales når udstyret er returneret og tjekket. Du kan se en liste over udstyret nedenfor.
+                    <br>
+                    <br>
+                    Man kan søge op til 5000 kr i støtte. Vi prioriterer dog at hjælpe flere events, og det sædvanlige tilskudsbeløb ligger derfor omkring 1-2000 kr per et event.
+                </p>
+                <br>
+                <br>
+                <div class="listbox">
+                    <h2>Sådan søger du:</h2>
+                    <p>Skriv en e-mail til kontakt@koyocon.dk med relevant information for ens ansøgning. Dette inkluderer:</p>
+                    <p>
+                        Beskrivelse af det event der ønskes afholdt.
+                        Beskrivelse af den støtte der ønskes. Hvis der ønskes økonomisk støtte skal der inkluderes et budget for eventet.
+                        Dato og lokation for eventet.
+                        Hvis man ansøger som flere bør alle navne inkluderes i ansøgningen.
+                        Ansøgningsfrist er senest 14 dage inden eventet.
+                    </p>
+
+                </div>
+
+                <div class="spacer-small"></div>
+
+                <div class="listbox">
+                    <h2>Krav</h2>
+                    <ul>
+                        <p>
+                        <li>
+                            Alle arrangører for eventet skal være medlemmer, så I er dækket af vores forsikring.
+                        </li>
+
+                        <li>
+                            Eventet skal være åbent for at andre Koyo medlemmer kan deltage. Er der begrænsede pladser kan vi hjælpe med at sætte et billetsalg op.
+                        </li>
+
+                        <li>
+                            Ved lån af materialer/udstyr skal disse leveres tilbage efter brug. Hvordan aftales nærmere ved den enkelte ansøgning.
+                        </li>
+
+                        <li>
+                            Ved økonomisk støtte skal overskydende penge returneres til Koyo.
+                        </li>
+
+                        <li>
+                            Alle events skal afrapporteres: Hvordan gik eventet? Antal deltagere? Inkluder gerne billeder/video. Ved økonomisk støtte inkluderes her også kvitteringer fra køb.
+                        </li>
+
+                        <li>
+                            Det skal fremgå tydeligt at Koyo støtter eventet (gælder dog ikke hvis man kun ønsker hjælp med promovering).
+                        </li>
+
+                        <li>
+                            Koyo har altid ret til at promovere eventet.
+                        </li>
+                        </p>
+                    </ul>
+                </div>
+                <br>
+                <br>
+                <h2>Udstyr tl udlån</h2>
+                <p>WIP</p>
+                <br>
+                <br>
+
+            </div>
+        </section>
+
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox6">
+            <label for="dropdown-checkbox6">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Vedtægter</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
+
+            <div class="dropdown-contents">
+                <div class="listbox">
+                    <h2>1 – NAVN OG HJEMSTED</h2>
+                    <p>
+                        1.1 – Foreningens navn er Kōyō.
+                        <br>
+                        <br>
+                        1.2 – Foreningen har hjemsted i Norddjurs kommune.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="listbox">
+                    <h2>2 – FORMÅL</h2>
+                    <p>
+                        2.1 – Foreningens formål er via flere årlige arrangementer i Jylland at skabe rammer for sociale aktiviteter som samler cosplay interesserede og fremme interessen for cosplay og relaterede aktiviteter. Foreningen ønsker at medlemmerne, gennem foreningens aktiviteter, engagerer sig og forhøjer deres teoretiske og praktiske færdigheder.
+                        <br>
+                        <br>
+                        2.2 – Foreningens formål er ikke at skabe økonomisk gevinst, men foreningen ønsker at geninvestere alle indtægter i eget arbejde.
+                        <br>
+                        <br>
+                        2.3 – Foreningen er ikke partipolitisk.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="listbox">
+                    <h2>3 – MEDLEMMER</h2>
+                    <p>
+                        3.1 – Alle, der ønsker det, kan blive medlem af foreningen.
+                        <br>
+                        <br>
+                        3.2 – Alle medlemmer har stemmeret under generalforsamlingen.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="listbox">
+                    <h2>4 – KONTINGENT</h2>
+                    <p>
+                        4.1 – Kontingent og opkrævningsform fastsættes af bestyrelsen, som også sørger for registrering af medlemskredsen.
+                        <br>
+                        <br>
+                        4.2 – Kontingent opkræves kontant til én af foreningens events eller via den, af bestyrelsens valgte, online billetsystem.
+                        <br>
+                        <br>
+                        4.3 – Kontingent er gældende fra betalingsdatoen indtil d. 31. december det indeværende år.
+                        <br>
+                        <br>
+                        4.4 – Kontingent for medlemskab af foreningen tilbagebetales ikke. Bestyrelsen kan vælge at bevilge en tilbagebetaling af kontingent i særlige tilfælde.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="listbox">
+                    <h2>5 – UDMELDING OG UDELUKKELSE</h2>
+                    <p>
+                        5.1 – Et medlem kan udmelde sig fra foreningen skriftligt til bestyrelsen gennem kontakt metoderne beskrevet på foreningens hjemmeside.
+                        <br>
+                        <br>
+                        5.2 – Et medlem kan udelukkes, hvis det pågældende medlem:
+                        <br>
+                        <br>
+                        Ikke betaler et vedtaget kontingent
+                        Modarbejder foreningen
+                        <br>
+                        <br>
+                        5.3 – En person kan af bestyrelsen dømmes uønsket til foreningens arrangementer i en periode eller permanent, samt udelukkes fra foreningens lukkede grupper på sociale medier hvis de modarbejder foreningen.
+                        <br>
+                        <br>
+                        5.4 – Et medlem eller deltager som udelukkes fra foreningen og dens arrangementer jf. §5.2 og §5.3, har ret til at anke sagen til den næstkommende generalforsamling efter dommens afgivelse. Her har generalforsamlingen mulighed for at omstøde bestyrelsens beslutning om udelukkelse af vedkommende.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="listbox">
+                    <h2>6 – FORENINGENS LEDELSE</h2>
+                    <p>
+                        6.1 – Foreningens ledelse varetages af en bestyrelse, bestående af én formand, én næstformand, én kasserer, og 2-4 menige.
+                        <br>
+                        <br>
+                        6.2 – Alle bestyrelsesposter vælges på den ordinære generalforsamling, heriblandt 4 menige.
+                        <br>
+                        <br>
+                        6.3 – Såfremt bestyrelsen på noget tidspunkt har færre end 2 menige medlemmer, da indkaldes til ekstraordinær generalforsamling, hvorpå der vælges et antal menige så bestyrelsen igen består af 7 medlemmer.
+                        <br>
+                        <br>
+                        6.4 – Alle bestyrelsesmedlemmer vælges for 1 år ad gangen.
+                        <br>
+                        <br>
+                        6.5 – Bestyrelsen fastsætter selv sin forretningsorden.
+                        <br>
+                        <br>
+                        6.6 – Fratræder formanden overtager næstformanden formandens post indtil næstkommende ordinære generalforsamling.
+                        <br>
+                        <br>
+                        6.7 –  Fratræder næstformanden vælger bestyrelsen intern iblandt sig en erstatning indtil den næstkommende ordinære generalforsamling.
+                        <br>
+                        <br>
+                        6.8 – Fratræder kassereren vælger bestyrelsen internt i blandt sig en erstatning, som overtager posten indtil den næstkommende ordinære generalforsamling.
+                        <br>
+                        <br>
+                        6.9 – I tilfælde af mistillid til at et medlem af bestyrelsen kan udføre sin opgave, arbejder for foreningens bedste, eller der på anden måde udvises inkompetence, kan der afholdes et ekstraordinært bestyrelsesmøde, hvor det eneste på dagsorden er en afstemning om mistillid. For at der skal kunne udtales mistillid, skal der, uden den pågældendes stemme, være flertal i bestyrelsen.
+                        <br>
+                        <br>
+                        6.10 – Intet bestyrelsesmedlem kan forblive i sin post, efter bestyrelsen har udtalt sin mistillid til denne.
+                        <br>
+                        <br>
+                        6.11 – Afhængig af mistillidens natur, afgør den resterende bestyrelsen internt om den pågældende må deltage i det ekstraordinære bestyrelsesmøde. Pågældende har dog krav på information om at mødet afholdes.
+                        <br>
+                        <br>
+                        6.12 – Alle der er frivillig inden for Koyo, skal være medlem af koyo.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="listbox">
+                    <h2>7 – TEGNINGSREGLER OG HÆFTELSE</h2>
+                    <p>
+                        7.1 – Foreningen tegnes udadtil af formanden og kassereren.
+                        <br>
+                        <br>
+                        7.2 – Ved optagelse af lån eller køb/salg af fast ejendom kræves en enig bestyrelse.
+                        <br>
+                        <br>
+                        7.3 – Hæftelse påhviler ikke foreningens medlemmer for forpligtelser som foreningen har tegnet.
+                        <br>
+                        <br>
+                        7.4 – Overskud og inventar kan ikke tilfalde enkeltpersoner.
+                        <br>
+                        <br>
+                        7.5 – Personer, der yder hærværk imod materiale og ejendom står selv til ansvar for reparation/erstatning.
+                        <br>
+                        <br>
+                        7.6 – Foreningen hæfter kun for sine forpligtelser med den af foreningen til enhver tid tilhørende formue.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="listbox">
+                    <h2>8 – REGNSKAB</h2>
+                    <p>
+                        8.1 – Regnskabsåret slutter d. 31. december.
+                        <br>
+                        <br>
+                        8.2 – Regnskabet revideres af hele bestyrelsen.
+                        <br>
+                        <br>
+                        8.3 – Regnskabet kan fremsendes til foreningens medlemmer, hvis dette ønskes inden den ordinære generalforsamling, ved skriftlig anmodning til kasserer.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="listbox">
+                    <h2>9 – GENERALFORSAMLING</h2>
+                    <p>
+                        9.1 – Generalforsamlingen er foreningens højeste myndighed.
+                        <br>
+                        <br>
+                        9.2 – Ordinær generalforsamling afholdes hvert år i årets sidste kvartal, under hensynstagning til foreningens øvrige arrangementer.
+                        <br>
+                        <br>
+                        9.3 – Den ordinære generalforsamling indkaldes med mindst fire ugers varsel ved bekendtgørelse via foreningens aktive medieplatforme.
+                        <br>
+                        <br>
+                        9.4 – Stemmer om valg til bestyrelsesposter afgives skriftligt.
+                        <br>
+                        <br>
+                        9.5 – Man kan kun stemme ved personligt fremmøde, og kan derfor ikke afgives ved fuldmagt.
+                        <br>
+                        <br>
+                        9.6 – Hvert medlem har én stemme per afgørelse.
+                        <br>
+                        <br>
+                        a) Ved valg af menige kan hvert medlem stemme på op til det antal kandidater, tilsvarende mængden af menige der skal stemmes ind. Et medlem kan kun stemme én gang på én kandidat.
+                        <br>
+                        b) Alle menige vælges i samme valgrunde.
+                        <br>
+                        <br>
+                        9.7 – Vedrørende stemmelighed:
+                        <br>
+                        a) Ved stemmelighed mellem to eller flere kandidater til én eller flere bestyrelsesposter, udføres endnu en valgrunde, hvor kun de lige kandidater kan stemmes på.
+                        <br>
+                        b) Såfremt der fortsat er stemmelighed mellem to eller flere kandidater, afgøres valget ved lodtrækning.
+                        <br>
+                        <br>
+                        9.8 – Dagsorden på den ordinære generalforsamling skal som minimum indeholde:
+                        <br>
+                        <br>
+                        Valg af: 1 dirigent, 2 referenter og 2 stemmetællere.
+                        <br>
+                        Bestyrelsens beretning
+                        <br>
+                        Fremlægning af regnskab
+                        <br>
+                        Vedtægtsforslag
+                        <br>
+                        Øvrige forslag
+                        <br>
+                        Fastsættelse af kontingent
+                        <br>
+                        <br>
+                        Valg af bestyrelsesmedlemmer i følgende rækkefølge:
+                        <br>
+                        Formand
+                        <br>
+                        Kasserer
+                        <br>
+                        Næstformand
+                        <br>
+                        Menige
+                        <br>
+                        <br>
+                        Eventuelt
+                        <br>
+                        <br>
+                        9.9 – Til generalforsamlingen tages beslutningsreferat. Umiddelbart efter generalforsamlingens afslutning sammenlignes de to referater, sammenskrives og det endelige referat godkendes af begge referenter.
+                        <br>
+                        <br>
+                        9.10 – Forslag der ønskes behandlet på den ordinære generalforsamling, skal skriftligt være bestyrelsen i hænde senest 2 dage før generalforsamlingen.
+                        <br>
+                        <br>
+                        9.11 – Ekstraordinær generalforsamling kan til enhver tid indkaldes af bestyrelsen, og skal desuden finde sted, når mindst 20 % af foreningens medlemmer indsender skriftlig anmodning herom.
+                        <br>
+                        <br>
+                        9.12 – En ekstraordinær generalforsamling skal afholdes senest 3 uger efter begæringens modtagelse. Angående krav til indkaldelse, mødets ledelse, afstemning m.m. gælder samme bestemmelser som for den ordinære generalforsamling.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="listbox">
+                    <h2>10 – VEDTÆGTSÆNDRINGER</h2>
+                    <p>
+                        10.1 – Forslag om vedtægtsændringer kan ske på enhver generalforsamling.
+                        <br>
+                        <br>
+                        10.2 – Vedtægtsændringer kan ske, når mindst 66 % af samtlige afgivne stemmer er for forslaget.
+                    </p>
+                </div>
+                <br>
+                <br>
+                <div class="listbox">
+                    <h2>11 – FORENINGENS OPLØSNING</h2>
+                    <p>
+                        11.1 – Foreningen kan kun opløses ved én af to måder:
+                        <br>
+                        <br>
+                        66% af alle mulige stemmer på en generalforsamling indkaldt til dette formål, stemmer for opløsningen af foreningen.
+                        <br>
+                        Det på hinanden følgende to generalforsamlinger ikke har vist sig muligt at udfylde nødvendige bestyrelsesposter.
+                        <br>
+                        <br>
+                        11.2 – Ved en generalforsamling med anledning om opløsning af foreningen, kræves der mindst 80 % af de afgivne stemmer er for opløsning.
+                        <br>
+                        <br>
+                        11.3 – Foreningens midler skal ved opløsning overdrages til foreningen Dokocon. Såfremt denne forening ikke længere er eksisterende, overdrages de til en anden forening, hvis formål ligeledes stemmer overens med Koyos formålsparagraf.
+                        <br>
+                        <br>
+                        Således vedtaget på generalforsamling den 4. december 2022.
+
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox7">
+            <label for="dropdown-checkbox7">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Samarbejdspartnere</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
+
+            <div class="dropdown-contents">
+                <h2>Bifrost: Landsforeningen for kreativ udvikling af børn og unge.</h2>
+                <p>Koyo er medlem af Bifrost og er derigennem en del af et større samarbejde med foreninger i hele landet. Gennem Bifrost får Koyo støtte til initiativer, hovedsaligt i form af vejledning og kurser, men også til tider økonomisk. Koyo støtter desuden Bifrost i deres mærkesager indenfor kreativ udvikling af børn og unge.</p>
+                <br>
+                <br>
+                <h2>OK</h2>
+                <p>
+                    Koyo har en sponsoraftale ved OK, der gør at vi får støtte fra OK hver gang vores medlemmer og andre interesserede tanker benzin med deres OK app eller kort. Du kan læse mere om detaljerne af aftalen her. Hvis du er interesseret i at hjælpe til så skal du oprette eller redigere din OK profil, så den støtter ‘Foreningen Koyo’ hver gang du tanker.
+                </p>
+                <br>
+                <br>
+                <h2>DokoCon</h2>
+                <p>
+                    DokoCon er en cosplay convention i Randers, som havde sin første convention i 2020. Koyo har et tæt samarbejder med DokoCon ift. sparring og vidensdeling.
+                </p>
+                <br>
+                <br>
+                <h2>Ninjin</h2>
+                <p>
+                    Ninjin er en cosplay convention i Nyborg, som havde sin første convention i 2022. Koyo har et tæt samarbejder med Ninjin ift. sparring og vidensdeling.
+                </p>
+                <br>
+                <br>
+                <p>
+                    Vil du også være en af Koyos officielle samarbejdspartnere? Så skriv en mail til os på kontakt@koyocon.dk
+                </p>
+            </div>
+        </section>
+
+        <div class="text-margin">
+            <h2>Foreningsstøtte</h2>
+            <br>
+            <p>
+                I Koyo arbejder vi aktivt på at blive en folkeoplysende forening, med forventning om at blive godkendt i løbet af 2022. Som folkeoplysende forening har vi mulighed for at modtage aktivitetstilskud af kommunen. Der er her tale om et beløb som kan svare til vores medlemsindtægter fra alle medlemmer under 25 år. Når vi søger aktivitetsstøtte, baseres beløbet på sidste års medlemstal, og derfor er der vigtigt for os allerede i år at øge vores medlemstal til næste års ansøgning.
+            </p>
+            <br>
+            <br>
+            <h2>Bifrost</h2>
+            <br>
+            <p>
+                Udover at Koyo selv kan modtage kommunal tilskud, sender vi hvert år også vores medlemstal til Landsforeningen Bifrost. Bifrost får årligt tildelt et millionbeløb fra Tipsmidlerne som fastsættes efter de samlede medlemstal i lokalforeningerne. Her udgør Koyo en væsentlig andel. Pengene bruges på at drive sekretariatet som igennem årene har hjulpet Koyo med fondssøgning og kontakt med kommunen, kurser, forsikring og giver adgang til de puljer som har startet Koyo Cosplay Camp. Jo flere medlemmer vi har, jo stærkere står landsforeningen til at hjælpe os.
+            </p>
+            <br>
+            <br>
+            <h2>Fondssøgning</h2>
+            <br>
+            <p>
+                Et højere antal medlemmer giver indirekte muligheden for at modtage flere fondspenge. Når fonde tildeler midler til ansøgere, lægger de som regel stor vægt på hvor mange mennesker der vil få glæde af ressourcerne. Når vi søger udstyr er det som regel med henblik på at bruge det til flere af vores arrangementer, og derfor vil der blive kigget på vores medlemstal frem for billetsalg. Derudover tildeler mange fonde ikke penge til arrangementer som laver overskud fra billetsalget. Når vi gør billetprisen lavere, og medlemsindtægter højere, kan vi derfor modtage flere penge fra fonden.
+                <br>
+                <br>
+                Ved at dele billetprisen op i mindre bidder, får Koyo derfor ikke kun mange flere midler til rådighed, men det giver også deltagerne mulighed for at opdele betalingen over flere måneder.
+                Får man ikke brugt sit medlemskab det pågældende år, enten fordi man blev forhindret eller der blev udsolgt til vores arrangementer, refunderer vi gerne medlemskabet.
+                <br>
+                <br>
+                Afsluttende er det bare fedt at kunne kalde os Danmarks største cosplay forening
+            </p>
+        </div>
+
+    </div>
+
+    <!-- Footer alignment (Don't Delete!)-->
+    <span class="grid-aligner"></span>
+    <span class="grid-aligner"></span>
+    <div class="spacer"></div>
+    <span class="grid-aligner"></span>
+    <span class="grid-aligner"></span>
+    <div class="spacer"></div>
+
+    <div class="top-container">
+        <span></span>
+        <a href="#" class="to-top">
+            <img src="assets/Arrow.svg" alt="">
+        </a>
+    </div>
+
+</body>
+
+
+
+<footer>
+    <span class="grid-aligner"></span>
+    <div>
+        <div class="footer-halftone"></div>
+        <div class="footer-main">
+            <div>
+                <p>
+                    <span class="footer-title">Følg os på sociale medier</span>
                     <div class="icon-container">
                         <a href="https://www.facebook.com/KoyoConDK/"><span class="hoverdisplay">Facebook</span><img src="assets/Group 32.svg" alt=""></a>
                         <a href="https://www.instagram.com/koyocon/"><span class="hoverdisplay">Instagram</span><img src="assets/Group 33.svg" alt=""></a>
                         <a href="https://www.youtube.com/@KoyoCon"><span class="hoverdisplay">YouTube</span><img src="assets/Group 34.svg" alt=""></a>
                     </div>
-                    </p>
-                </div>
+                </p>
             </div>
+
+            <p>Ophavsret © Koyo 2023<br><br>CVR-nr. 37 77 30 85 | <a href="om-koyo.html#privatlivspolitik" style="text-decoration:underline">Privatlivspolitik</a></p>
+
+            <div>
+                <p>
+                    <span class="footer-title">Kontakt &nbsp;&nbsp;&nbsp; Light Mode</span><br><br>
+
+                    <div class="icon-container">
+                        <a href="mailto:kontakt@koyocon.dk"><span class="hoverdisplay">kontakt@koyocon.dk</span><img src="assets/Group 31.svg" alt="" class="footer-icon-adjust"></a>
+                        <a class="dark" onclick="toggleMode()"><div class="toggleDarkButton"></div></a>
+                    </div>
+                </p>
+            </div>
+
         </div>
-    </footer>
+    </div>
+</footer>
 </html>

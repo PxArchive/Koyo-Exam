@@ -8,218 +8,220 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
         <script src="countdownScript.js" defer></script>
+        <script src="darkToggleScript.js" defer></script>
         <link rel="icon" type="image/x-icon" href="favicon.png">
     </head>
 
     <body>
-        <!-- Heading and top bar section -->
-        <span class="grid-aligner"></span>
-        <header>
-            <!-- Countdown Timer -->
-            <div class="countdown-bar">
-                <p class="mobile-visible countdown-mobile-span">Koyocon Sommer 2023</p>
-                <p class="mobile-hidden">Koyocon</p>
-                <p id="countdown" class="spacing-small"></p>
-                <a href="https://conbillet.dk/events/" target=”_blank”>
-                    <button><div class="buttonstyle"><p>køb billetter</p></div></button>
-                </a>
-                <p style="font-size: 0.75em;" class="spacing-small mobile-hidden">Sommer 2023</p>
-                <p id="cdtext" class="spacing cdtext">  dage timer min sek</p>
-                <a href="billetter.html" class="cdtext">Læs mere >></a>
-            </div>
-         <span></span>
-            <a class="logo" href="index.html">
-                <img src="assets/cherubic_sky_2_cropped.png" class="logo-owl" alt="" href="index.html">
-                <img src="assets/Logo.svg" alt="" class="logo-text">
+    <!-- Heading and top bar section -->
+    <span class="grid-aligner"></span>
+    <header>
+        <!-- Countdown Timer -->
+        <div class="countdown-bar">
+            <p class="mobile-visible countdown-mobile-span">Koyocon Sommer 2023</p>
+            <p class="mobile-hidden">Koyocon</p>
+            <p id="countdown" class="spacing-small"></p>
+            <a href="https://conbillet.dk/events/" target=”_blank”>
+                <button><div class="buttonstyle"><p>køb billetter</p></div></button>
             </a>
-            <input type="checkbox" id="navtoggle">
-             <label for="navtoggle" class="borgar">
-                 <span></span>
-                 <div class="borgar-line x1"></div>
-                 <div class="borgar-line x2"></div>
-                 <div class="borgar-line x3"></div>
-                 <span></span>
-             </label>
-            <nav>
+            <p style="font-size: 0.75em;" class="spacing-small mobile-hidden">Sommer 2023</p>
+            <p id="cdtext" class="spacing cdtext">  dage timer min sek</p>
+            <a href="billetter.html" class="cdtext-tickets">Læs mere >></a>
+        </div>
+        <span></span>
+        <a class="logo" href="index.html">
+            <img src="assets/cherubic_sky_2_cropped.png" class="logo-owl" alt="" href="index.html">
+            <img src="assets/Logo.svg" alt="" class="logo-text">
+        </a>
+        <input type="checkbox" id="navtoggle">
+        <label for="navtoggle" class="borgar">
+            <span></span>
+            <div class="borgar-line x1"></div>
+            <div class="borgar-line x2"></div>
+            <div class="borgar-line x3"></div>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li class="mobile-visible"><a href="index.html"><h1>Hjem</h1></a></li>
+                <li><a href="event-info.html"><h1>Event Info</h1></a></li>
+                <li data-active="true"><a href="billetter.html"><h1>Billetter</h1></a></li>
+                <li><a href="om-koyo.html"><h1>Om Koyo</h1></a></li>
+                <li><a href="join-teamet.html"><h1>Join Teamet</h1></a></li>
+                <li><a href="kontakt.html"><h1>Kontakt</h1></a></li>
+            </ul>
+        </nav>
+        <div class="nav-halftone"></div>
+    </header>
+    <span></span>
+
+    <!-- main content section -->
+    <span></span>
+    <div class="maincontent">
+
+        <div class="text-margin">
+            <br>
+            <h1>Billetter</h1>
+            <br>
+            <p>
+                De følgende events som man kan købe
+                billetter til på nuværende tidspunkt
+                er således:
+                <br>
+                <br>
+                Koyo Sommer
+                <br>
+                <br>
+                Koyo Chibi Djurssommerlandstur
+                <br>
+                <br>
+                Billetterne kan købes på <a href="https://conbillet.dk/events/">conbillet.dk</a>.
+            </p>
+            <br>
+
+            <br>
+
+            <div class="listbox">
+                <h2>Priser</h2>
                 <ul>
-                    <li class="mobile-visible"><a href="index.html" ><h1>Hjem</h1></a></li>
-                    <li><a href="event-info.html"><h1>Event Info</h1></a></li>
-                    <li data-active="true"><a href="billetter.html"><h1>Billetter</h1></a></li>
-                    <li><a href="om-koyo.html"><h1>Om Koyo</h1></a></li>
-                    <li><a href="join-teamet.html"><h1>Join Teamet</h1></a></li>
-                    <li><a href="kontakt.html"><h1>Kontakt</h1></a></li>
+                    <p>
+                        <strong>Weekend billetter:</strong>
+                    </p>
+                    <li>
+                        Weekendbillet: 350,-
+                    </li>
+                    <li>
+                        Medlemsbillet: 200,-
+                    </li>
+                    <p>
+                        Et medlemsskab købt via conbillet.dk koster 100kr.
+                        <br>
+                        Du sparer dermed 50,- ved at vælge denne løsning frem for en standard weekendbillet.
+                    </p>
+
+
+                    <p>
+                        <strong>Dagsbilletter:</strong>
+                    </p>
+                    <li>
+                        Fredag: 150,-
+                    </li>
+                    <li>
+                        Lørdag: 200,-
+                    </li>
+                    <li>
+                        Søndag: 150,-
+                    </li>
+                    <li>
+                        Sovesal: 100,-
+                    </li>
                 </ul>
-            </nav>
-             <div class="nav-halftone"></div>
-        </header>
-        <span></span>
 
-        <!-- main content section -->
-        <span></span>
-        <div class="maincontent">
-            
-            <div class="text-margin">
-                <br>
-                <h1>Billetter</h1>
-                <br>
-                <p>
-                    De følgende events som man kan købe
-                    billetter til på nuværende tidspunkt
-                    er således:
-                    <br>
-                    <br>
-                    Koyo Sommer
-                    <br>
-                    <br>
-                    Koyo Chibi Djurssommerlandstur
-                    <br>
-                    <br>
-                    Billetterne kan købes på <a href="https://conbillet.dk/events/">conbillet.dk</a>.
-                </p>
-                <br>
-
-                <br>
-
-                <div class="listbox">
-                    <h2>Priser</h2>
-                    <ul>
-                        <p>
-                            <strong>Weekend billetter:</strong>
-                        </p>
-                        <li>
-                            Weekendbillet: 350,-
-                        </li>
-                        <li>
-                            Medlemsbillet: 200,-
-                        </li>
-                        <p>
-                            Et medlemsskab købt via conbillet.dk koster 100kr.
-                            <br>
-                            Du sparer dermed 50,- ved at vælge denne løsning frem for en standard weekendbillet.
-                        </p>
-
-
-                        <p>
-                            <strong>Dagsbilletter:</strong>
-                        </p>
-                        <li>
-                            Fredag: 150,-
-                        </li>
-                        <li>
-                            Lørdag: 200,-
-                        </li>
-                        <li>
-                            Søndag: 150,-
-                        </li>
-                        <li>
-                            Sovesal: 100,-
-                        </li>
-                    </ul>
-
-                    <br>
-                </div>
-
-                <div class="spacer-small" style="background: transparent;"></div>
-
-                <a href="https://conbillet.dk/events/" class="center" target=”_blank”>
-                    <button><div class="buttonstyle"><p>køb billetter</p></div></button>
-                </a>
-                <br>
-            </div>
-            <div class="spacer-small"></div>
-
-            <div class="text-margin">
-                <h1>Medlemskab</h1>
-                <br>
-                <p>
-                    Alle er velkomne i foreningen, uanset om man selv deler vores interesser eller blot ønsker at støtte op om fællesskabet.
-                    <br>
-                    <br>
-                    Det er muligt at blive medlem af foreningen Koyo på hjemmesiden conbillet.dk. Et medlemskab koster 100 kr. og gælder året ud. Medlemskab kan købes hele året og kan ikke refunderes.
-                </p>
-                <br>
                 <br>
             </div>
 
-                <section class="dropdown">
-                    <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox1">
-                    <label for="dropdown-checkbox1">
-                        <div class="skewedpanel">
-                            <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                            <div class="dropdown-title">
-                                <h2>Fordele for dig</h2>
-                                <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                            </div>
-                        </div>
-                    </label>
-    
-                    <div class="dropdown-contents">
-                        <p>
-                            Et medlemskab giver adgang til alle foreningens arrangementer, herunder Koyo Sommer, Koyo Cosplay Camp og Koyo Chibi. Der kan dog forekomme ekstra udgifter, f.eks. kræver Koyo Cosplay Camp typisk en mindre entré betaling. 
-                            <br>
-                            <br>
-                            Derudover giver medlemskabet adgang til køb af de billigere Koyocon medlemsbilletter. Selvom man ikke har mulighed for at deltage til foreningens mindre arrangementer, tjener medlemskabet sig ind allerede til Koyocon.
-                            <br>
-                            <br>
-                            Medlemmer får information om relevante begivenheder på mail, så de er sikre på aldrig at misse noget. Dog sender Koyo maks 4 mails om året, så man skal ikke være bange for at vi fylder indbakken helt op.
-                            <br>
-                            <br>
-                            Ønsker medlemmer selv at oprette events der støtter op om foreningens formål, såsom cosplay picnics eller specielle biografvisninger, er det muligt at søge Koyo’s initiativstøtte. Dette inkluderer promovering, penge til materialer el.lign. og lån af materialer og udstyr.
-                            <br>
-                            <br>
-                            Medlemmer har desuden mulighed for at stemme og stille op til poster i bestyrelsen ved Koyo’s Generalforsamling. På generalforsamlingen kan man derfor få stor indflydelse på foreningens udvikling det kommende år.
-                            <br>
-                            <br>
-                            Sidst men ikke mindst har foreningen en forsikring som dækker alle medlemmer under vores arrangementer. Dette dækker udgifter og erstatning hvis et medlem kommer til skade når de hjælper connen, fx i forbindelse med at sætte scenen op, får smadret sine briller, eller hvis man kommer til at gøre skade på lokationen.
-                        </p>
-                    </div>
-                </section>
+            <div class="spacer-small" style="background: transparent;"></div>
 
-                <section class="dropdown">
-                    <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox2">
-                    <label for="dropdown-checkbox2">
-                        <div class="skewedpanel">
-                            <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                            <div class="dropdown-title">
-                                <h2>Fordele for Os</h2>
-                                <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                            </div>
-                        </div>
-                    </label>
-    
-                    <div class="dropdown-contents">
-                        <p>
-                            Helt fundamentalt er en forening intet uden dets medlemmer. Det er selve grundstenen i foreningslivet.
-                            Historisk har Koyo ageret mere som en event organisation end en forening, men dette sætter en begrænsning på hvilke retninger foreningens kan udhvikle sig i fremtiden. Derfor har bestyrelserne i de senere år arbejdet særligt på at udhvikle selve medlemsskabet og gøre det attraktivt.
-                            <br>
-                            <br>
-                            Vi ønsker at give vores deltagere ejerskab over foreningen. Jo flere som føler sig involverede i foreningen, fx gennem et aktivt medlemsskab, jo bedre et indblik får bestyrelsen og arrangørgrupperne i deltagernes ønsker.
-                        </p>
-                    </div>
-                </section>
-                
-            
+            <a href="https://conbillet.dk/events/" class="center" target=”_blank”>
+                <button><div class="buttonstyle"><p>køb billetter</p></div></button>
+            </a>
+            <br>
+        </div>
+        <div class="spacer-small"></div>
 
+        <div class="text-margin">
+            <h1>Medlemskab</h1>
+            <br>
+            <p>
+                Alle er velkomne i foreningen, uanset om man selv deler vores interesser eller blot ønsker at støtte op om fællesskabet.
+                <br>
+                <br>
+                Det er muligt at blive medlem af foreningen Koyo på hjemmesiden conbillet.dk. Et medlemskab koster 100 kr. og gælder året ud. Medlemskab kan købes hele året og kan ikke refunderes.
+            </p>
+            <br>
+            <br>
         </div>
 
-        <!-- Footer alignment (Don't Delete!)-->
-        <span class="grid-aligner"></span>
-        <span class="grid-aligner"></span>
-        <div class="spacer"></div>
-        <span class="grid-aligner"></span>
-        <span class="grid-aligner"></span>
-        <div class="spacer"></div>
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox1">
+            <label for="dropdown-checkbox1">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Fordele for dig</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
 
-        <div class="top-container">
-            <span></span>
-            <a href="#" class="to-top">
-                <img src="assets/Arrow.svg" alt="">
-            </a>
-       </div> 
+            <div class="dropdown-contents">
+                <p>
+                    Et medlemskab giver adgang til alle foreningens arrangementer, herunder Koyo Sommer, Koyo Cosplay Camp og Koyo Chibi. Der kan dog forekomme ekstra udgifter, f.eks. kræver Koyo Cosplay Camp typisk en mindre entré betaling.
+                    <br>
+                    <br>
+                    Derudover giver medlemskabet adgang til køb af de billigere Koyocon medlemsbilletter. Selvom man ikke har mulighed for at deltage til foreningens mindre arrangementer, tjener medlemskabet sig ind allerede til Koyocon.
+                    <br>
+                    <br>
+                    Medlemmer får information om relevante begivenheder på mail, så de er sikre på aldrig at misse noget. Dog sender Koyo maks 4 mails om året, så man skal ikke være bange for at vi fylder indbakken helt op.
+                    <br>
+                    <br>
+                    Ønsker medlemmer selv at oprette events der støtter op om foreningens formål, såsom cosplay picnics eller specielle biografvisninger, er det muligt at søge Koyo’s initiativstøtte. Dette inkluderer promovering, penge til materialer el.lign. og lån af materialer og udstyr.
+                    <br>
+                    <br>
+                    Medlemmer har desuden mulighed for at stemme og stille op til poster i bestyrelsen ved Koyo’s Generalforsamling. På generalforsamlingen kan man derfor få stor indflydelse på foreningens udvikling det kommende år.
+                    <br>
+                    <br>
+                    Sidst men ikke mindst har foreningen en forsikring som dækker alle medlemmer under vores arrangementer. Dette dækker udgifter og erstatning hvis et medlem kommer til skade når de hjælper connen, fx i forbindelse med at sætte scenen op, får smadret sine briller, eller hvis man kommer til at gøre skade på lokationen.
+                </p>
+            </div>
+        </section>
+
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox2">
+            <label for="dropdown-checkbox2">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Fordele for Os</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
+
+            <div class="dropdown-contents">
+                <p>
+                    Helt fundamentalt er en forening intet uden dets medlemmer. Det er selve grundstenen i foreningslivet.
+                    Historisk har Koyo ageret mere som en event organisation end en forening, men dette sætter en begrænsning på hvilke retninger foreningens kan udhvikle sig i fremtiden. Derfor har bestyrelserne i de senere år arbejdet særligt på at udhvikle selve medlemsskabet og gøre det attraktivt.
+                    <br>
+                    <br>
+                    Vi ønsker at give vores deltagere ejerskab over foreningen. Jo flere som føler sig involverede i foreningen, fx gennem et aktivt medlemsskab, jo bedre et indblik får bestyrelsen og arrangørgrupperne i deltagernes ønsker.
+                </p>
+            </div>
+        </section>
+
+
+
+    </div>
+
+    <!-- Footer alignment (Don't Delete!)-->
+    <span class="grid-aligner"></span>
+    <span class="grid-aligner"></span>
+    <div class="spacer"></div>
+    <span class="grid-aligner"></span>
+    <span class="grid-aligner"></span>
+    <div class="spacer"></div>
+
+    <div class="top-container">
+        <span></span>
+        <a href="#" class="to-top">
+            <img src="assets/Arrow.svg" alt="">
+        </a>
+    </div>
 
     </body>
+
 
 
     <footer>
@@ -227,18 +229,30 @@
         <div>
             <div class="footer-halftone"></div>
             <div class="footer-main">
-                <p><span class="footer-title">Kontakt os</span><br><br>
-                <a href="mailto:kontakt@koyocon.dk"><span class="hoverdisplay">kontakt@koyocon.dk</span><img src="assets/Group 31.svg" alt="" class="footer-icon-adjust"></a></p>
-                <p>Ophavsret © Koyo 2023<br><br>CVR-nr. 37 77 30 85 | <a href="om-koyo.html#privatlivspolitik" style="text-decoration:underline">Privatlivspolitik</a></p>
                 <div>
-                    <p><span class="footer-title">Følg os på sociale medier</span>
-                    <div class="icon-container">
-                        <a href="https://www.facebook.com/KoyoConDK/"><span class="hoverdisplay">Facebook</span><img src="assets/Group 32.svg" alt=""></a>
-                        <a href="https://www.instagram.com/koyocon/"><span class="hoverdisplay">Instagram</span><img src="assets/Group 33.svg" alt=""></a>
-                        <a href="https://www.youtube.com/@KoyoCon"><span class="hoverdisplay">YouTube</span><img src="assets/Group 34.svg" alt=""></a>
-                    </div>
+                    <p>
+                        <span class="footer-title">Følg os på sociale medier</span>
+                        <div class="icon-container">
+                            <a href="https://www.facebook.com/KoyoConDK/"><span class="hoverdisplay">Facebook</span><img src="assets/Group 32.svg" alt=""></a>
+                            <a href="https://www.instagram.com/koyocon/"><span class="hoverdisplay">Instagram</span><img src="assets/Group 33.svg" alt=""></a>
+                            <a href="https://www.youtube.com/@KoyoCon"><span class="hoverdisplay">YouTube</span><img src="assets/Group 34.svg" alt=""></a>
+                        </div>
                     </p>
                 </div>
+
+                <p>Ophavsret © Koyo 2023<br><br>CVR-nr. 37 77 30 85 | <a href="om-koyo.html#privatlivspolitik" style="text-decoration:underline">Privatlivspolitik</a></p>
+
+                <div>
+                    <p>
+                        <span class="footer-title">Kontakt &nbsp;&nbsp;&nbsp; Light Mode</span><br><br>
+
+                        <div class="icon-container">
+                            <a href="mailto:kontakt@koyocon.dk"><span class="hoverdisplay">kontakt@koyocon.dk</span><img src="assets/Group 31.svg" alt="" class="footer-icon-adjust"></a>
+                            <a class="dark" onclick="toggleMode()"><div class="toggleDarkButton"></div></a>
+                        </div>
+                    </p>
+                </div>
+
             </div>
         </div>
     </footer>

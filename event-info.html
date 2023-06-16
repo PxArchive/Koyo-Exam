@@ -1,1183 +1,1185 @@
 <!doctype html>
 <html>
     <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width">
-        <title>Koyocon - Event Info</title>
-        <link rel="stylesheet" href="style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"> 
-        <script src="countdownScript.js" defer></script>
-        <link rel="icon" type="image/x-icon" href="favicon.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Koyocon - Event Info</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <script src="countdownScript.js" defer></script>
+    <script src="darkToggleScript.js" defer></script>
+    <link rel="icon" type="image/x-icon" href="favicon.png">
     </head>
 
     <body>
-        <!-- Heading and top bar section -->
-        <span class="grid-aligner"></span>
-        <header>
-            <!-- Countdown Timer -->
-            <div class="countdown-bar">
-                <p class="mobile-visible countdown-mobile-span">Koyocon Sommer 2023</p>
-                <p class="mobile-hidden">Koyocon</p>
-                <p id="countdown" class="spacing-small"></p>
-                <a href="https://conbillet.dk/events/" target=”_blank”>
-                    <button><div class="buttonstyle"><p>køb billetter</p></div></button>
-                </a>
-                <p style="font-size: 0.75em;" class="spacing-small mobile-hidden">Sommer 2023</p>
-                <p id="cdtext" class="spacing cdtext">  dage timer min sek</p>
-                <a href="billetter.html" class="cdtext">Læs mere >></a>
-            </div>
-         <span></span>
-            <a class="logo" href="index.html">
-                <img src="assets/cherubic_sky_2_cropped.png" class="logo-owl" alt="" href="index.html">
-                <img src="assets/Logo.svg" alt="" class="logo-text">
+    <!-- Heading and top bar section -->
+    <span class="grid-aligner"></span>
+    <header>
+        <!-- Countdown Timer -->
+        <div class="countdown-bar">
+            <p class="mobile-visible countdown-mobile-span">Koyocon Sommer 2023</p>
+            <p class="mobile-hidden">Koyocon</p>
+            <p id="countdown" class="spacing-small"></p>
+            <a href="https://conbillet.dk/events/" target=”_blank”>
+                <button><div class="buttonstyle"><p>køb billetter</p></div></button>
             </a>
-            <input type="checkbox" id="navtoggle">
-             <label for="navtoggle" class="borgar">
-                 <span></span>
-                 <div class="borgar-line x1"></div>
-                 <div class="borgar-line x2"></div>
-                 <div class="borgar-line x3"></div>
-                 <span></span>
-             </label>
-            <nav>
-                <ul>
-                    <li class="mobile-visible"><a href="index.html" ><h1>Hjem</h1></a></li>
-                    <li data-active="true"><a href="event-info.html"><h1>Event Info</h1></a></li>
-                    <li><a href="billetter.html"><h1>Billetter</h1></a></li>
-                    <li><a href="om-koyo.html"><h1>Om Koyo</h1></a></li>
-                    <li><a href="join-teamet.html"><h1>Join Teamet</h1></a></li>
-                    <li><a href="kontakt.html"><h1>Kontakt</h1></a></li>
-                </ul>
-            </nav>
-             <div class="nav-halftone"></div>
-        </header>
+            <p style="font-size: 0.75em;" class="spacing-small mobile-hidden">Sommer 2023</p>
+            <p id="cdtext" class="spacing cdtext">  dage timer min sek</p>
+            <a href="billetter.html" class="cdtext-tickets">Læs mere >></a>
+        </div>
         <span></span>
+        <a class="logo" href="index.html">
+            <img src="assets/cherubic_sky_2_cropped.png" class="logo-owl" alt="" href="index.html">
+            <img src="assets/Logo.svg" alt="" class="logo-text">
+        </a>
+        <input type="checkbox" id="navtoggle">
+        <label for="navtoggle" class="borgar">
+            <span></span>
+            <div class="borgar-line x1"></div>
+            <div class="borgar-line x2"></div>
+            <div class="borgar-line x3"></div>
+            <span></span>
+        </label>
+        <nav>
+            <ul>
+                <li class="mobile-visible"><a href="index.html"><h1>Hjem</h1></a></li>
+                <li data-active="true"><a href="event-info.html"><h1>Event Info</h1></a></li>
+                <li><a href="billetter.html"><h1>Billetter</h1></a></li>
+                <li><a href="om-koyo.html"><h1>Om Koyo</h1></a></li>
+                <li><a href="join-teamet.html"><h1>Join Teamet</h1></a></li>
+                <li><a href="kontakt.html"><h1>Kontakt</h1></a></li>
+            </ul>
+        </nav>
+        <div class="nav-halftone"></div>
+    </header>
+    <span></span>
 
-        <!-- main content section -->
-        <span></span>
-        <div class="maincontent">
+    <!-- main content section -->
+    <span></span>
+    <div class="maincontent">
 
-            <div class="text-margin">
-                <br>
-                <h1>Hovedevents</h1>
-                <br>
-                <p> Koyocon er vores store events der bliver afholdt 2 gange om året, delt op i Koyocon Sommer og Koyocon Vinter.</p>
+        <div class="text-margin">
+            <br>
+            <h1>Hovedevents</h1>
+            <br>
+            <p> Koyocon er vores store events der bliver afholdt 2 gange om året, delt op i Koyocon Sommer og Koyocon Vinter.</p>
+            <div class="spacer-small"></div>
+        </div>
+
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox1">
+            <label for="dropdown-checkbox1">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Koyo Sommer</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
+
+            <div class="dropdown-contents">
+                <p>
+                    KoyoCon er en convention som blev startet i 2013, og har siden vokset sig til et event med over 1000 deltagere.
+                    <br>
+                    Foreningen afholder to conventions i året; en i sommerferien og en i slutningen af efteråret.
+                    <br>
+                    <br>
+                    KoyoCon Sommer afholdes i år d. 30. juni-2. juli 2023, på Grenaa Idrætscenter.
+                </p>
+
                 <div class="spacer-small"></div>
-            </div>
 
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox1">
-                <label for="dropdown-checkbox1">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Koyo Sommer</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
+                <div class="column-half">
+                    <img src="img/events/e_con1.jpg" style="width: 100%; height: 100%;" alt="Nogle boder ved KoyoCon">
+                    <img src="img/events/e_con3.jpg" style="width: 100%; height: 100%;" alt="En gruppe cosplayere på hovedscenen tager gruppebillede efter showet">
+                </div>
+
+
+                <div class="spacer-small"></div>
+
+                <div class="column-half">
+                    <div class="listbox">
+                        <h2>Billetter</h2>
+                        <ul>
+                            <p>
+                                <strong>Weekend billetter:</strong>
+                            </p>
+                            <li>
+                                Weekendbillet: 350,-
+                            </li>
+                            <li>
+                                Medlemsbillet: 200,-
+                            </li>
+                            <p>
+                                Et medlemsskab købt via conbillet.dk koster 100kr.
+                                <br>
+                                Du sparer dermed 50,- ved at vælge denne løsning frem for en standard weekendbillet.
+                            </p>
+
+                            <p>
+                                <strong>Dagsbilletter:</strong>
+                            </p>
+                            <li>
+                                Fredag: 150,-
+                            </li>
+                            <li>
+                                Lørdag: 200,-
+                            </li>
+                            <li>
+                                Søndag: 150,-
+                            </li>
+                            <li>
+                                Sovesal: 100,-
+                            </li>
+                        </ul>
+                        <br>
                     </div>
-                </label>
 
-                <div class="dropdown-contents">
-                    <p>
-                        KoyoCon er en convention som blev startet i 2013, og har siden vokset sig til et event med over 1000 deltagere.
-                        <br>
-                        Foreningen afholder to conventions i året; en i sommerferien og en i slutningen af efteråret.
-                        <br>
-                        <br>
-                        KoyoCon Sommer afholdes i år d. 30. juni-2. juli 2023, på Grenaa Idrætscenter.
-                    </p>
-
-                    <div class="spacer-small"></div>
-
-                    <div class="column-half">
-                        <img src="img/events/e_con1.jpg" style="width: 100%; height: 100%;" alt="Nogle boder ved KoyoCon">
-                        <img src="img/events/e_con3.jpg" style="width: 100%; height: 100%;" alt="En gruppe cosplayere på hovedscenen tager gruppebillede efter showet">
-                    </div>
-
-
-                    <div class="spacer-small"></div>
-
-                    <div class="column-half">
-                        <div class="listbox">
-                            <h2>Billetter</h2>
+                    <div>
+                        <div class="listbox" style="width:100%">
+                            <h2>Lokation</h2>
                             <ul>
                                 <p>
-                                    <strong>Weekend billetter:</strong>
-                                </p>
-                                <li>
-                                    Weekendbillet: 350,-
-                                </li>
-                                <li>
-                                    Medlemsbillet: 200,-
-                                </li>
-                                <p>
-                                    Et medlemsskab købt via conbillet.dk koster 100kr.
+                                    <strong>Grenaa Idrætscenter:</strong>
                                     <br>
-                                    Du sparer dermed 50,- ved at vælge denne løsning frem for en standard weekendbillet.
+                                    Ydesvej 2
+                                    <br>
+                                    8500 Grenaa
                                 </p>
-
-                                <p>
-                                    <strong>Dagsbilletter:</strong>
-                                </p>
-                                <li>
-                                    Fredag: 150,-
-                                </li>
-                                <li>
-                                    Lørdag: 200,-
-                                </li>
-                                <li>
-                                    Søndag: 150,-
-                                </li>
-                                <li>
-                                    Sovesal: 100,-
-                                </li>
                             </ul>
                             <br>
                         </div>
 
-                        <div>
-                            <div class="listbox" style="width:100%">
-                                <h2>Lokation</h2>
-                                <ul>
-                                    <p>
-                                        <strong>Grenaa Idrætscenter:</strong>
-                                        <br>
-                                        Ydesvej 2
-                                        <br>
-                                        8500 Grenaa
-                                    </p>
-                                </ul>
-                                <br>
-                            </div>
+                        <br>
 
-                            <br>
-
-                            <div class="listbox">
-                                <h2>Sovesal</h2>
-                                <ul>
-                                    <p>
-                                        Man skal selv medbringe pude, dyne/sovepose og liggeunderlag/madras.
-                                        <br>
-                                        <br>
-                                        Det koster 100 kr. at benytte sovesalen og dette tilkøbes din billet på Conbillet.dk.
-                                        <br>
-                                        <br>
-                                        Her er det også muligt at sikre sig at du ender i samme sovesal som dine venner, i skal blot skrive det samme under ‘sovesals ID’ i bestillingen.
-                                        <br>
-                                        <br>
-                                        Mere info kommer løbende.
-                                    </p>
-                                </ul>
-                                <br>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="spacer-small" style="background: transparent"></div>
-
-                    <a href="https://conbillet.dk/events/" target=”_blank” class="center">
-                        <button><div class="buttonstyle"><p>køb billetter</p></div></button>
-                    </a>
-                    <br>
-                    <br>
-                    <br>
-                    <section class="dropdown">
-                        <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox2">
-                        <label for="dropdown-checkbox2">
-                            <div class="skewedpanel">
-                                <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                                <div class="dropdown-title">
-                                    <h2>Mere info om Koyo Sommer</h2>
-                                    <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                                </div>
-                            </div>
-                        </label>
-
-                        <div class="dropdown-contents">
-                            <div class="text-margin">
-                                <h2>Hvad er Koyo Sommer?</h2>
-                                <br>
+                        <div class="listbox">
+                            <h2>Sovesal</h2>
+                            <ul>
                                 <p>
-                                    Hvert år forvandles Grenaa Idrætscenters haller og lokaler til et mekka for entusiaster inden for tegnefilm og -serier, spil, mytologi og lignende. Centeret fyldes af unge mennesker i farvestrålende udklædninger, som deltager i lege, konkurrencer og opfører skuespil som deres yndlings karakterer. Der købes og sælges merchandise hos forhandlere eller individuelle kunstnere, som har boder til eventet.
+                                    Man skal selv medbringe pude, dyne/sovepose og liggeunderlag/madras.
                                     <br>
                                     <br>
-                                    Der har oprindeligt været mest fokus på Japansk populærkultur men alle velkomne, selvom interessen er på mere vestlige kulturelementer. Det er en rigtig god lejlighed til at mødes med andre med samme interesse, men også en fantastisk mulighed for at stifte nye bekendtskaber. I forhold til andre lignende arrangementer holder KōyōCon stort fokus på at være begyndervenlig og skabe trygge og hyggelige rammer for deltagerne på trods af at det pt. er det største arrangement af sin slags udenfor hovedstadsområdet.
+                                    Det koster 100 kr. at benytte sovesalen og dette tilkøbes din billet på Conbillet.dk.
                                     <br>
                                     <br>
-                                    Hvis du vil have mere løbende information er du både velkommen til at tjekke vores facebook side og vores Instagram.
-                                </p>
-                                <br>
-                                <br>
-                                <h3>Til Forældre</h3>
-                                <br>
-                                <br>
-                                <h2>Hvad kan cosplay?</h2>
-                                <br>
-                                <p>
-                                    Vi tror på at børn ved hjælp af cosplay både kan udvikle deres kreative side, men også udforske sin egen identitet i et sikkert miljø med ligesindede unge.
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Alder</h2>
-                                <br>
-                                <p>
-                                    Koyocon vægter meget højt at være en god indgang til cosplay miljøet, og der plejer at være rigtig god stemning til at lære nye mennesker at kende. Sender du din teenager til Koyocon behøver du ikke bekymre dig for hvorvidt der vil være jævnaldrende til eventet. Mange tager til deres første convention i de unge teenage år. Deltagerne er fordelt over en relativt bred aldersgruppe, med en gennemsnitsalder på 22 år. Har du yngre børn anbefaler vi dog på forhånd at have aftaler med venner eller familie, så I er sikre på barnet har nogen at opleve connen sammen med. I Koyo lægger vi vægt på at folk må bruge cosplay som en kunstform til at udtrykke sig frit, så længe deres kostumer ikke er stødende. Vi gør derfor opmærksom på at der ofte vil være deltagere til stede i mere letpåklædte kostumer.
+                                    Her er det også muligt at sikre sig at du ender i samme sovesal som dine venner, i skal blot skrive det samme under ‘sovesals ID’ i bestillingen.
                                     <br>
                                     <br>
-                                    Børn under 10 år behøver ikke billet for at deltage.
-                                </p>
-                                <br>
-                                <h2>Sikkerhed</h2>
-                                <br>
-                                <p>
-                                    Cosplay er en hobby som vi rigtig gerne vil inkludere børn i på en sjov og sikker måde. Vi ønsker derfor at alle børn som er i stand til dette skal kunne udforske arrangementets områder frit på egen hånd – selvfølgelig tilknyttet en voksen til stede på området. Til Koyocon kan der være 1000 deltagere, og aktiviteterne er fordelt over flere store haller og etager. Der er derfor meget som kan fange yngre børns opmærksomhed, og det kan være let at blive væk fra hinanden. Til Koyocon vil der kun være én indgang, hvor Informationen er placeret. Skulle der ske noget vil I altid kunne søge hjælp her, og det er også et oplagt sted at aftale med dit barn at mødes i tilfælde af at I utilsigtet bliver væk fra hinanden. Har du yngre børn kan du i Informationen få udleveret armbånd til barnet hvorpå du kan skrive dit telefonnummer. Det gør det let for arrangører og andre hjælpende sind at få fat i dig hvis dit barn har brug for hjælp. Derudover vil der om aftenen og gennem natten være professionelle nattevagter til stede på connens område og sovesale, som tager sig af sikkerheden for de deltagere der er længere oppe.
-                                </p>
-                                <br>
-                                <br>
-                                <h3>Særlige Behov</h3>
-                                <br>
-                                <br>
-                                <h2>Ledsagerkort</h2>
-                                <br>
-                                <p>
-                                    Et ledsagerkort giver altid adgang til Koyos arrangementer, som støtte til betalende gæster. Ønsker ledsageren efterfølgende at bevæge sig rundt til arrangementet på egen hånd, kræver det dog køb af billet til denne.
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Fysiske udfordringer</h2>
-                                <br>
-                                <p>
-                                    Koyo bestræber os på altid at vælge lokationer for vores arrangementer, hvortil det er muligt at deltage på lige fod med andre som gangbesværet eller kørestolsbruger. Er man i tvivl om ens handicap vil være en forhindring, er man selvfølgelig altid velkommen til at kontakte os inden arrangementet. Så vil vi gøre hvad vi kan for at skabe muligheder.
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Psykiske udfordringer</h2>
-                                <br>
-                                <p>
-                                    I Koyo støtter vi op om solsikkesnoren, og opfordrer alle med usynlige handicap som kan påvirke deres interaktioner med andre gæster, om at undersøge om snoren er et tiltag for dem.
-
-Til KoyoCon er der rigtig mange mennesker, ofte på ret smalle gange. Skulle nogen få et angstanfald, klaustrofobi eller lignende, som gør at de har brug for at komme væk fra andre gæster, vil vores søde tryghedsværter kunne give adgang til et lukket og roligt rum.
-Har man angst eller andet som gør at man ikke føler sig tryg i store sovesale, har man mulighed for at blive tildelt en plads i et af vores såkaldte angst-sovesale, sammen med én ledsager. I disse lokaler vil der højst være 6 overnattende gæster. Der er begrænset antal pladser som fordeles efter først til mølle. Send os en mail for at blive tildelt en plads.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h3>Dealer Hall</h3>
-                                  <br>
-                                  <h2>AniPopGam</h2>
-                                  <br>
-                                  <p>
-                                    AniPopGam sælger anime merchandise, plushies og japanske snacks
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Tea:Licious</h2>
-                                  <br>
-                                  <p>
-                                    Tea:Licious er en bubble tea og snack café, som ligger ved siden af vores kantine på 1. sal. De laver alverdens flotte og farverige bubble teas og sælger et udvalg af andre eksotiske snacks.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Buens Bogcafé</h2>
-                                  <br>
-                                  <p>
-                                    (Regn)buens bogcafé er en lokalejet boghandler i Aalborg specialiseret i at forhandle både nyt og brugt LGBT+ litteratur.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Rainbow Island</h2>
-                                  <br>
-                                  <p>
-                                    Rainbow island sælger merch for både anime og kpop, kawaii stationary og asiatiske snacks.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>AMAI</h2>
-                                  <br>
-                                  <p>
-                                    Amai sælger et stort udvalg af k-pop merch, japansk slik og andre lækkerier.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Sagostenar</h2>
-                                  <br>
-                                  <p>
-                                    Sagostenar sælger flotte krystaller
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>AniMerch</h2>
-                                  <br>
-                                  <p>
-                                    AniMerch har et stort udvalg af anime figurer og andet anime relateret merchandise.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Nerdcave</h2>
-                                  <br>
-                                  <p>
-                                    Nerdcave er en lokal brætspils café som til Koyo Sommer stiller en bod op med Ramune og Mochi.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Matrix K-pop and Anime Store</h2>
-                                  <br>
-                                  <p>
-                                    Matrix K-pop and Anime Store sælger et bredt udvalg af k-pop og anime merchandise såsom t-.shirts, figurer og cosplayartikler.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>The korner</h2>
-                                  <br>
-                                  <p>
-                                    The Korner sælger kpop merch og cute stationary, nøgleringe mm.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Pop Maniac</h2>
-                                  <br>
-                                  <p>
-                                    Pop Maniac sælger især Funko Pops, men også andre typer popkultur figurer og merchandise.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h3>Bring n’ Buy</h3>
-                                  <br>
-                                  <h2>Bring n' Buy</h2>
-                                  <br>
-                                  <p>
-                                    I Bring n’ Buy kan du sælge dit merchandise, det kræver dog at du også har en entre billet til KoyoCon. Disse skal være børnevenlige, vi tager ikke imod +18 merchandise i Bring n’ Buy.
-                                    <br>
-                                    <br>
-Du har mulighed for at medbringe merchandise uden tilmelding.
-<br>
-<br>
-Vi modtager et max af 5 ting uden tilmelding. Hvis du vil sælger flere end 5 ting bedes du tilmelde dem via overstående link, da der ved tilmelding er et max på 20 ting.
-<br>
-<br>
-Du vil modtage en bekræftelsesmail indenfor 14 dage. Du bedes holde dine priser over 10 kr.
-<br>
-<br>
-Det koster 20 kr at få dit merchandise solgt i Bring n’ Buy, hvilket du bedes betale med Mobilepay, når du aflevere dit merchandise på connen.
-<br>
-<br>
-Tilmeldingsfristen for Bring n’ Buy er 1. Juni. Tilmeldinger senere end dette kan ikke lade sig gøre. Efter d. 1. Juni er det kun muligt at medbringe max 5 ting på connen.
-<br>
-<br>
-Varerne afleveres fredag ved Bring n’ Buy boden i Artist Alley, og kan afhentes igen søndag.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Regler</h2>
-                                  <br>
-                                  <p>
-                                    Fanart, bootleg og +18 merchandice er ikke tilladt i Bring n’ Buy og vil ikke blive solgt hvis tilmeldt.
-                                    <br>
-                                    <br>
-Glemte ting fundet under oprydning opbevares i tre (3) måneder efter Koyocon lukker. Når 3 måneder er gået, hvis tingene ikke ar afhentet, vil de anses som værende en donation til Koyocon, som må bruge det til hvad end de ønsker.
-<br>
-<br>
-Enhver omkostning associeret med at returnere glemte ting afholdes af modtageren.
-<br>
-<br>
-Har du spørgsmål? Så kontakt <a href="mailto:aabb@koyocon.dk">aabb@koyocon.dk</a> 
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h3>Aktiviteter</h3>
-                                  <br>
-                                  <h2>Gameroom</h2>
-                                  <br>
-                                  <p>
-                                    Til Koyocon har vi et område dedikeret til gaming og andre hyggelige aktiviteter.
-                                    <br>
-                                    <br>
-NesBozz kommer og sætter et stort udvalg op af retro spilkonsoller, så du får mulighed for at udfordre alle dine venner i alle klassikerne og købe noget med hjem til samlingen. Der er også mulighed for at vinde præmier, når der afholdes turneringer i udvalgte spil.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Art Lounge</h2>
-                                  <br>
-                                  <p>
-                                    Nærmere info kommer snarest
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Brætspil</h2>
-                                  <br>
-                                  <p>
-                                    Nærmere info kommer snarest
-                                  </p>
-                </div>
-
-                        </div>
-                    </section>
-
-                    <section class="dropdown">
-                        <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox3">
-                        <label for="dropdown-checkbox3">
-                            <div class="skewedpanel">
-                                <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                                <div class="dropdown-title">
-                                    <h2>Ordensregler</h2>
-                                    <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                                </div>
-                            </div>
-                        </label>
-
-                        <div class="dropdown-contents">
-                            <div class="text-margin">
-                                <h2>Opfordringer</h2>
-                                <br>
-                                <p>
-                                    Vi skal altid tage hensyn til hinanden. Føler man sig generet af en anden deltager, opfordres man til at tage kontakt til en arrangør til at håndtere sagen. Som udgangspunkt forsøger vi at løse problemerne via en samtale, men ved repetitive sager kan vi udelukke vedkommende fra det pågældende- og fremtidige arrangementer.
-                                    <br>
-                                    <br>
-                                    1. Spørg altid før du krammer, fotograferer eller filmer specifikke personer.
-                                    <br>
-                                    2. Ingen stalking/forfølgelse. Vær sikker på at de mennesker du følger ønsker dit selskab.
-                                    <br>
-                                    3. Optag ikke toiletterne unødigt til lægning af makeup og bodypaint, og gør ordentlig rent efter dig.
-                                    <br>
-                                    4. Brug faciliteterne ansvarligt og respektfuldt så der ikke forårsages skader på lokation og udstyr.
-                                    <br>
-                                    5. Symboler og påklædning som kan forventes forvekslet med hadefuld symbolik (se generelle regler), såsom det buddhistiske manji, må kun benyttes i sammenhæng med tydelig oplysning om symbolets betydning.
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Børn</h2>
-                                <br>
-                                <p>
-                                    Af hensyn til barnet selv og andre deltagere, må børn til og med 3 år ikke overnatte i sovesalene.
-                                    <br>
-                                    <br>
-                                    Børn under 15 skal være ifølge med en voksen. Barnet må gerne bevæge sig rundt til arrangementet på egen hånd, men det forventes at de har en voksen som er at finde på arrangementets område.
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Rygning</h2>
-                                <br>
-                                <p>
-                                    Der må aldrig ryges indenfor til Koyos arrangementer, og rygere skal holde afstand til andre gæster omkring indgange og udendørs opholdsområder.
-                                    <br>
-                                    <br>
-                                    Til KoyoCon må der kun ryges i det markerede rygeskur.
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Alkohol</h2>
-                                <br>
-                                <br>
-                                <p>
-                                    KoyoCon Sommer er et helt alkoholfrit arrangement. Det er ikke tilladt at opbevare, indtage eller være påvirket af alkohol og/eller andre euforiserende stoffer på arrangementets område. Dette vil medføre øjeblikkelig fjernelse af armbånd og billet. Arrangørerne kan kræve test med alkometer ved mistanke.
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Hadefuld Symbolik</h2>
-                                <br>
-                                <p>
-                                    Alle symboler, påklædning og skiltning som støtter organisationer associeret med forskelsbehandling, had, kriminalitet eller vold, er ikke tilladt. Dette inkluderer nazistiske hagekors, rocker logoer, terror-organisationer mm.
-                                </p>
-                                <br>
-                                <h2>Modarbejdelse af foreningen og KoyoCon</h2>
-                                <br>
-                                <p>
-                                    Modarbejdelse inkluderer, men er ikke begrænset til:
-                                    <br>
-                                    <br>
-                                    1. Bevidste handlinger som gør Koyos arrangementer til et utrygt sted at være for gæster såvel som frivillige.
-                                    <br>
-                                    2. Bevidst at sprede dårlig omtale om foreningen, med henblik på at skade foreningens billetindtægter, medlemsoptagelse eller erhvervelse af frivillige kræfter.
-                                    <br>
-                                    <br>
-                                    Skulle det efter dialog med parten være tydeligt at der er tale om bevidst skadelige handlinger, vil dette medføre fjernelse af armbånd og billet, samt eventuelt opsigelse af medlemskab, jævnfør foreningens vedtægter.
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Lovgivning</h2>
-                                <br>
-                                <p>
-                                    Brud på dansk lovgivning vil som minimum altid medføre øjeblikkelig fjernelse af armbånd og billet, og i alvorlige tilfælde vil overtrædelsen blive politianmeldt.
-                                    Dette inkluderer, men er ikke begrænset til følgende punkter:
-                                    <br>
-                                    <br>
-                                    1. Hærværk
-                                    <br>
-                                    2. Tyveri
-                                    <br>
-                                    3. Medbringelse af våben/airsoft
-                                    <br>
-                                    4. Blufærdighedskrænkelse
-                                    <br>
-                                    5. Diskrimination
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Samleje og Nøgenhed</h2>
-                                <br>
-                                <p>
-                                    Samleje er forbudt på alle områder tilknyttet arrangementet, inklusiv sovesale og omkringliggende udendørsarealer. Ligeledes af hensyn til andre deltagere er offentlig nøgenhed ikke tilladt til Koyos arrangementer. Kostumer skal som minimum altid dække kønsdele.
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Forskelsbehandling</h2>
-                                <br>
-                                <p>
-                                    Diskrimination, fx på baggrund af etnicitet, neuro-diversitet, fysik eller kønsidentitet er ulovligt. Det er derfor til KoyoCon ikke tilladt at farve sin hud for at efterligne en anden menneskelig hudfarve end sin egen.
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Våben og Props</h2>
-                                <br>
-                                <p>
-                                    I Koyo sætter vi ingen regler for størrelse, materialer eller andet som udgør dine props som medbringes til vores arrangementer. Vi forventer blot at du på forhånd har sat dig ind i, og overholder dansk våbenlov.
-                                    <br>
-                                    <br>
-                                    I Koyo er vi hverken jurister eller våben-specialister, og vi kan derfor ikke rådgive dig i hvorvidt din prop overholder dansk lovgivning. Vi vil dog rigtig gerne hjælpe dig med at finde de rigtige ressourcer, så tøv ikke med at smide os en mail alligevel!
-                                    I første omgang henviser vi til denne guide udformet af landsforeningen Bifrost, som er skrevet specifikt til udklædnings-hobbyer som cosplay. Du finder den på den her <a href="https://landsforeningenbifrost.dk/guides-og-handboger/">side</a>
-                                    <br>
-                                    <br>
-                                    Siden Koyo ikke er kvalificeret til at godkende din prop, vil du derfor heller ikke møde et såkaldt “våben-check” ved indgangen til connen. Du har derfor selv ansvaret for sikkerheden af alle dele af dit cosplay.
-                                    <br>
-                                    <br>
-                                    Oplever vi at du med dit prop fremstår truende, utryghedsskabende eller potentiel farlig for de andre deltagere, vil vi dog bede dig om at lægge dit prop væk. Vi ved selvfølgelig at det sjældent er nogens hensigt at gøre andre utrygge, og vi hjælper derfor gerne med sikkert at opbevare din prop indtil connen er overstået, hvis du ikke selv har mulighed for det.
-                                    <br>
-                                    <br>
-                                    Bevæger du dig uden for connens område, skal du være opmærksom på at de fleste mennesker ikke nødvendigvis forventer at se attrapvåben i hverdagen, og derfor skal der mindre til at gøre folk utrygge end på connens område. Vi opfordrer jer derfor til at tildække mere realistiske attrapper i transporten til/fra connen, samt at opbevare den i vores garderobe, hvis du skal uden for connens område.
-                                    <br>
-                                    <br>
-                                    Selvom politiet plejer at være forstående over for vores hobby, vil det stadig være en ubehagelig oplevelse for alle parter hvis politiet skal kaldes.
-                                    <br>
-                                    <br>
-                                    Af hensyn til scene sikkerhed, kan der være særlige regler for rekvisitter når du deltager til cosplay-showet eller craftsmanship. Check derfor de specifikke regelsæt for konkurrencerne, da disse kan variere.
-                                </p>
-                                <br>
-                                <br>
-                                <h2>Personsager</h2>
-                                <br>
-                                <p>
-                                    Du kan altid kontakte Koyos bestyrelse eller hovedarrangører hvis du, dit barn eller en af dine venner oplever problemer med en anden gæst eller frivillig, eller bliver udsat for noget ubehageligt under et af Koyos arrangementer. Du behøver aldrig at stå med en ubehagelig sag eller konfrontation alene.
-                                    <br>
-                                    <br>
-                                    Det er altid nemmest for os at hjælpe hvis du tager kontakt til os så hurtigt som muligt efter episoden har fundet sted. Hvis det ikke har været muligt at få fat i en arrangør under det pågældende arrangement, så kan du efterfølgende tage kontakt til bestyrelsen på følgende email: bestyrelse@koyocon.dk
-                                    <br>
-                                    <br>
-                                    Vi kan ikke love, at vi behandler din henvendelse 100% som du ønsker det, men vi kan love at vi altid lytter og tager din henvendelse seriøst. Vi vil altid gøre vores bedste for at møde dig, der hvor du har brug for det.
-                                    <br>
-                                    <br>
-                                    Din sag bliver ikke overdraget til nogen uden for bestyrelsen eller din kontaktperson uden dit samtykke.
-                                    <br>
-                                    <br>
-                                    Såfremt sagen omhandler et bestyrelsesmedlem, eller du af anden årsag ikke føler bestyrelsen har håndteret din sag tilfredsstillende, så kan du efterspørge at få sat et dialogmøde op, styret af en ekstern mediator. Denne person vil være erfaren i håndtering af sager om trivsel og tryghed, og vil selvfølgelig være helt upartisk i sagen.
-                                </p>
-                            </div>
-
-                        </div>
-                    </section>
-                    
-                    <section class="dropdown">
-                        <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox4">
-                        <label for="dropdown-checkbox4">
-                            <div class="skewedpanel">
-                                <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                                <div class="dropdown-title">
-                                    <h2>Event Oversigt</h2>
-                                    <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                                </div>
-                            </div>
-                        </label>
-        
-                        <div class="dropdown-contents">
-                            <div class="text-margin">
-                                  <h2>Paneler</h2>
-                                  <br>
-                                  <p>
-                                    Koyocons paneler er stedet hvor du kan få ny viden om nørdede emner, og tilegne dig helt nye skills. Det er paneler til dig uanset om du drømmer om at lave dit første cosplay, eller gerne vil gøre det bedst muligt klar til at deltage i dit første cosplay show!
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Turneringer & Konkurrencer</h2>
-                                  <br>
-                                  <p>
-                                    Du skal ikke gå fra connen uden at have haft muligheden for at vinde en masse af vores fede præmier. Uanset om du elsker at tegne, synge eller løse gåder, så får du muligheden for at vise dine evner frem i en af vores sjove turneringer og konkurrencer.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Quizzer</h2>
-                                  <br>
-                                  <p>
-                                    Koyocons Eventteam har altid gjort noget særligt ud af sine quizzer, og de har haft stor popularitet gennem årene. Tag et par venner under armen, og vis os hvor meget viden I har om alt fra anime og Pokemon, til Disney eller noget helt fjerde ⎯ og vind vilde præmier samtidigt!
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Hygge-Events</h2>
-                                  <br>
-                                  <p>
-                                    Til vores Hyggeevents er der både plads til lege med højt tempo og fede præmier, og hyggelige aktiviteter hvor vi griner sammen og lærer hinanden bedre at kende, eller bare slapper helt af når vi har brug for en pause fra connens høje energiniveau.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Fan-Events</h2>
-                                  <br>
-                                  <p>
-                                    Fan-events afholdes af vores fantastiske deltagere, og kan handle om lige det man har lyst til ⎯ fra in-character paneler og lærerige præsentationer, til quizzer og lege! Har du selv en idé til et event, som du godt kunne tænke dig at afholde på Koyocon? Kontakt Eventteamet via <a href="mailto:event@koyocon.dk">event@koyocon.dk</a>
-                                  </p>
-                                  <br>
-                                  <h2>Craftsmanship / Cosplay Catwalk</h2>
-                                  <br>
-                                  <p>
                                     Mere info kommer løbende.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>KoyoCons Prop Konkurrence (Sword emojis)</h2>
-                                  <br>
-                                  <p>
-                                    Sidder hænderne rigtigt skruet på og kan du lave de vildeste rekvisitter? Så har du mulighed for at deltage til KoyoCons Prop konkurrence!
-                                    <br>
-                                    <br>
-                                    I denne craftmanship konkurrence behøver du ikke at have et fuldendt kostume, stå frem på nogen scene, eller gå gennem lydprøver og prejudging. Alt hvad du skal kunne, er at skabe et vild prop.
-                                    <br>
-                                    <br>
-                                    Der vil blive lagt vægt på alt håndværk; din bearbejdning af materialer, maleteknikker, elektronik, kreativitet og source accuracy. Det kan være stort såvel som småt, detaljeret eller solidt, velkendt eller niche.
-                                    <br>
-                                    <br>
-                                    Alle tilmeldte props vil blive udstillet på borde bag afspærring ved siden af Artist Alley og Bring & Buy, hvor der er staff tilstede til at holde øje med udstillingen. Dit prop skal indleveres fredag, hvorefter det vil blive udstillet så alle connens deltagere kan beundre dit fantastiske arbejde.
-                                    <br>
-                                    <br>
-                                    Vinderne udvælges af vores dommer-panel, og annonceres lørdag aften til ballet.
-                                    <br>
-                                    <br>
-                                    Tilmeldingen lukker d. 3 Juni 2023
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Regler</h2>
-                                  <br>
-                                  <p>
-                                    Der gælder følgende regler for de tilmeldte props:
-                                    <br>
-                                    <br>
-                                    1. Den må ikke indgå som en del af en beklædningsdel. En rekvisit er seperat og ikke afhængig af at blive båret for at fremstå til sit fulde potentiale. Det kan være alt fra attrap-våben, til proderede tasker. Vi godkender dog også hovedbeklædning, herunder kroner, masker og hatte.
-                                    <br>
-                                    2. Din prop skal være noget du har kreeret. Du bliver bedømt på dit håndværk, og derfor skal det fremgå tydeligt i beskrivelsen i tilmeldingen, hvis der er dele som er købt og ombygget.
-                                    <br>
-                                    3. Din prop skal tage udgangspunkt i et canon (officielt udgivet) design eller univers. Det behøver ikke være en præcis gengivelse, men må gerne blot være inspireret af sit kildemateriale.
-                                    <br>
-                                    4. Ønsker man sin prop udstillet på nogen særlig måde, såsom på en pude eller mannequin hoved, skal dette selv medbringes. Dette tilbehør skal fremstå anonymt, og ikke distrahere fra de udstildede genstande.
-                                    <br>
-                                    5. Du må gerne have deltaget og vundet i tidligere shows og konkurencer med dit prop.
-                                    <br>
-                                    6. Det skal overholde dansk lovgivning og vores generelle retningslinier for våben og props, som kan læses under connens ordensregler.
-                                    <br>
-                                    7. Du må tilmelde op til 3 props, men kan dog kun vinde én præmie.
-                                    <br>
-                                    8. Man må gerne have været flere om at skabe et prop sammen. Alle der har medvirket i den håndværksmæssige process, skal fremgå af tilmeldingen.
-                                    <br>
-                                    9. Tilmeldingen er som udgangspunkt bindende, men skulle man blive forhindret i at deltage i konkurrencen, skal man sende en mail til kontakt@koyocon.dk hurtigst muligt.
-                                    <br>
-                                    10. Man skal ved tilmeldingen have en conbillet bruger, og senest d. 3. Juni have købt en weekend- eller medlemsbillet til KoyoCon Sommer.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Tilmelding</h2>
-                                  <br>
-                                  <p>
-                                    Du tilmelder dig ved at udfylde formularen som bliver linket ovenover.
-                                    <br>
-                                    <br>
-                                    Til tilmeldingen skal du have følgende klar:
-                                    <br>
-                                    <br>
-                                    Et reference-billede eller kollage af billeder som viser kildematerialet din prop er baseret på. Billedet skal være minimum 874(bredde)*620(højde) pixels. Passer dit billede ikke i formatet, vil vi crop det efter bedste evne.
-                                    <br>
-                                    <br>
-                                    En beskrivelse af dit håndværk. Her skal der fremstå hvad du har lavet, men ellers er det helt op til dig hvad du ønsker at fremhæve: materialer, teknikker, overvejelser eller andet. Beskrivelsen skal være mellem 500-700 tegn, eksklusiv mellemrum.
-                                    <br>
-                                    <br>
-                                    Mål på dit prop (Bredde*Højde*Dybde). Det behøver ikke være helt præcise mål hvis dit prop ikke er lavet færdig ved tilmeldingen. Vi bruger målene til at planlægge udstillingen.
-                                    <br>
-                                    <br>
-                                    Din beskrivelse og reference-billede udstilles på et skilt sammen med dit prop.      
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Hvad er Artist Alley?</h2>
-                                  <br>
-                                  <p>
-                                    Hos Koyocon støtter vi kunstnere fra miljøet og i Artist Alley kan du finde personer fra hele landet, som sælger kreationer de selv har lavet.
-                                    <br>
-                                    <br>
-Eksempler på varer du måske kan finde i Artist Alley kan være: Print, klistermærker, nøgleringe, Dnd terninger, strikkede tørklæder, bøger, tegneserier, smykker, bamser, tryllestave og meget mere.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Starttidspunkt for tilmelding</h2>
-                                  <br>
-                                  <p>
-                                    Kunstnere med etablerede firmaer (CVR) kan ansøge om at få en af de 10 reserverede borde ved at tilmelde sig fra nu indtil d. 1. April kl 12 via mail: aabb@koyocon.dk med følgene oplysninger:
-                                    <br>
-                                    <br>
-    Navn
-    <br>
-    Kunstnernavn
-    <br>
-    CVR
-    <br>
-    Kort liste over varer
-    <br>
-    Screenshot af Koyocon Sommer 2023 billet
-    <br>
-    <br>
-Andre Kunstnere kan tilmelde sig fra d. 2. April via ovenstående link (Den røde knap vil være grøn og sige “Tilmeldingen er åben”) Tilmeldingen vil stå åben i en uge.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Info</h2>
-                                  <br>
-                                  <p>
-                                    I Artist Alley har du fra connens åbning til søndag kl 15, et bord, hvor du kan sælge dine kreationer.
-                                    <br>
-                                    <br>
-Der er 50 borde. Disse er først til mølle indenfor kategori, dvs. ved tilmelding vælger du din primære kategori i form af: print/klistermærker, smykker, bøger, dice mm. Dette behøver ikke være den eneste slags varer, som du sælger, bare den du arbejder mest i. Dette er for at sikre et stort udvalg og mest mulig diversitet i Artist Alley varerne.
-                                    <br>
-                                    <br>
-Efter d. 9. April vil du modtage en bekræftelsesmail hurtigst muligt, senest i løbet af 7 dage. Skulle din tilmeldingen komme efter bordene er fuldt, vil der være mulighed for venteliste.
-                                    <br>
-                                    <br>
-Et bord kan bookes hele weekenden eller per. dag. Der kan bookes et helt bord 100*200cm eller et halvt bord 100*100 cm. Bordene gruppes sammen til 2 og 2, der vil være en forlængerledning til hver gruppe.
-                                    <br>
-                                    <br>
-    Intervaller og priser:
-    <br>
-    Halve borde:
-    <br>
-    Fredag 18:00 – 23:00 – 15 kr.
-    <br>
-    Lørdag 10:00 – 23:00 – 30 kr.
-    <br>
-    Søndag 10:00 – 15:00 – 15 kr.
-    <br>
-    Hele weekenden – 50 kr.
-    <br>
-    Hele borde:
-    <br>
-    Fredag 18:00 – 23:00 – 30 kr.
-    <br>
-    Lørdag 10:00 – 23:00 – 60 kr.
-    <br>
-    Søndag 10:00 – 15:00 – 30 kr.
-    <br>
-    Hele weekenden – 100 kr.
-    <br>
-    <br>
-Betaling sker ved ankomst ved dit bord på selve connen.
-<br>
-<br>
-For at sikre den bedste mulige Artist Alley, bedes bordet være bemandet i størstedelen af tiden.
-<br>
-<br>
-    Indgangsbilletten til connen er ikke inkluderet i lejen for et bordet – vær venligst sikker på du har købt billet inden du lejer bord.
-    <br>
-    Pengene for bordet betales over Mobilepay.
-    <br>
-    Hallen er aflåst om natten.
-    <br>
-    Vil du have dug på dit bord, så bedes du selv medbringe dette. Dette inkludere hvis du vil dække bordet til, når du lukker.
-    <br>
-    Glemte ting fundet under oprydning opbevares i tre (3) måneder efter Koyo Sommer lukker. Når 3 måneder er gået, hvis tingene ikke er afhentet, vil de anses som værende en donation til Koyo, som må bruges til hvad end de ønsker.
-    <br>
-    Enhver omkostning i forbindelse med at returnere glemte ting ligger hos modtageren.
-                                  </p>
-                                  <br>
-                                  <br>
-                                  <h2>Regler</h2>
-                                  <br>
-                                  <p>
-                                    Udover almindelig dansk lovgivning, er der til Koyocon, nogle regler Artists bedes overholde.
-                                    <br>
-                                    <br>
-Bryder man nogen af disse regler, vil man – afhængigt af alvorsgraden – få en advarsel eller blive bandlyst fra Artist Alley resten af connen. Flere advarsler kan også medføre at man bliver bandlyst. Bryder man loven vil man blive bandlyst og meldt til politiet.
-                                    <br>
-                                    <br>
-Billet til con-området, til det pågældende interval, er påkrævet.
-                                    <br>
-                                    <br>
-1. Du må ikke sælge varer, der ikke overholder dansk lovgivning.
-<br>
-2. Salg af fanart er forbudt jf. dansk lovgivning, medmindre kunstneren har tilladelse fra indehaveren af ophavsretten, eller hvis kunsten falder ind under parodi- eller satireparagraffen.
-<br>
-3. Det påhviler kunstneren at indhente de nødvendige tilladelser fra respektive indehavere af ophavsretten.
-<br>
-4. Kunstneren påtager sig al juridisk ansvar, hvis de beslutter at sælge fanart uden de rette tilladelser.
-<br>
-5. Grundet produktets natur, vil Artist Alley ansvarlig antage at kunstneren har indhentet de rette tilladelser, hvis staff overværer salget af fanart, men forbeholder sig retten til at spørge ind til det.
-<br>
-6. Pornografisk og overdrevent voldeligt materiale må kun sælges til personer 16 år eller ældre, jf. dansk strafferet, kapitel 24, §234.
-<br>
-7. Kunstneren skal se køberens ID inden transaktionen fuldføres
-<br>
-8. Pornografisk og overdrevent voldeligt materiale må ikke åbent vises frem, grundet tilstedeværelsen af små børn.
-<br>
-9. Koyocon forbeholder sig retten til at bede om ID følgende en transaktion eller bede en sælger fjerne eller dække bestemte produkter sat til salg, hvis de ikke følger Koyocon regler.
-<br>
-10. Traced eller AI kunst er ikke tilladt som salgsvarer i Koyocons Artist Alley.
-<br>
-<br>
-Har du spørgsmål? Så kontakt <a href="mailto:aabb@koyocon.dk.">aabb@koyocon.dk.</a> 
-                                  </p>
-                            </div>
-                              
-                        </div>
-                    </section>
-                </div>
-
-            </section>
-
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox9">
-                <label for="dropdown-checkbox9">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Koyo Vinter</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                                </p>
+                            </ul>
+                            <br>
                         </div>
                     </div>
-                </label>
-
-                <div class="dropdown-contents">
-                
-                    <p>
-                        KoyoCon er en convention som blev startet i 2013, og har siden vokset sig til et event med over 1000 deltagere. Foreningen afholder to conventions i året; en i sommerferien og en i slutningen af efteråret.
-                            <br>
-                            <br>
-                            KoyoCon Vinter afholdes i år d. 27. Oktober-29. Oktober 2023, i Vejlby-Risskov hallerne ved Aarhus.                            
-                            </p>
-             
-                    <div class="spacer-small"></div>
-
-                    <img src="img/events/e_con2.jpg" style="width: 50%; height: 50%;" class="center" alt="Cosplayere til KoyoCon poserer for kameraet">
-
                 </div>
-            </section>
 
-            <div class="text-margin">
-                <br>
-                <h1>Mindre events</h1>
-                <br>
-                <p> Koyo afholder også mindre events regelmæssigt i løbet af året, som fokuserer på at hygge og snakke med koyo fællesskabet!</p>
-                <p> Du kan læse mere om de små events herunder:</p>
+                <div class="spacer-small" style="background: transparent"></div>
 
-                <div class="spacer-small"></div>
+                <a href="https://conbillet.dk/events/" target=”_blank” class="center">
+                    <button><div class="buttonstyle"><p>køb billetter</p></div></button>
+                </a>
+                <br>
+                <br>
+                <br>
+                <section class="dropdown">
+                    <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox2">
+                    <label for="dropdown-checkbox2">
+                        <div class="skewedpanel">
+                            <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                            <div class="dropdown-title">
+                                <h2>Mere info om Koyo Sommer</h2>
+                                <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                            </div>
+                        </div>
+                    </label>
+
+                    <div class="dropdown-contents">
+                        <div class="text-margin">
+                            <h2>Hvad er Koyo Sommer?</h2>
+                            <br>
+                            <p>
+                                Hvert år forvandles Grenaa Idrætscenters haller og lokaler til et mekka for entusiaster inden for tegnefilm og -serier, spil, mytologi og lignende. Centeret fyldes af unge mennesker i farvestrålende udklædninger, som deltager i lege, konkurrencer og opfører skuespil som deres yndlings karakterer. Der købes og sælges merchandise hos forhandlere eller individuelle kunstnere, som har boder til eventet.
+                                <br>
+                                <br>
+                                Der har oprindeligt været mest fokus på Japansk populærkultur men alle velkomne, selvom interessen er på mere vestlige kulturelementer. Det er en rigtig god lejlighed til at mødes med andre med samme interesse, men også en fantastisk mulighed for at stifte nye bekendtskaber. I forhold til andre lignende arrangementer holder KōyōCon stort fokus på at være begyndervenlig og skabe trygge og hyggelige rammer for deltagerne på trods af at det pt. er det største arrangement af sin slags udenfor hovedstadsområdet.
+                                <br>
+                                <br>
+                                Hvis du vil have mere løbende information er du både velkommen til at tjekke vores facebook side og vores Instagram.
+                            </p>
+                            <br>
+                            <br>
+                            <h3>Til Forældre</h3>
+                            <br>
+                            <br>
+                            <h2>Hvad kan cosplay?</h2>
+                            <br>
+                            <p>
+                                Vi tror på at børn ved hjælp af cosplay både kan udvikle deres kreative side, men også udforske sin egen identitet i et sikkert miljø med ligesindede unge.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Alder</h2>
+                            <br>
+                            <p>
+                                Koyocon vægter meget højt at være en god indgang til cosplay miljøet, og der plejer at være rigtig god stemning til at lære nye mennesker at kende. Sender du din teenager til Koyocon behøver du ikke bekymre dig for hvorvidt der vil være jævnaldrende til eventet. Mange tager til deres første convention i de unge teenage år. Deltagerne er fordelt over en relativt bred aldersgruppe, med en gennemsnitsalder på 22 år. Har du yngre børn anbefaler vi dog på forhånd at have aftaler med venner eller familie, så I er sikre på barnet har nogen at opleve connen sammen med. I Koyo lægger vi vægt på at folk må bruge cosplay som en kunstform til at udtrykke sig frit, så længe deres kostumer ikke er stødende. Vi gør derfor opmærksom på at der ofte vil være deltagere til stede i mere letpåklædte kostumer.
+                                <br>
+                                <br>
+                                Børn under 10 år behøver ikke billet for at deltage.
+                            </p>
+                            <br>
+                            <h2>Sikkerhed</h2>
+                            <br>
+                            <p>
+                                Cosplay er en hobby som vi rigtig gerne vil inkludere børn i på en sjov og sikker måde. Vi ønsker derfor at alle børn som er i stand til dette skal kunne udforske arrangementets områder frit på egen hånd – selvfølgelig tilknyttet en voksen til stede på området. Til Koyocon kan der være 1000 deltagere, og aktiviteterne er fordelt over flere store haller og etager. Der er derfor meget som kan fange yngre børns opmærksomhed, og det kan være let at blive væk fra hinanden. Til Koyocon vil der kun være én indgang, hvor Informationen er placeret. Skulle der ske noget vil I altid kunne søge hjælp her, og det er også et oplagt sted at aftale med dit barn at mødes i tilfælde af at I utilsigtet bliver væk fra hinanden. Har du yngre børn kan du i Informationen få udleveret armbånd til barnet hvorpå du kan skrive dit telefonnummer. Det gør det let for arrangører og andre hjælpende sind at få fat i dig hvis dit barn har brug for hjælp. Derudover vil der om aftenen og gennem natten være professionelle nattevagter til stede på connens område og sovesale, som tager sig af sikkerheden for de deltagere der er længere oppe.
+                            </p>
+                            <br>
+                            <br>
+                            <h3>Særlige Behov</h3>
+                            <br>
+                            <br>
+                            <h2>Ledsagerkort</h2>
+                            <br>
+                            <p>
+                                Et ledsagerkort giver altid adgang til Koyos arrangementer, som støtte til betalende gæster. Ønsker ledsageren efterfølgende at bevæge sig rundt til arrangementet på egen hånd, kræver det dog køb af billet til denne.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Fysiske udfordringer</h2>
+                            <br>
+                            <p>
+                                Koyo bestræber os på altid at vælge lokationer for vores arrangementer, hvortil det er muligt at deltage på lige fod med andre som gangbesværet eller kørestolsbruger. Er man i tvivl om ens handicap vil være en forhindring, er man selvfølgelig altid velkommen til at kontakte os inden arrangementet. Så vil vi gøre hvad vi kan for at skabe muligheder.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Psykiske udfordringer</h2>
+                            <br>
+                            <p>
+                                I Koyo støtter vi op om solsikkesnoren, og opfordrer alle med usynlige handicap som kan påvirke deres interaktioner med andre gæster, om at undersøge om snoren er et tiltag for dem.
+
+                                Til KoyoCon er der rigtig mange mennesker, ofte på ret smalle gange. Skulle nogen få et angstanfald, klaustrofobi eller lignende, som gør at de har brug for at komme væk fra andre gæster, vil vores søde tryghedsværter kunne give adgang til et lukket og roligt rum.
+                                Har man angst eller andet som gør at man ikke føler sig tryg i store sovesale, har man mulighed for at blive tildelt en plads i et af vores såkaldte angst-sovesale, sammen med én ledsager. I disse lokaler vil der højst være 6 overnattende gæster. Der er begrænset antal pladser som fordeles efter først til mølle. Send os en mail for at blive tildelt en plads.
+                            </p>
+                            <br>
+                            <br>
+                            <h3>Dealer Hall</h3>
+                            <br>
+                            <h2>AniPopGam</h2>
+                            <br>
+                            <p>
+                                AniPopGam sælger anime merchandise, plushies og japanske snacks
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Tea:Licious</h2>
+                            <br>
+                            <p>
+                                Tea:Licious er en bubble tea og snack café, som ligger ved siden af vores kantine på 1. sal. De laver alverdens flotte og farverige bubble teas og sælger et udvalg af andre eksotiske snacks.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Buens Bogcafé</h2>
+                            <br>
+                            <p>
+                                (Regn)buens bogcafé er en lokalejet boghandler i Aalborg specialiseret i at forhandle både nyt og brugt LGBT+ litteratur.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Rainbow Island</h2>
+                            <br>
+                            <p>
+                                Rainbow island sælger merch for både anime og kpop, kawaii stationary og asiatiske snacks.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>AMAI</h2>
+                            <br>
+                            <p>
+                                Amai sælger et stort udvalg af k-pop merch, japansk slik og andre lækkerier.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Sagostenar</h2>
+                            <br>
+                            <p>
+                                Sagostenar sælger flotte krystaller
+                            </p>
+                            <br>
+                            <br>
+                            <h2>AniMerch</h2>
+                            <br>
+                            <p>
+                                AniMerch har et stort udvalg af anime figurer og andet anime relateret merchandise.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Nerdcave</h2>
+                            <br>
+                            <p>
+                                Nerdcave er en lokal brætspils café som til Koyo Sommer stiller en bod op med Ramune og Mochi.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Matrix K-pop and Anime Store</h2>
+                            <br>
+                            <p>
+                                Matrix K-pop and Anime Store sælger et bredt udvalg af k-pop og anime merchandise såsom t-.shirts, figurer og cosplayartikler.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>The korner</h2>
+                            <br>
+                            <p>
+                                The Korner sælger kpop merch og cute stationary, nøgleringe mm.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Pop Maniac</h2>
+                            <br>
+                            <p>
+                                Pop Maniac sælger især Funko Pops, men også andre typer popkultur figurer og merchandise.
+                            </p>
+                            <br>
+                            <br>
+                            <h3>Bring n’ Buy</h3>
+                            <br>
+                            <h2>Bring n' Buy</h2>
+                            <br>
+                            <p>
+                                I Bring n’ Buy kan du sælge dit merchandise, det kræver dog at du også har en entre billet til KoyoCon. Disse skal være børnevenlige, vi tager ikke imod +18 merchandise i Bring n’ Buy.
+                                <br>
+                                <br>
+                                Du har mulighed for at medbringe merchandise uden tilmelding.
+                                <br>
+                                <br>
+                                Vi modtager et max af 5 ting uden tilmelding. Hvis du vil sælger flere end 5 ting bedes du tilmelde dem via overstående link, da der ved tilmelding er et max på 20 ting.
+                                <br>
+                                <br>
+                                Du vil modtage en bekræftelsesmail indenfor 14 dage. Du bedes holde dine priser over 10 kr.
+                                <br>
+                                <br>
+                                Det koster 20 kr at få dit merchandise solgt i Bring n’ Buy, hvilket du bedes betale med Mobilepay, når du aflevere dit merchandise på connen.
+                                <br>
+                                <br>
+                                Tilmeldingsfristen for Bring n’ Buy er 1. Juni. Tilmeldinger senere end dette kan ikke lade sig gøre. Efter d. 1. Juni er det kun muligt at medbringe max 5 ting på connen.
+                                <br>
+                                <br>
+                                Varerne afleveres fredag ved Bring n’ Buy boden i Artist Alley, og kan afhentes igen søndag.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Regler</h2>
+                            <br>
+                            <p>
+                                Fanart, bootleg og +18 merchandice er ikke tilladt i Bring n’ Buy og vil ikke blive solgt hvis tilmeldt.
+                                <br>
+                                <br>
+                                Glemte ting fundet under oprydning opbevares i tre (3) måneder efter Koyocon lukker. Når 3 måneder er gået, hvis tingene ikke ar afhentet, vil de anses som værende en donation til Koyocon, som må bruge det til hvad end de ønsker.
+                                <br>
+                                <br>
+                                Enhver omkostning associeret med at returnere glemte ting afholdes af modtageren.
+                                <br>
+                                <br>
+                                Har du spørgsmål? Så kontakt <a href="mailto:aabb@koyocon.dk">aabb@koyocon.dk</a>
+                            </p>
+                            <br>
+                            <br>
+                            <h3>Aktiviteter</h3>
+                            <br>
+                            <h2>Gameroom</h2>
+                            <br>
+                            <p>
+                                Til Koyocon har vi et område dedikeret til gaming og andre hyggelige aktiviteter.
+                                <br>
+                                <br>
+                                NesBozz kommer og sætter et stort udvalg op af retro spilkonsoller, så du får mulighed for at udfordre alle dine venner i alle klassikerne og købe noget med hjem til samlingen. Der er også mulighed for at vinde præmier, når der afholdes turneringer i udvalgte spil.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Art Lounge</h2>
+                            <br>
+                            <p>
+                                Nærmere info kommer snarest
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Brætspil</h2>
+                            <br>
+                            <p>
+                                Nærmere info kommer snarest
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="dropdown">
+                    <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox3">
+                    <label for="dropdown-checkbox3">
+                        <div class="skewedpanel">
+                            <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                            <div class="dropdown-title">
+                                <h2>Ordensregler</h2>
+                                <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                            </div>
+                        </div>
+                    </label>
+
+                    <div class="dropdown-contents">
+                        <div class="text-margin">
+                            <h2>Opfordringer</h2>
+                            <br>
+                            <p>
+                                Vi skal altid tage hensyn til hinanden. Føler man sig generet af en anden deltager, opfordres man til at tage kontakt til en arrangør til at håndtere sagen. Som udgangspunkt forsøger vi at løse problemerne via en samtale, men ved repetitive sager kan vi udelukke vedkommende fra det pågældende- og fremtidige arrangementer.
+                                <br>
+                                <br>
+                                1. Spørg altid før du krammer, fotograferer eller filmer specifikke personer.
+                                <br>
+                                2. Ingen stalking/forfølgelse. Vær sikker på at de mennesker du følger ønsker dit selskab.
+                                <br>
+                                3. Optag ikke toiletterne unødigt til lægning af makeup og bodypaint, og gør ordentlig rent efter dig.
+                                <br>
+                                4. Brug faciliteterne ansvarligt og respektfuldt så der ikke forårsages skader på lokation og udstyr.
+                                <br>
+                                5. Symboler og påklædning som kan forventes forvekslet med hadefuld symbolik (se generelle regler), såsom det buddhistiske manji, må kun benyttes i sammenhæng med tydelig oplysning om symbolets betydning.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Børn</h2>
+                            <br>
+                            <p>
+                                Af hensyn til barnet selv og andre deltagere, må børn til og med 3 år ikke overnatte i sovesalene.
+                                <br>
+                                <br>
+                                Børn under 15 skal være ifølge med en voksen. Barnet må gerne bevæge sig rundt til arrangementet på egen hånd, men det forventes at de har en voksen som er at finde på arrangementets område.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Rygning</h2>
+                            <br>
+                            <p>
+                                Der må aldrig ryges indenfor til Koyos arrangementer, og rygere skal holde afstand til andre gæster omkring indgange og udendørs opholdsområder.
+                                <br>
+                                <br>
+                                Til KoyoCon må der kun ryges i det markerede rygeskur.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Alkohol</h2>
+                            <br>
+                            <br>
+                            <p>
+                                KoyoCon Sommer er et helt alkoholfrit arrangement. Det er ikke tilladt at opbevare, indtage eller være påvirket af alkohol og/eller andre euforiserende stoffer på arrangementets område. Dette vil medføre øjeblikkelig fjernelse af armbånd og billet. Arrangørerne kan kræve test med alkometer ved mistanke.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Hadefuld Symbolik</h2>
+                            <br>
+                            <p>
+                                Alle symboler, påklædning og skiltning som støtter organisationer associeret med forskelsbehandling, had, kriminalitet eller vold, er ikke tilladt. Dette inkluderer nazistiske hagekors, rocker logoer, terror-organisationer mm.
+                            </p>
+                            <br>
+                            <h2>Modarbejdelse af foreningen og KoyoCon</h2>
+                            <br>
+                            <p>
+                                Modarbejdelse inkluderer, men er ikke begrænset til:
+                                <br>
+                                <br>
+                                1. Bevidste handlinger som gør Koyos arrangementer til et utrygt sted at være for gæster såvel som frivillige.
+                                <br>
+                                2. Bevidst at sprede dårlig omtale om foreningen, med henblik på at skade foreningens billetindtægter, medlemsoptagelse eller erhvervelse af frivillige kræfter.
+                                <br>
+                                <br>
+                                Skulle det efter dialog med parten være tydeligt at der er tale om bevidst skadelige handlinger, vil dette medføre fjernelse af armbånd og billet, samt eventuelt opsigelse af medlemskab, jævnfør foreningens vedtægter.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Lovgivning</h2>
+                            <br>
+                            <p>
+                                Brud på dansk lovgivning vil som minimum altid medføre øjeblikkelig fjernelse af armbånd og billet, og i alvorlige tilfælde vil overtrædelsen blive politianmeldt.
+                                Dette inkluderer, men er ikke begrænset til følgende punkter:
+                                <br>
+                                <br>
+                                1. Hærværk
+                                <br>
+                                2. Tyveri
+                                <br>
+                                3. Medbringelse af våben/airsoft
+                                <br>
+                                4. Blufærdighedskrænkelse
+                                <br>
+                                5. Diskrimination
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Samleje og Nøgenhed</h2>
+                            <br>
+                            <p>
+                                Samleje er forbudt på alle områder tilknyttet arrangementet, inklusiv sovesale og omkringliggende udendørsarealer. Ligeledes af hensyn til andre deltagere er offentlig nøgenhed ikke tilladt til Koyos arrangementer. Kostumer skal som minimum altid dække kønsdele.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Forskelsbehandling</h2>
+                            <br>
+                            <p>
+                                Diskrimination, fx på baggrund af etnicitet, neuro-diversitet, fysik eller kønsidentitet er ulovligt. Det er derfor til KoyoCon ikke tilladt at farve sin hud for at efterligne en anden menneskelig hudfarve end sin egen.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Våben og Props</h2>
+                            <br>
+                            <p>
+                                I Koyo sætter vi ingen regler for størrelse, materialer eller andet som udgør dine props som medbringes til vores arrangementer. Vi forventer blot at du på forhånd har sat dig ind i, og overholder dansk våbenlov.
+                                <br>
+                                <br>
+                                I Koyo er vi hverken jurister eller våben-specialister, og vi kan derfor ikke rådgive dig i hvorvidt din prop overholder dansk lovgivning. Vi vil dog rigtig gerne hjælpe dig med at finde de rigtige ressourcer, så tøv ikke med at smide os en mail alligevel!
+                                I første omgang henviser vi til denne guide udformet af landsforeningen Bifrost, som er skrevet specifikt til udklædnings-hobbyer som cosplay. Du finder den på den her <a href="https://landsforeningenbifrost.dk/guides-og-handboger/">side</a>
+                                <br>
+                                <br>
+                                Siden Koyo ikke er kvalificeret til at godkende din prop, vil du derfor heller ikke møde et såkaldt “våben-check” ved indgangen til connen. Du har derfor selv ansvaret for sikkerheden af alle dele af dit cosplay.
+                                <br>
+                                <br>
+                                Oplever vi at du med dit prop fremstår truende, utryghedsskabende eller potentiel farlig for de andre deltagere, vil vi dog bede dig om at lægge dit prop væk. Vi ved selvfølgelig at det sjældent er nogens hensigt at gøre andre utrygge, og vi hjælper derfor gerne med sikkert at opbevare din prop indtil connen er overstået, hvis du ikke selv har mulighed for det.
+                                <br>
+                                <br>
+                                Bevæger du dig uden for connens område, skal du være opmærksom på at de fleste mennesker ikke nødvendigvis forventer at se attrapvåben i hverdagen, og derfor skal der mindre til at gøre folk utrygge end på connens område. Vi opfordrer jer derfor til at tildække mere realistiske attrapper i transporten til/fra connen, samt at opbevare den i vores garderobe, hvis du skal uden for connens område.
+                                <br>
+                                <br>
+                                Selvom politiet plejer at være forstående over for vores hobby, vil det stadig være en ubehagelig oplevelse for alle parter hvis politiet skal kaldes.
+                                <br>
+                                <br>
+                                Af hensyn til scene sikkerhed, kan der være særlige regler for rekvisitter når du deltager til cosplay-showet eller craftsmanship. Check derfor de specifikke regelsæt for konkurrencerne, da disse kan variere.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Personsager</h2>
+                            <br>
+                            <p>
+                                Du kan altid kontakte Koyos bestyrelse eller hovedarrangører hvis du, dit barn eller en af dine venner oplever problemer med en anden gæst eller frivillig, eller bliver udsat for noget ubehageligt under et af Koyos arrangementer. Du behøver aldrig at stå med en ubehagelig sag eller konfrontation alene.
+                                <br>
+                                <br>
+                                Det er altid nemmest for os at hjælpe hvis du tager kontakt til os så hurtigt som muligt efter episoden har fundet sted. Hvis det ikke har været muligt at få fat i en arrangør under det pågældende arrangement, så kan du efterfølgende tage kontakt til bestyrelsen på følgende email: bestyrelse@koyocon.dk
+                                <br>
+                                <br>
+                                Vi kan ikke love, at vi behandler din henvendelse 100% som du ønsker det, men vi kan love at vi altid lytter og tager din henvendelse seriøst. Vi vil altid gøre vores bedste for at møde dig, der hvor du har brug for det.
+                                <br>
+                                <br>
+                                Din sag bliver ikke overdraget til nogen uden for bestyrelsen eller din kontaktperson uden dit samtykke.
+                                <br>
+                                <br>
+                                Såfremt sagen omhandler et bestyrelsesmedlem, eller du af anden årsag ikke føler bestyrelsen har håndteret din sag tilfredsstillende, så kan du efterspørge at få sat et dialogmøde op, styret af en ekstern mediator. Denne person vil være erfaren i håndtering af sager om trivsel og tryghed, og vil selvfølgelig være helt upartisk i sagen.
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="dropdown">
+                    <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox4">
+                    <label for="dropdown-checkbox4">
+                        <div class="skewedpanel">
+                            <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                            <div class="dropdown-title">
+                                <h2>Event Oversigt</h2>
+                                <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                            </div>
+                        </div>
+                    </label>
+
+                    <div class="dropdown-contents">
+                        <div class="text-margin">
+                            <h2>Paneler</h2>
+                            <br>
+                            <p>
+                                Koyocons paneler er stedet hvor du kan få ny viden om nørdede emner, og tilegne dig helt nye skills. Det er paneler til dig uanset om du drømmer om at lave dit første cosplay, eller gerne vil gøre det bedst muligt klar til at deltage i dit første cosplay show!
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Turneringer & Konkurrencer</h2>
+                            <br>
+                            <p>
+                                Du skal ikke gå fra connen uden at have haft muligheden for at vinde en masse af vores fede præmier. Uanset om du elsker at tegne, synge eller løse gåder, så får du muligheden for at vise dine evner frem i en af vores sjove turneringer og konkurrencer.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Quizzer</h2>
+                            <br>
+                            <p>
+                                Koyocons Eventteam har altid gjort noget særligt ud af sine quizzer, og de har haft stor popularitet gennem årene. Tag et par venner under armen, og vis os hvor meget viden I har om alt fra anime og Pokemon, til Disney eller noget helt fjerde ⎯ og vind vilde præmier samtidigt!
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Hygge-Events</h2>
+                            <br>
+                            <p>
+                                Til vores Hyggeevents er der både plads til lege med højt tempo og fede præmier, og hyggelige aktiviteter hvor vi griner sammen og lærer hinanden bedre at kende, eller bare slapper helt af når vi har brug for en pause fra connens høje energiniveau.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Fan-Events</h2>
+                            <br>
+                            <p>
+                                Fan-events afholdes af vores fantastiske deltagere, og kan handle om lige det man har lyst til ⎯ fra in-character paneler og lærerige præsentationer, til quizzer og lege! Har du selv en idé til et event, som du godt kunne tænke dig at afholde på Koyocon? Kontakt Eventteamet via <a href="mailto:event@koyocon.dk">event@koyocon.dk</a>
+                            </p>
+                            <br>
+                            <h2>Craftsmanship / Cosplay Catwalk</h2>
+                            <br>
+                            <p>
+                                Mere info kommer løbende.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>KoyoCons Prop Konkurrence (Sword emojis)</h2>
+                            <br>
+                            <p>
+                                Sidder hænderne rigtigt skruet på og kan du lave de vildeste rekvisitter? Så har du mulighed for at deltage til KoyoCons Prop konkurrence!
+                                <br>
+                                <br>
+                                I denne craftmanship konkurrence behøver du ikke at have et fuldendt kostume, stå frem på nogen scene, eller gå gennem lydprøver og prejudging. Alt hvad du skal kunne, er at skabe et vild prop.
+                                <br>
+                                <br>
+                                Der vil blive lagt vægt på alt håndværk; din bearbejdning af materialer, maleteknikker, elektronik, kreativitet og source accuracy. Det kan være stort såvel som småt, detaljeret eller solidt, velkendt eller niche.
+                                <br>
+                                <br>
+                                Alle tilmeldte props vil blive udstillet på borde bag afspærring ved siden af Artist Alley og Bring & Buy, hvor der er staff tilstede til at holde øje med udstillingen. Dit prop skal indleveres fredag, hvorefter det vil blive udstillet så alle connens deltagere kan beundre dit fantastiske arbejde.
+                                <br>
+                                <br>
+                                Vinderne udvælges af vores dommer-panel, og annonceres lørdag aften til ballet.
+                                <br>
+                                <br>
+                                Tilmeldingen lukker d. 3 Juni 2023
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Regler</h2>
+                            <br>
+                            <p>
+                                Der gælder følgende regler for de tilmeldte props:
+                                <br>
+                                <br>
+                                1. Den må ikke indgå som en del af en beklædningsdel. En rekvisit er seperat og ikke afhængig af at blive båret for at fremstå til sit fulde potentiale. Det kan være alt fra attrap-våben, til proderede tasker. Vi godkender dog også hovedbeklædning, herunder kroner, masker og hatte.
+                                <br>
+                                2. Din prop skal være noget du har kreeret. Du bliver bedømt på dit håndværk, og derfor skal det fremgå tydeligt i beskrivelsen i tilmeldingen, hvis der er dele som er købt og ombygget.
+                                <br>
+                                3. Din prop skal tage udgangspunkt i et canon (officielt udgivet) design eller univers. Det behøver ikke være en præcis gengivelse, men må gerne blot være inspireret af sit kildemateriale.
+                                <br>
+                                4. Ønsker man sin prop udstillet på nogen særlig måde, såsom på en pude eller mannequin hoved, skal dette selv medbringes. Dette tilbehør skal fremstå anonymt, og ikke distrahere fra de udstildede genstande.
+                                <br>
+                                5. Du må gerne have deltaget og vundet i tidligere shows og konkurencer med dit prop.
+                                <br>
+                                6. Det skal overholde dansk lovgivning og vores generelle retningslinier for våben og props, som kan læses under connens ordensregler.
+                                <br>
+                                7. Du må tilmelde op til 3 props, men kan dog kun vinde én præmie.
+                                <br>
+                                8. Man må gerne have været flere om at skabe et prop sammen. Alle der har medvirket i den håndværksmæssige process, skal fremgå af tilmeldingen.
+                                <br>
+                                9. Tilmeldingen er som udgangspunkt bindende, men skulle man blive forhindret i at deltage i konkurrencen, skal man sende en mail til kontakt@koyocon.dk hurtigst muligt.
+                                <br>
+                                10. Man skal ved tilmeldingen have en conbillet bruger, og senest d. 3. Juni have købt en weekend- eller medlemsbillet til KoyoCon Sommer.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Tilmelding</h2>
+                            <br>
+                            <p>
+                                Du tilmelder dig ved at udfylde formularen som bliver linket ovenover.
+                                <br>
+                                <br>
+                                Til tilmeldingen skal du have følgende klar:
+                                <br>
+                                <br>
+                                Et reference-billede eller kollage af billeder som viser kildematerialet din prop er baseret på. Billedet skal være minimum 874(bredde)*620(højde) pixels. Passer dit billede ikke i formatet, vil vi crop det efter bedste evne.
+                                <br>
+                                <br>
+                                En beskrivelse af dit håndværk. Her skal der fremstå hvad du har lavet, men ellers er det helt op til dig hvad du ønsker at fremhæve: materialer, teknikker, overvejelser eller andet. Beskrivelsen skal være mellem 500-700 tegn, eksklusiv mellemrum.
+                                <br>
+                                <br>
+                                Mål på dit prop (Bredde*Højde*Dybde). Det behøver ikke være helt præcise mål hvis dit prop ikke er lavet færdig ved tilmeldingen. Vi bruger målene til at planlægge udstillingen.
+                                <br>
+                                <br>
+                                Din beskrivelse og reference-billede udstilles på et skilt sammen med dit prop.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Hvad er Artist Alley?</h2>
+                            <br>
+                            <p>
+                                Hos Koyocon støtter vi kunstnere fra miljøet og i Artist Alley kan du finde personer fra hele landet, som sælger kreationer de selv har lavet.
+                                <br>
+                                <br>
+                                Eksempler på varer du måske kan finde i Artist Alley kan være: Print, klistermærker, nøgleringe, Dnd terninger, strikkede tørklæder, bøger, tegneserier, smykker, bamser, tryllestave og meget mere.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Starttidspunkt for tilmelding</h2>
+                            <br>
+                            <p>
+                                Kunstnere med etablerede firmaer (CVR) kan ansøge om at få en af de 10 reserverede borde ved at tilmelde sig fra nu indtil d. 1. April kl 12 via mail: aabb@koyocon.dk med følgene oplysninger:
+                                <br>
+                                <br>
+                                Navn
+                                <br>
+                                Kunstnernavn
+                                <br>
+                                CVR
+                                <br>
+                                Kort liste over varer
+                                <br>
+                                Screenshot af Koyocon Sommer 2023 billet
+                                <br>
+                                <br>
+                                Andre Kunstnere kan tilmelde sig fra d. 2. April via ovenstående link (Den røde knap vil være grøn og sige “Tilmeldingen er åben”) Tilmeldingen vil stå åben i en uge.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Info</h2>
+                            <br>
+                            <p>
+                                I Artist Alley har du fra connens åbning til søndag kl 15, et bord, hvor du kan sælge dine kreationer.
+                                <br>
+                                <br>
+                                Der er 50 borde. Disse er først til mølle indenfor kategori, dvs. ved tilmelding vælger du din primære kategori i form af: print/klistermærker, smykker, bøger, dice mm. Dette behøver ikke være den eneste slags varer, som du sælger, bare den du arbejder mest i. Dette er for at sikre et stort udvalg og mest mulig diversitet i Artist Alley varerne.
+                                <br>
+                                <br>
+                                Efter d. 9. April vil du modtage en bekræftelsesmail hurtigst muligt, senest i løbet af 7 dage. Skulle din tilmeldingen komme efter bordene er fuldt, vil der være mulighed for venteliste.
+                                <br>
+                                <br>
+                                Et bord kan bookes hele weekenden eller per. dag. Der kan bookes et helt bord 100*200cm eller et halvt bord 100*100 cm. Bordene gruppes sammen til 2 og 2, der vil være en forlængerledning til hver gruppe.
+                                <br>
+                                <br>
+                                Intervaller og priser:
+                                <br>
+                                Halve borde:
+                                <br>
+                                Fredag 18:00 – 23:00 – 15 kr.
+                                <br>
+                                Lørdag 10:00 – 23:00 – 30 kr.
+                                <br>
+                                Søndag 10:00 – 15:00 – 15 kr.
+                                <br>
+                                Hele weekenden – 50 kr.
+                                <br>
+                                Hele borde:
+                                <br>
+                                Fredag 18:00 – 23:00 – 30 kr.
+                                <br>
+                                Lørdag 10:00 – 23:00 – 60 kr.
+                                <br>
+                                Søndag 10:00 – 15:00 – 30 kr.
+                                <br>
+                                Hele weekenden – 100 kr.
+                                <br>
+                                <br>
+                                Betaling sker ved ankomst ved dit bord på selve connen.
+                                <br>
+                                <br>
+                                For at sikre den bedste mulige Artist Alley, bedes bordet være bemandet i størstedelen af tiden.
+                                <br>
+                                <br>
+                                Indgangsbilletten til connen er ikke inkluderet i lejen for et bordet – vær venligst sikker på du har købt billet inden du lejer bord.
+                                <br>
+                                Pengene for bordet betales over Mobilepay.
+                                <br>
+                                Hallen er aflåst om natten.
+                                <br>
+                                Vil du have dug på dit bord, så bedes du selv medbringe dette. Dette inkludere hvis du vil dække bordet til, når du lukker.
+                                <br>
+                                Glemte ting fundet under oprydning opbevares i tre (3) måneder efter Koyo Sommer lukker. Når 3 måneder er gået, hvis tingene ikke er afhentet, vil de anses som værende en donation til Koyo, som må bruges til hvad end de ønsker.
+                                <br>
+                                Enhver omkostning i forbindelse med at returnere glemte ting ligger hos modtageren.
+                            </p>
+                            <br>
+                            <br>
+                            <h2>Regler</h2>
+                            <br>
+                            <p>
+                                Udover almindelig dansk lovgivning, er der til Koyocon, nogle regler Artists bedes overholde.
+                                <br>
+                                <br>
+                                Bryder man nogen af disse regler, vil man – afhængigt af alvorsgraden – få en advarsel eller blive bandlyst fra Artist Alley resten af connen. Flere advarsler kan også medføre at man bliver bandlyst. Bryder man loven vil man blive bandlyst og meldt til politiet.
+                                <br>
+                                <br>
+                                Billet til con-området, til det pågældende interval, er påkrævet.
+                                <br>
+                                <br>
+                                1. Du må ikke sælge varer, der ikke overholder dansk lovgivning.
+                                <br>
+                                2. Salg af fanart er forbudt jf. dansk lovgivning, medmindre kunstneren har tilladelse fra indehaveren af ophavsretten, eller hvis kunsten falder ind under parodi- eller satireparagraffen.
+                                <br>
+                                3. Det påhviler kunstneren at indhente de nødvendige tilladelser fra respektive indehavere af ophavsretten.
+                                <br>
+                                4. Kunstneren påtager sig al juridisk ansvar, hvis de beslutter at sælge fanart uden de rette tilladelser.
+                                <br>
+                                5. Grundet produktets natur, vil Artist Alley ansvarlig antage at kunstneren har indhentet de rette tilladelser, hvis staff overværer salget af fanart, men forbeholder sig retten til at spørge ind til det.
+                                <br>
+                                6. Pornografisk og overdrevent voldeligt materiale må kun sælges til personer 16 år eller ældre, jf. dansk strafferet, kapitel 24, §234.
+                                <br>
+                                7. Kunstneren skal se køberens ID inden transaktionen fuldføres
+                                <br>
+                                8. Pornografisk og overdrevent voldeligt materiale må ikke åbent vises frem, grundet tilstedeværelsen af små børn.
+                                <br>
+                                9. Koyocon forbeholder sig retten til at bede om ID følgende en transaktion eller bede en sælger fjerne eller dække bestemte produkter sat til salg, hvis de ikke følger Koyocon regler.
+                                <br>
+                                10. Traced eller AI kunst er ikke tilladt som salgsvarer i Koyocons Artist Alley.
+                                <br>
+                                <br>
+                                Har du spørgsmål? Så kontakt <a href="mailto:aabb@koyocon.dk.">aabb@koyocon.dk.</a>
+                            </p>
+                        </div>
+
+                    </div>
+                </section>
             </div>
 
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox5">
-                <label for="dropdown-checkbox5">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Koyo Cosplay Camp</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
-                    </div>
-                </label>
+        </section>
 
-                <div class="dropdown-contents">
-            
-                    <p>
-                        Koyo Cosplay Camp (forkortet KCC) startede i 2019 med støtte fra DUF.
-                            <br>
-                            <br>
-                            Koyo Cosplay Camp er nogle hyggelige weekend arrangementer med fokus på at lave egne cosplays. Koyo stiller et udvalg af forskellige materialer og værktøj til rådighed ved arrangementet, med formål at gøre det nemmere for nye såvel som garvede cosplayers at prøve nye ting.                                                    
-                            </p>
-               
-                    <div class="spacer-small"></div>
-
-                    <img src="img/events/e_camp.jpg" style="width: 100%; height: 100%;" alt="Cosplay Camp deltagere arbejder på kostumer og props">
-
-                    <br>
-                    <br>
-                    <h2>Hvad er Koyo Cosplay Camp?</h2>
-                    <br>
-                    <p>
-                        Koyo Cosplay Camp er et weekend arrangement, hvor man kan sidde og arbejde på sit cosplay, derved også kan få hjælp fra andre deltagere og/eller de koyo arrangører som selv deltager i eventet. Arrangementet vil gøre det muligt for deltagerene at lære nye teknikker indenfor f.eks. crafting, wigstyling og syning. Der vil også være mulighed for at arbejde med maskiner og materialer som du måske ikke lige har tilgængeligt derhjemme.
-                        <br>
-                        <br>
-Arrangementet starter kl. 18:00 fredag og slutter kl. 15:00 søndag.
-<br>
-<br>
-Har du spørgsmål er du velkommen til at skrive på <a href="mailto:kontakt@koyocon.dk">kontakt@koyocon.dk</a> eller skrive til os over <a href="https://www.facebook.com/KoyoConDK/">facebook</a>  
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Lokation</h2>
-                    <br>
-                    <p>
-                        Dania Games
-                        <br>
-N P Josiassens Vej 44A
-<br>
-8500 Grenå
-<br>
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Sovesal info</h2>
-                    <br>
-                    <p>
-                        Overnatning foregår i én fælles sal på lokationen, og man skal selv medbringe madras, sovepose m.v.
-                        <br>
-                        <br>
-Børn under 15 år skal være ifølge med en voksen, hvis de ønsker at overnatte.
-                        <br>
-                        <br>
-Har du spørgsmål, kan du kontakte os via <a href="mailto:kontakt@koyocon.dk">kontakt@koyocon.dk</a> 
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Mad</h2>
-                    <br>
-                    <p>
-                        Der er køkken med tilhørende køleskab, mikroovn og el kedel, som ville være mulig at bruge under weekendens arrangement.
-                        <br>
-                        <br>
-Koyo vil sælge et lille udvalg af snacks og drikkevare under weekenden.
-<br>
-<br>
-I forhold til mad, kan man benytte en af byens mange madtilbud rundt omkring, både af restauranter, dagligvarer og andet.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Materialer og værktøj</h2>
-                    <br>
-                    <p>
-                        Til Koyo Cosplay Camp får du adgang til mange forskellige materialer og værktøjer. Dette er en overordnet oversigt over dem, men der tages forbehold for at vi potentielt har udvidet vores sortiment eller eventuelt er løbet tør for noget.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Crafting</h2>
-                    <br>
-                    <p>
-                        Af værktøj har vi både deltaslibere og dremmel, samt varmpistoler, lim pistoler og diverse små værktøj, såsom hobbyknive, file, loddekolbe, save og naturligvis det nødvendige sikkerhedsudstyr. Derudover har vi pensler til maling.
-                        <br>
-                        <br>
-Af materialer har vi foam i forskellige tykkelser og densitet, foam clay, Polymorph, sort og transparent worbla og ler.
-                        <br>
-                        <br>
-Af lim har vi kontakt lim, hot glue, træ lim, sekund lim og spray lim.
-                        <br>
-                        <br>
-Af maling har vi både spray maling og akrylmaling i et væld af forskellige farver. Derudover har vi lak, primer og selvlysende maling.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Wig styling</h2>
-                    <br>
-                    <p>
-                        Vi har wigheads, wighead holdere, hairspray (got2b glued), textil lim, hårnåle, elastikker, sakse og kamme.
-                        <br>
-                        <br>
-*OBS!* du skal selv medbringe wig.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Syning</h2>
-                    <br>
-                    <p>
-Af maskiner har vi 5 alm. symaskiner (stikkesting), 2 overlockere og 1 broderingsmaskine.
-<br>
-<br>
-*OBS!* der kan være kø ved maskinerne, så hvis man har mulighed for det er man velkommen til at medbringe sin egen. Vi har desuden strygejern og strygebræt.
-<br>
-<br>
-Derudover har vi et væld af sytilbehør, f.eks. nåle, sakse, skrædder linealer, opsprættere, markeringspenne, symaskine fødder (til lynlås og kantbånd), wondertape m.v.
-<br>
-<br>
-Vi har broderingstråd og alm. tråd i forskellige farver, derudover har vi lynlåse, kantbånd, pipingbånd og satin bånd i sort og hvid, samt elastik i sort. Derudover har vi en del blandende knapper, trykknapper, overtræksknapper og hægter. Vi har desuden et lille udvalg af stof maling.
-<br>
-<br>
-Af stof har vi twill i sort/mørkeblå, pleather i brun/sort og flies, bomuldslærred, jersey og polyester i et væld af forskellige farver.
-<br>
-<br>
-*OBS!* Vi har ikke alting og alle farver, så hvis du skal bruge noget helt særligt stof (eller anden materiale) bør du selv medbringe det.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Resin</h2>
-                    <br>
-                    <p>
-                        Vi har resin (alm. m. hærder) og resin farve i blå, grøn, gul, hvid, lilla, pink, rød og sort.
-                        <br>
-                        <br>
-*OBS!* ved størrere resin projekter bedes du selv medbringe resin, da vi skal have nok til at alle kan prøve.
-                        <br>
-                        <br>
-Vi har forme til forskellige juveler og enhjørninghorn, silikone målebæger og arbejdsmåtter.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Læder</h2>
-                    <br>
-                    <p>
-Vi har skærehjul, rem skærer, hobbykniv og læderhøvl til udskæring. Til kanterne har vi Kantpolertræ, kantskærer og gum tragacanth.
-<br>
-<br>
-Til syning har vi syl, sadelmagernål, firefork, enfork, syrille, stikpasser og vokstråd i sort, brun og hvid.
-<br>
-<br>
-Vi har desuden læderolie, læderfedt, læderhærder, finish, stempler til snøreringe, nitter og trykknapper, klemmer, lighter, hammer, knibtang, punsel, swivel kniv, tracefilm, revolvertang og nervsværte i rød, sort og brun.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Generelle Ordensregler</h2>
-                    <br>
-                    <p>
-                        Da Kōyō lægger stor vægt på at være en venlig og velkommende forening hvor alle skal kunne føle sig godt tilpas, har vi nogle regler der gælder for alle, både deltagere og arrangører/medhjælpere. Overtrædelse af en regel medfører en advarsel, og ved gentagende overtrædelser bedes man forlade eventet. Overtrædelse af visse regler medfører øjeblikkelig udvisning.
-                        <br>
-                        <br>
-1. Samleje er forbudt på arrangementets område og tilhørende sovepladser, af hensyn til andre congæster og dansk lovgivning. Overtrædelse af denne regel medfører øjeblikkelig udvisning og kan medføre blacklisting fra fremtidige Kōyō arrangementer. Husk at der er mindreårige til stede og at deres forældre skal være trygge ved at sende dem af sted.
-<br>
-2. Opbevaring, indtagelse og at være påvirket af alkohol og/eller stoffer på arrangementets område er forbudt medfører øjeblikkelig udvisning.
-<br>
-3. Hærværk og tyveri medfører øjeblikkelig udvisning og politianmeldes.
-<br>
-4. Spørg altid før du krammer, fotograferer eller filmer en bestemt person – samtykke er sejt.
-<br>
-5. Undgå at stalke/følge efter andre personer uden deres tilladelse – hvis nogen føler sig stalket har de ret til at klage til en arrangør eller frivillig og det kan medføre klip i armbåndet.
-<br>
-6. Fysisk og verbal chikane er forbudt –  hvis nogen føler sig chikaneret har de ret til at klage til en arrangør eller frivillig og det kan medføre udvisning.
-<br>
-7. Affald skal smides i skraldespande/sække.
-<br>
-8. Lad være med at farve hår i håndvaske. Det ødelægger både dit hår, vasken og som regel også dit cosplay.
-<br>
-9. Når du deltager til arrangementet giver du Koyo lov til at tage billeder af dig under arrangementet til brug ved promovering.
-<br>
-10. Overtrædelse af foreningens vedtægter og dansk lovgivning medfører øjeblikkelig udvisning, og i værste fald politi anmeldelse.
-<br>
-11. Det er forbudt at ryge indenfor – dette inkluderer e-cigaretter.
-<br>
-12. Børn til og med 3 år kan deltage gratis uden medlemskab. Af hensyn til andre deltagere og barnet må børn til og med 3 år ikke overnatte i sovesalene.
-<br>
-13. Alle børn under 15 skal være i følge med en voksen.
-<br>
-14. Det er ikke tilladt at medbringe dyr.
-                    </p>
-                    <br>
-                    <br>
-                    <h2>Regler for Koyo Cosplay Camp</h2>
-                    <br>
-                    <p>
-                        1. Der skal være stille i sovesalen fra 22-08.
-                        <br>
-2. Spraymaling foregår udenfor på afdækket område.
-<br>
-3. Det er ikke tilladt at bruge Koyos materialer til at producere noget med formål at sælge det.
-<br>
-4. Koyos materialer er tiltænkt som et supplement, og det er derfor ikke tilladt at anvende større mængder. Ønsker man at benytte mere end 1m stof eller tilsvarende A4 størrelse af craftingmateriale, bedes man snakke med en arrangør om formålet.
-<br>
-5. Husk at bruge påkrævet sikkerhedsudstyr når du crafter, er du i tvivl så spørg en arrangør.
-<br>
-6. Husk at rydde op efter jer selv.
-<br>
-7. Det er tilladt at medbringe mad/drikke til arrangementet. Mad må dog ikke nydes crafting/sy rummene og drikke skal enten være i beholdere med låg eller holdes på et bord el.lign. væk fra maskiner m.v.
-                    </p>
-                </div>
-            </section>
-
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox6">
-                <label for="dropdown-checkbox6">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Manga Camp</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
-                    </div>
-                </label>
-
-                <div class="dropdown-contents">
-              
-                          <p>
-                            Manga Camp er et 3 dags arrangement med fokus på manga tegning for 13+ årige.
-                            <br>
-                            <br>
-                            Arrangementet bliver afholdt i påsken, sommerferien og efterårsferien. Programmet for arrangementet indeholder både traditionel og digital tegne undervisning ved dygtige kunstnere, samt masser af hygge.
-
-                            </p>
-         
-                </div>
-            </section>
-
-            <section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox7">
-                <label for="dropdown-checkbox7">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Koyo Chibi</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
-                    </div>
-                </label>
-
-                <div class="dropdown-contents">
-             
-                          <p>
-                            Koyo Chibi dækker over en del mindre arrangementer.
-                            <br>
-                            <br>
-                            Dette inkludere blandt andet meet-ups, hygge weekender og cosplay picnics.
-                            </p>
-          
-                    <div class="spacer-small"></div>
-
-                    <img src="img/events/e_chibi.jpg" style="width: 100%; height: 100%;" alt="afholdelse af Koyo Chibi på Erhvervsakademi Dania">
-
-                </div>
-            </section>
-
-            <!--<section class="dropdown">
-                <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox8">
-                <label for="dropdown-checkbox8">
-                    <div class="skewedpanel">
-                        <img src="assets/triangle2.svg" alt="" class="speechtriangle">
-                        <div class="dropdown-title">
-                            <h2>Event oversigt</h2>
-                            <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
-                        </div>
-                    </div>
-                </label>
-
-                <div class="dropdown-contents">
-                    <div class="eventTimeline">
-                        <img src="img/Timeline_layout_Final.png" alt="Tidslinje over kommende events">
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox9">
+            <label for="dropdown-checkbox9">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Koyo Vinter</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
                     </div>
                 </div>
-            </section>-->
+            </label>
+
+            <div class="dropdown-contents">
+
+                <p>
+                    KoyoCon er en convention som blev startet i 2013, og har siden vokset sig til et event med over 1000 deltagere. Foreningen afholder to conventions i året; en i sommerferien og en i slutningen af efteråret.
+                    <br>
+                    <br>
+                    KoyoCon Vinter afholdes i år d. 27. Oktober-29. Oktober 2023, i Vejlby-Risskov hallerne ved Aarhus.
+                </p>
+
+                <div class="spacer-small"></div>
+
+                <img src="img/events/e_con2.jpg" style="width: 50%; height: 50%;" class="center" alt="Cosplayere til KoyoCon poserer for kameraet">
+
+            </div>
+        </section>
+
+        <div class="text-margin">
+            <br>
+            <h1>Mindre events</h1>
+            <br>
+            <p> Koyo afholder også mindre events regelmæssigt i løbet af året, som fokuserer på at hygge og snakke med koyo fællesskabet!</p>
+            <p> Du kan læse mere om de små events herunder:</p>
+
+            <div class="spacer-small"></div>
         </div>
 
-        <!-- Footer alignment (Don't Delete!)-->
-        <span class="grid-aligner"></span>
-        <span class="grid-aligner"></span>
-        <div class="spacer"></div>
-        <span class="grid-aligner"></span>
-        <span class="grid-aligner"></span>
-        <div class="spacer"></div>
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox5">
+            <label for="dropdown-checkbox5">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Koyo Cosplay Camp</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
 
-        <div class="top-container">
-            <span></span>
-            <a href="#" class="to-top">
-                <img src="assets/Arrow.svg" alt="">
-            </a>
-       </div> 
+            <div class="dropdown-contents">
+
+                <p>
+                    Koyo Cosplay Camp (forkortet KCC) startede i 2019 med støtte fra DUF.
+                    <br>
+                    <br>
+                    Koyo Cosplay Camp er nogle hyggelige weekend arrangementer med fokus på at lave egne cosplays. Koyo stiller et udvalg af forskellige materialer og værktøj til rådighed ved arrangementet, med formål at gøre det nemmere for nye såvel som garvede cosplayers at prøve nye ting.
+                </p>
+
+                <div class="spacer-small"></div>
+
+                <img src="img/events/e_camp.jpg" style="width: 100%; height: 100%;" alt="Cosplay Camp deltagere arbejder på kostumer og props">
+
+                <br>
+                <br>
+                <h2>Hvad er Koyo Cosplay Camp?</h2>
+                <br>
+                <p>
+                    Koyo Cosplay Camp er et weekend arrangement, hvor man kan sidde og arbejde på sit cosplay, derved også kan få hjælp fra andre deltagere og/eller de koyo arrangører som selv deltager i eventet. Arrangementet vil gøre det muligt for deltagerene at lære nye teknikker indenfor f.eks. crafting, wigstyling og syning. Der vil også være mulighed for at arbejde med maskiner og materialer som du måske ikke lige har tilgængeligt derhjemme.
+                    <br>
+                    <br>
+                    Arrangementet starter kl. 18:00 fredag og slutter kl. 15:00 søndag.
+                    <br>
+                    <br>
+                    Har du spørgsmål er du velkommen til at skrive på <a href="mailto:kontakt@koyocon.dk">kontakt@koyocon.dk</a> eller skrive til os over <a href="https://www.facebook.com/KoyoConDK/">facebook</a>
+                </p>
+                <br>
+                <br>
+                <h2>Lokation</h2>
+                <br>
+                <p>
+                    Dania Games
+                    <br>
+                    N P Josiassens Vej 44A
+                    <br>
+                    8500 Grenå
+                    <br>
+                </p>
+                <br>
+                <br>
+                <h2>Sovesal info</h2>
+                <br>
+                <p>
+                    Overnatning foregår i én fælles sal på lokationen, og man skal selv medbringe madras, sovepose m.v.
+                    <br>
+                    <br>
+                    Børn under 15 år skal være ifølge med en voksen, hvis de ønsker at overnatte.
+                    <br>
+                    <br>
+                    Har du spørgsmål, kan du kontakte os via <a href="mailto:kontakt@koyocon.dk">kontakt@koyocon.dk</a>
+                </p>
+                <br>
+                <br>
+                <h2>Mad</h2>
+                <br>
+                <p>
+                    Der er køkken med tilhørende køleskab, mikroovn og el kedel, som ville være mulig at bruge under weekendens arrangement.
+                    <br>
+                    <br>
+                    Koyo vil sælge et lille udvalg af snacks og drikkevare under weekenden.
+                    <br>
+                    <br>
+                    I forhold til mad, kan man benytte en af byens mange madtilbud rundt omkring, både af restauranter, dagligvarer og andet.
+                </p>
+                <br>
+                <br>
+                <h2>Materialer og værktøj</h2>
+                <br>
+                <p>
+                    Til Koyo Cosplay Camp får du adgang til mange forskellige materialer og værktøjer. Dette er en overordnet oversigt over dem, men der tages forbehold for at vi potentielt har udvidet vores sortiment eller eventuelt er løbet tør for noget.
+                </p>
+                <br>
+                <br>
+                <h2>Crafting</h2>
+                <br>
+                <p>
+                    Af værktøj har vi både deltaslibere og dremmel, samt varmpistoler, lim pistoler og diverse små værktøj, såsom hobbyknive, file, loddekolbe, save og naturligvis det nødvendige sikkerhedsudstyr. Derudover har vi pensler til maling.
+                    <br>
+                    <br>
+                    Af materialer har vi foam i forskellige tykkelser og densitet, foam clay, Polymorph, sort og transparent worbla og ler.
+                    <br>
+                    <br>
+                    Af lim har vi kontakt lim, hot glue, træ lim, sekund lim og spray lim.
+                    <br>
+                    <br>
+                    Af maling har vi både spray maling og akrylmaling i et væld af forskellige farver. Derudover har vi lak, primer og selvlysende maling.
+                </p>
+                <br>
+                <br>
+                <h2>Wig styling</h2>
+                <br>
+                <p>
+                    Vi har wigheads, wighead holdere, hairspray (got2b glued), textil lim, hårnåle, elastikker, sakse og kamme.
+                    <br>
+                    <br>
+                    *OBS!* du skal selv medbringe wig.
+                </p>
+                <br>
+                <br>
+                <h2>Syning</h2>
+                <br>
+                <p>
+                    Af maskiner har vi 5 alm. symaskiner (stikkesting), 2 overlockere og 1 broderingsmaskine.
+                    <br>
+                    <br>
+                    *OBS!* der kan være kø ved maskinerne, så hvis man har mulighed for det er man velkommen til at medbringe sin egen. Vi har desuden strygejern og strygebræt.
+                    <br>
+                    <br>
+                    Derudover har vi et væld af sytilbehør, f.eks. nåle, sakse, skrædder linealer, opsprættere, markeringspenne, symaskine fødder (til lynlås og kantbånd), wondertape m.v.
+                    <br>
+                    <br>
+                    Vi har broderingstråd og alm. tråd i forskellige farver, derudover har vi lynlåse, kantbånd, pipingbånd og satin bånd i sort og hvid, samt elastik i sort. Derudover har vi en del blandende knapper, trykknapper, overtræksknapper og hægter. Vi har desuden et lille udvalg af stof maling.
+                    <br>
+                    <br>
+                    Af stof har vi twill i sort/mørkeblå, pleather i brun/sort og flies, bomuldslærred, jersey og polyester i et væld af forskellige farver.
+                    <br>
+                    <br>
+                    *OBS!* Vi har ikke alting og alle farver, så hvis du skal bruge noget helt særligt stof (eller anden materiale) bør du selv medbringe det.
+                </p>
+                <br>
+                <br>
+                <h2>Resin</h2>
+                <br>
+                <p>
+                    Vi har resin (alm. m. hærder) og resin farve i blå, grøn, gul, hvid, lilla, pink, rød og sort.
+                    <br>
+                    <br>
+                    *OBS!* ved størrere resin projekter bedes du selv medbringe resin, da vi skal have nok til at alle kan prøve.
+                    <br>
+                    <br>
+                    Vi har forme til forskellige juveler og enhjørninghorn, silikone målebæger og arbejdsmåtter.
+                </p>
+                <br>
+                <br>
+                <h2>Læder</h2>
+                <br>
+                <p>
+                    Vi har skærehjul, rem skærer, hobbykniv og læderhøvl til udskæring. Til kanterne har vi Kantpolertræ, kantskærer og gum tragacanth.
+                    <br>
+                    <br>
+                    Til syning har vi syl, sadelmagernål, firefork, enfork, syrille, stikpasser og vokstråd i sort, brun og hvid.
+                    <br>
+                    <br>
+                    Vi har desuden læderolie, læderfedt, læderhærder, finish, stempler til snøreringe, nitter og trykknapper, klemmer, lighter, hammer, knibtang, punsel, swivel kniv, tracefilm, revolvertang og nervsværte i rød, sort og brun.
+                </p>
+                <br>
+                <br>
+                <h2>Generelle Ordensregler</h2>
+                <br>
+                <p>
+                    Da Kōyō lægger stor vægt på at være en venlig og velkommende forening hvor alle skal kunne føle sig godt tilpas, har vi nogle regler der gælder for alle, både deltagere og arrangører/medhjælpere. Overtrædelse af en regel medfører en advarsel, og ved gentagende overtrædelser bedes man forlade eventet. Overtrædelse af visse regler medfører øjeblikkelig udvisning.
+                    <br>
+                    <br>
+                    1. Samleje er forbudt på arrangementets område og tilhørende sovepladser, af hensyn til andre congæster og dansk lovgivning. Overtrædelse af denne regel medfører øjeblikkelig udvisning og kan medføre blacklisting fra fremtidige Kōyō arrangementer. Husk at der er mindreårige til stede og at deres forældre skal være trygge ved at sende dem af sted.
+                    <br>
+                    2. Opbevaring, indtagelse og at være påvirket af alkohol og/eller stoffer på arrangementets område er forbudt medfører øjeblikkelig udvisning.
+                    <br>
+                    3. Hærværk og tyveri medfører øjeblikkelig udvisning og politianmeldes.
+                    <br>
+                    4. Spørg altid før du krammer, fotograferer eller filmer en bestemt person – samtykke er sejt.
+                    <br>
+                    5. Undgå at stalke/følge efter andre personer uden deres tilladelse – hvis nogen føler sig stalket har de ret til at klage til en arrangør eller frivillig og det kan medføre klip i armbåndet.
+                    <br>
+                    6. Fysisk og verbal chikane er forbudt –  hvis nogen føler sig chikaneret har de ret til at klage til en arrangør eller frivillig og det kan medføre udvisning.
+                    <br>
+                    7. Affald skal smides i skraldespande/sække.
+                    <br>
+                    8. Lad være med at farve hår i håndvaske. Det ødelægger både dit hår, vasken og som regel også dit cosplay.
+                    <br>
+                    9. Når du deltager til arrangementet giver du Koyo lov til at tage billeder af dig under arrangementet til brug ved promovering.
+                    <br>
+                    10. Overtrædelse af foreningens vedtægter og dansk lovgivning medfører øjeblikkelig udvisning, og i værste fald politi anmeldelse.
+                    <br>
+                    11. Det er forbudt at ryge indenfor – dette inkluderer e-cigaretter.
+                    <br>
+                    12. Børn til og med 3 år kan deltage gratis uden medlemskab. Af hensyn til andre deltagere og barnet må børn til og med 3 år ikke overnatte i sovesalene.
+                    <br>
+                    13. Alle børn under 15 skal være i følge med en voksen.
+                    <br>
+                    14. Det er ikke tilladt at medbringe dyr.
+                </p>
+                <br>
+                <br>
+                <h2>Regler for Koyo Cosplay Camp</h2>
+                <br>
+                <p>
+                    1. Der skal være stille i sovesalen fra 22-08.
+                    <br>
+                    2. Spraymaling foregår udenfor på afdækket område.
+                    <br>
+                    3. Det er ikke tilladt at bruge Koyos materialer til at producere noget med formål at sælge det.
+                    <br>
+                    4. Koyos materialer er tiltænkt som et supplement, og det er derfor ikke tilladt at anvende større mængder. Ønsker man at benytte mere end 1m stof eller tilsvarende A4 størrelse af craftingmateriale, bedes man snakke med en arrangør om formålet.
+                    <br>
+                    5. Husk at bruge påkrævet sikkerhedsudstyr når du crafter, er du i tvivl så spørg en arrangør.
+                    <br>
+                    6. Husk at rydde op efter jer selv.
+                    <br>
+                    7. Det er tilladt at medbringe mad/drikke til arrangementet. Mad må dog ikke nydes crafting/sy rummene og drikke skal enten være i beholdere med låg eller holdes på et bord el.lign. væk fra maskiner m.v.
+                </p>
+            </div>
+        </section>
+
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox6">
+            <label for="dropdown-checkbox6">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Manga Camp</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
+
+            <div class="dropdown-contents">
+
+                <p>
+                    Manga Camp er et 3 dags arrangement med fokus på manga tegning for 13+ årige.
+                    <br>
+                    <br>
+                    Arrangementet bliver afholdt i påsken, sommerferien og efterårsferien. Programmet for arrangementet indeholder både traditionel og digital tegne undervisning ved dygtige kunstnere, samt masser af hygge.
+
+                </p>
+
+            </div>
+        </section>
+
+        <section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox7">
+            <label for="dropdown-checkbox7">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Koyo Chibi</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
+
+            <div class="dropdown-contents">
+
+                <p>
+                    Koyo Chibi dækker over en del mindre arrangementer.
+                    <br>
+                    <br>
+                    Dette inkludere blandt andet meet-ups, hygge weekender og cosplay picnics.
+                </p>
+
+                <div class="spacer-small"></div>
+
+                <img src="img/events/e_chibi.jpg" style="width: 100%; height: 100%;" alt="afholdelse af Koyo Chibi på Erhvervsakademi Dania">
+
+            </div>
+        </section>
+
+        <!--<section class="dropdown">
+            <input type="checkbox" class="dropdown-checkbox" id="dropdown-checkbox8">
+            <label for="dropdown-checkbox8">
+                <div class="skewedpanel">
+                    <img src="assets/triangle2.svg" alt="" class="speechtriangle">
+                    <div class="dropdown-title">
+                        <h2>Event oversigt</h2>
+                        <img src="assets/Arrow.svg" alt="" class="dropdown-arrow">
+                    </div>
+                </div>
+            </label>
+
+            <div class="dropdown-contents">
+                <div class="eventTimeline">
+                    <img src="img/Timeline_layout_Final.png" alt="Tidslinje over kommende events">
+                </div>
+            </div>
+        </section>-->
+    </div>
+
+    <!-- Footer alignment (Don't Delete!)-->
+    <span class="grid-aligner"></span>
+    <span class="grid-aligner"></span>
+    <div class="spacer"></div>
+    <span class="grid-aligner"></span>
+    <span class="grid-aligner"></span>
+    <div class="spacer"></div>
+
+    <div class="top-container">
+        <span></span>
+        <a href="#" class="to-top">
+            <img src="assets/Arrow.svg" alt="">
+        </a>
+    </div>
 
     </body>
+
 
 
     <footer>
@@ -1185,18 +1187,30 @@ Vi har desuden læderolie, læderfedt, læderhærder, finish, stempler til snør
         <div>
             <div class="footer-halftone"></div>
             <div class="footer-main">
-                <p><span class="footer-title">Kontakt os</span><br><br>
-                <a href="mailto:kontakt@koyocon.dk"><span class="hoverdisplay">kontakt@koyocon.dk</span><img src="assets/Group 31.svg" alt="" class="footer-icon-adjust"></a></p>
-                <p>Ophavsret © Koyo 2023<br><br>CVR-nr. 37 77 30 85 | <a href="om-koyo.html#privatlivspolitik" style="text-decoration:underline">Privatlivspolitik</a></p>
                 <div>
-                    <p><span class="footer-title">Følg os på sociale medier</span>
-                    <div class="icon-container">
-                        <a href="https://www.facebook.com/KoyoConDK/"><span class="hoverdisplay">Facebook</span><img src="assets/Group 32.svg" alt=""></a>
-                        <a href="https://www.instagram.com/koyocon/"><span class="hoverdisplay">Instagram</span><img src="assets/Group 33.svg" alt=""></a>
-                        <a href="https://www.youtube.com/@KoyoCon"><span class="hoverdisplay">YouTube</span><img src="assets/Group 34.svg" alt=""></a>
-                    </div>
+                    <p>
+                        <span class="footer-title">Følg os på sociale medier</span>
+                        <div class="icon-container">
+                            <a href="https://www.facebook.com/KoyoConDK/"><span class="hoverdisplay">Facebook</span><img src="assets/Group 32.svg" alt=""></a>
+                            <a href="https://www.instagram.com/koyocon/"><span class="hoverdisplay">Instagram</span><img src="assets/Group 33.svg" alt=""></a>
+                            <a href="https://www.youtube.com/@KoyoCon"><span class="hoverdisplay">YouTube</span><img src="assets/Group 34.svg" alt=""></a>
+                        </div>
                     </p>
                 </div>
+
+                <p>Ophavsret © Koyo 2023<br><br>CVR-nr. 37 77 30 85 | <a href="om-koyo.html#privatlivspolitik" style="text-decoration:underline">Privatlivspolitik</a></p>
+
+                <div>
+                    <p>
+                        <span class="footer-title">Kontakt &nbsp;&nbsp;&nbsp; Light Mode</span><br><br>
+
+                        <div class="icon-container">
+                            <a href="mailto:kontakt@koyocon.dk"><span class="hoverdisplay">kontakt@koyocon.dk</span><img src="assets/Group 31.svg" alt="" class="footer-icon-adjust"></a>
+                            <a class="dark" onclick="toggleMode()"><div class="toggleDarkButton"></div></a>
+                        </div>
+                    </p>
+                </div>
+
             </div>
         </div>
     </footer>
