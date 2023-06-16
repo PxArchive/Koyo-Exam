@@ -35,12 +35,20 @@ html {
     --clr-bg-light: #ededed; /*light grey*/
     --clr-bg-dark: #404040; /*medium grey*/
     --clr-shadow: #231F20; /*dark tinted borders, near black*/
+    /*filters*/
+    --brightness: 0;
+    --invert: 0;
+    /*images*/
+    --nav-image: url(assets/halftone-shadow.svg);
+    --darktoggle-image: url(assets/toggle-dark.svg);
     /*gradients*/
     /*--clr-gradient-box:linear-gradient(90deg, var(--clr-F) 0%, var(--clr-F) 10%, var(--clr-primary-tint) 100%);*/
     --clr-gradient-box: linear-gradient(90deg, #FFFFFF 0%, #FFFFFF 10%, var(--clr-primary-tint) 100%);
     --clr-gradient-button: linear-gradient(to right, var(--clr-button-tint-2), var(--clr-button-tint-1));
-    --clr-gradient-button-hover: linear-gradient(to right, var(--clr-F), var(--clr-button-tint-3));
-    --clr-gradient-button-click: linear-gradient(to left, var(--clr-F), var(--clr-button-tint-3));
+    /*--clr-gradient-button-hover: linear-gradient(to right, var(--clr-F), var(--clr-button-tint-3));*/
+    --clr-gradient-button-hover: linear-gradient(to right, #FFFFFF, var(--clr-button-tint-3));
+    /*--clr-gradient-button-click: linear-gradient(to left, var(--clr-F), var(--clr-button-tint-3));*/
+    --clr-gradient-button-click: linear-gradient(to left, #FFFFFF, var(--clr-button-tint-3));
     /*transforms*/
     --transform-skew: skewX(-12.5deg);
     --transform-unskew: skewX(12.5deg);
@@ -407,7 +415,7 @@ header {
 
 .nav-halftone {
     position: relative;
-    background-image: url(assets/halftone-shadow.svg);
+    background-image: var(--nav-image);
     background-size: contain;
     background-repeat: repeat-x;
     overflow-x: hidden;
@@ -427,18 +435,18 @@ nav ul {
 nav ul li {
     transform: var(--transform-skew);
     text-align: center;
-    background: var(--clr-F);
+    background: #FFFFFF;
     background-image: var(--clr-gradient-box);
     box-shadow: 10px 10px 0px var(--clr-primary);
 }
 
 nav ul li[data-active="true"] {
     background: var(--clr-primary);
-    color: var(--clr-F);
+    color: #FFFFFF;
 }
 
 nav ul li[data-active="true"] h1 {
-    color: var(--clr-F);
+    color: #FFFFFF;
 }
 
 nav ul li a {
@@ -459,7 +467,7 @@ nav ul li:hover {
 
 nav ul li:hover a h1 {
     transition: 200ms;
-    color: var(--clr-F);
+    color: #FFFFFF;
 }
 
 .top-container {
@@ -488,7 +496,7 @@ nav ul li:hover a h1 {
 .to-top:hover {
     transform: translate(-2px, -146px);
     box-shadow: 5px 5px 0px var(--clr-primary);
-    background: var(--clr-F);
+    background: #FFFFFF;
 }
 
 .to-top:hover img {
@@ -533,7 +541,7 @@ nav ul li:hover a h1 {
 
 #navtoggle:checked ~ .borgar .x1 {
     transform: rotate(45deg) translate(0.4rem, 0.35rem);
-    background: var(--clr-F);
+    background: #FFFFFF;
     border-radius: 1rem;
     transition: 100ms;
 }
@@ -544,7 +552,7 @@ nav ul li:hover a h1 {
 
 #navtoggle:checked ~ .borgar .x3 {
     transform: rotate(-45deg) translate(0.45rem, -0.35rem);
-    background: var(--clr-F);
+    background: #FFFFFF;
     border-radius: 1rem;
     transition: 100ms;
 }
@@ -569,7 +577,7 @@ footer {
 .footer-halftone {
     position: relative;
     background-image: url(assets/halftone-medgreyt.svg);
-    filter: brightness(0);
+    filter: brightness(var(--brightness));
     background-size: contain;
     background-repeat: repeat-x;
     overflow-x: hidden;
@@ -615,6 +623,7 @@ footer a:hover {
 footer img {
     height: 3em;
     opacity: 50%;
+    filter: invert(var(--invert));
 }
 
 footer a:hover img {
@@ -632,13 +641,12 @@ footer a:hover * {
 .hoverdisplay {
     position: absolute;
     background: var(--clr-bg-dark);
-    color: var(--clr-F);
+    color: #FFFFFF;
     padding: 0.5em;
     border-radius: 0.5em;
     font-size: 1em;
     transform: translateY(-1.5em);
     font-size: 1.125em;
-    color: var(--clr-F);
     font-family: "Atkinson Hyperlegible", Arial, Helvetica, sans-serif;
     opacity: 0%;
 }
@@ -649,8 +657,16 @@ footer a:hover .hoverdisplay {
     transition: 200ms;
 }
 
-/* ------------------- Countdown bar -------------------*/
+.toggleDarkButton {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: var(--darktoggle-image);
+    height: 2.5em;
+    width: 4em;
+    cursor: pointer;
+}
 
+/* ------------------- Countdown bar -------------------*/
 .countdown-bar {
     width: clamp(1280px, 80%, 1600px);
     position: fixed;
@@ -681,6 +697,15 @@ footer a:hover .hoverdisplay {
 .cdtext {
     font-size: 0.5em;
     color: var(--clr-primary);
+}
+
+.cdtext-tickets {
+    font-size: 0.5em;
+    color: var(--clr-primary);
+}
+
+.cdtext-tickets:hover {
+    color: var(--clr-F);
 }
 
 .countdown-bar button {

@@ -1,0 +1,9 @@
+<svg width="358" height="169" viewBox="0 0 358 169" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="353" y="164" width="348" height="159" rx="79.5" transform="rotate(-180 353 164)" stroke="#404040" stroke-width="10"/>
+<circle cx="85" cy="85" r="50" transform="rotate(-180 85 85)" fill="black" stroke="white" stroke-width="10"/>
+<mask id="path-3-inside-1_193_18" fill="white">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M85 140C115.376 140 140 115.376 140 85C140 54.6243 115.376 30 85 30L85 140Z"/>
+</mask>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M85 140C115.376 140 140 115.376 140 85C140 54.6243 115.376 30 85 30L85 140Z" fill="white"/>
+<path d="M85 140L75 140L75 150L85 150L85 140ZM85 30L85 20L75 20L75 30L85 30ZM130 85C130 109.853 109.853 130 85 130L85 150C120.899 150 150 120.899 150 85L130 85ZM85 40C109.853 40 130 60.1472 130 85L150 85C150 49.1015 120.899 20 85 20L85 40ZM75 30L75 140L95 140L95 30L75 30Z" fill="white" mask="url(#path-3-inside-1_193_18)"/>
+</svg>
